@@ -18,33 +18,33 @@ This project is currently deployed to [http://dot-comics-test.appspot.com/](http
 ## Documentation
 
 ### File Structure
-.
-+-- src
-|   +-- conf 						// Configuration files
-|      +-- Router.java 				// Controls all the routing to Actions
-|   +-- controllers
-|      +-- Action.java 				// Interface for Action Controllers
-|      +-- ActionFactory.java 		// Maps requests to Actions
-|   +-- dao 						// Data Access Objects used for updating/creating/deleting models
-|									// and sending queries to db
-|   +-- db
-|      +-- db.java 					// Manages db connection & executes/updates queries
-|   +-- filters
-|      +-- Filter.java 				// Examines incoming url requests and directs them to correct place
-|   +-- models 						// Data models - sort of like javabeans
-+-- web
-|   +-- css
-|   +-- fonts
-|   +-- img
-|   +-- js
-|   +-- WEB-INF
-|      +-- appengine-web.xml
-|      +-- web.xml
-|   +-- favicon.ico 				// The icon on the browser tab
-|   +-- index.jsp
-|   +-- jslibs.jsp 					// Contains JavaScript libraries we need in our pages
-|   +-- nav.jsp 					// Contains the nav
-+-- README.md
+
+    .
+    ├── src
+    ├──── conf                    // Configuration files
+    ├────── Router.java           // Controls all the routing to Actions
+    ├──── controllers
+    ├────── Action.java           // Interface for Action Controllers
+    ├────── ActionFactory.java    // Maps requests to Actions
+    ├──── dao                     // Data Access Objects used for updating/creating/deleting models and sending queries to db
+    ├──── db
+    ├────── db.java               // Manages db connection & executes/updates queries
+    ├──── filters
+    ├────── Filter.java           // Examines incoming url requests and directs them to correct place
+    ├──── models
+    ├── web
+    ├──── css
+    ├──── fonts
+    ├──── img
+    ├──── js
+    ├──── WEB-INF
+    ├────── appengine-web.xml
+    ├────── web.xml
+    ├──── favicon.ico
+    ├──── index.jsp
+    ├──── jslibs.jsp
+    ├──── nav.jsp
+    └── README.md
 
 ### Routing
 
