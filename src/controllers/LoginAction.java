@@ -1,9 +1,8 @@
 package controllers;
 
-import conf.Action;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Created by Jessica on 3/19/2016.
@@ -11,8 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginAction implements Action {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        return "login";
-
+        HttpSession session = request.getSession(true);
+        session.setAttribute("username", "Name");
+        return "";
     }
 
 }
