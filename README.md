@@ -9,7 +9,10 @@ Clone this repo:
 git clone https://github.com/blizzard-blue/dotcomics.git
 ```
 
-**Just work on the master branch.** Don't create your own branch - work on your local copy and push when you have something working.
+Switch to build1 branch
+```
+git checkout build1
+```
 
 Make sure you have [IntelliJ](https://www.jetbrains.com/idea/download/#section=windows) and the [Google App Engine SDK](https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Java) installed.
 
@@ -43,9 +46,9 @@ Commit
 git commit -m "message"
 ```
 
-Push your commit - from your branch `master` to the remote `origin`
+Push your commit - from your branch `build1` to the remote `origin`
 ```
-git push origin master
+git push origin build1
 ```
 
 Show changes between commits
