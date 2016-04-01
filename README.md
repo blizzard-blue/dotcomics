@@ -9,11 +9,56 @@ Clone this repo:
 git clone https://github.com/blizzard-blue/dotcomics.git
 ```
 
+**Just work on the master branch.** Don't create your own branch - work on your local copy and push when you have something working.
+
 Make sure you have [IntelliJ](https://www.jetbrains.com/idea/download/#section=windows) and the [Google App Engine SDK](https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Java) installed.
 
 Open the cloned repo in IntelliJ, and make sure you have IntelliJ set to be using Java 7.
 
 This project is currently deployed to [http://dot-comics-test.appspot.com/](http://dot-comics-test.appspot.com/).
+
+### Git commands
+
+Some helpful git commands:
+
+You should always make sure your local repository is up-to-date with changes before you work.
+
+Check the state of the repository with the working branch:
+```
+git status
+```
+
+Update your master and feature heads to reflect your friend's changes - uses `git fetch` and then `git merge`
+```
+git pull
+```
+
+Add files you changed for next commit
+```
+git add .
+```
+
+Commit
+```
+git commit -m "message"
+```
+
+Push your commit - from your branch `master` to the remote `origin`
+```
+git push origin master
+```
+
+Show changes between commits
+```
+git diff
+```
+
+View previous commits
+```
+git log
+```
+
+Add stuff here.
 
 ## Documentation
 
