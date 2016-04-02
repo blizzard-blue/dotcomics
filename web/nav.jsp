@@ -15,9 +15,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+                <jsp:useBean id="user" class="models.UserAcct" scope="session">
+                    <jsp:setProperty name="user" property="*"/>
+                </jsp:useBean>
                 <c:choose>
-                    <c:when test="${sessionScope.username != null}">
-                        <li><a>${sessionScope.username}</a></li>
+                    <c:when test="${user.username != null}">
+                        <li><a>${user.username}</a></li>
                         <li><a href="/logout">Logout</a></li>
                     </c:when>
                     <c:otherwise>

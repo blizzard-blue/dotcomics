@@ -19,6 +19,8 @@ public class Filter implements javax.servlet.Filter {
         if (path.startsWith("/WEB-INF/")) {
             // Just let container's default servlet do its job.
             chain.doFilter(req, resp);
+        } else if (path.startsWith("/_ah")){
+            chain.doFilter(req, resp);
         } else {
             // Delegate to your front controller.
             request.getRequestDispatcher("/pages" + path).forward(req, resp);

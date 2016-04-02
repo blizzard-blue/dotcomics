@@ -26,14 +26,8 @@ public class Router extends HttpServlet {
             Action action = ActionFactory.getInstance().getAction(request);
             String view = action.execute(request, response);
 
-            String currentPage = request.getRequestURI();
-
-            if(view == ""){
-                response.sendRedirect("/");
-            } else{
-                if(!(view.equals(currentPage))){
-                    request.getRequestDispatcher("/" + view + ".jsp").forward(request, response);
-                }
+            if(view != null){
+                request.getRequestDispatcher("/" + view + ".jsp").forward(request, response);
             }
         }
         catch (Exception e) {

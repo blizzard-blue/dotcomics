@@ -16,6 +16,12 @@ public class ActionFactory {
         actions.put("GET/", new StartupAction());
         actions.put("GET/login", new LoginAction());
         actions.put("GET/logout", new LogoutAction());
+        actions.put("GET/signup", new SignupAction());
+        actions.put("GET/draw", new LoadPageAction());
+        actions.put("GET/upload", new LoadPageAction());
+        actions.put("GET/account", new LoadAccountAction());
+        actions.put("GET/getbookmarks", new GetBookmarksAction());
+        actions.put("GET/getsubscriptions", new GetSubscriptionsAction());
     }
 
     public static ActionFactory getInstance() {
