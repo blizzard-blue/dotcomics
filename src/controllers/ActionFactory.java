@@ -22,6 +22,7 @@ public class ActionFactory {
         actions.put("GET/account", new LoadAccountAction());
         actions.put("GET/getbookmarks", new GetBookmarksAction());
         actions.put("GET/getsubscriptions", new GetSubscriptionsAction());
+        actions.put("GET/search", new LoadSearchAction());
     }
 
     public static ActionFactory getInstance() {
