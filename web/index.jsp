@@ -13,7 +13,7 @@
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
       <link href="/css/scroll.css" rel="stylesheet">
-
+    <link href="/css/nav.css" rel="stylesheet">
   </head>
 
   <body>
