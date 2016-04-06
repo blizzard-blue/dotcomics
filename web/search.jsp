@@ -9,6 +9,9 @@
 <html>
 <head>
     <title>Search</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/nav.css" rel="stylesheet">
 </head>
 <body>
     <jsp:directive.include file="/nav.jsp" />
