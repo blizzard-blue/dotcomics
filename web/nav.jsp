@@ -25,18 +25,26 @@
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search">
                     </div>
-                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    <button type="submit" class="btn btn-default" id="search-btn"><span class="glyphicon glyphicon-search"></span></button>
                 </form>
 
                 <c:choose>
                     <c:when test="${user.username != null}">
                         <li><a>${user.username}</a></li>
-                        <li><a href="/draw"><span class="glyphicon glyphicon-pencil"></span></a></li>
+
+                        <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/upload">Upload</a></li>
+                            <li><a href="/draw">Draw</a></li>
+                        </ul>
+                        </li>
 
                         <li class="dropdown" id="bookmarks">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                 <span class="glyphicon glyphicon-star"></span>
-                                <span class="caret"></span></a>
                             <ul class="dropdown-menu scroll-dd">
                                 <li><a href="#">Captain America</a></li>
                                 <li><a href="#">The Avengers</a></li>
@@ -47,7 +55,6 @@
                         <li class="dropdown" id="subs">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                 <span class="glyphicon glyphicon-thumbs-up"></span>
-                                <span class="caret"></span></a>
                             <ul class="dropdown-menu scroll-dd">
                                 <li><a href="#">Randall</a></li>
                                 <li><a href="#">Matt</a></li>
