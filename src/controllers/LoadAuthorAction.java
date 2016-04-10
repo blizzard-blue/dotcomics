@@ -4,13 +4,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Created by Jessica on 4/2/2016.
+ * Created by sicaz on 4/10/2016.
  */
-public class LoadPageAction implements Action {
-
+public class LoadAuthorAction implements Action {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        String view = request.getPathInfo();
-        return view;
+        return "author";
     }
 }

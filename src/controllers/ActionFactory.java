@@ -23,6 +23,8 @@ public class ActionFactory {
         actions.put("GET/getbookmarks", new GetBookmarksAction());
         actions.put("GET/getsubscriptions", new GetSubscriptionsAction());
         actions.put("GET/search", new LoadSearchAction());
+        actions.put("GET/comic", new LoadComicAction());
+        actions.put("GET/author", new LoadAuthorAction());
     }
 
     public static ActionFactory getInstance() {

@@ -2,8 +2,15 @@
 <html>
     <head>
         <title>dotComics | MyAccount</title>
+
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/nav.css" rel="stylesheet">
     </head>
     <body>
+        <jsp:directive.include file="/nav.jsp" />
+
         <h1>Upload</h1>
+
+        <jsp:directive.include file="/jslibs.jsp" />
     </body>
 </html>
