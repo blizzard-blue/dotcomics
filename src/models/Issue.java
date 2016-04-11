@@ -1,7 +1,50 @@
 package models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Jessica on 3/30/2016.
  */
-public class Issue {
+public class Issue implements java.io.Serializable {
+    private String title;
+    private String path;
+    private String seriesTitle;
+    private int numPages;
+
+    public String getTitle(){
+        return title;
+    }
+
+    public String getSeriesTitle(){
+        return seriesTitle;
+    }
+
+    public String getPage(int page){
+        return path + "/" + page + ".jpg";
+    }
+
+    public int getNumPages(){
+        return numPages;
+    }
+
+    public String getPath(){
+        return path;
+    }
+
+    public void setTitle(String title){
+        this.title = title;
+    }
+
+    public void setSeriesTitle(String title){
+        this.seriesTitle = title;
+    }
+
+    public void setPath(String path){
+        this.path = path;
+    }
+
+    public void setNumPages(int pages){
+        this.numPages = pages;
+    }
 }

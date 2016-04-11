@@ -36,16 +36,16 @@
         <div class="carousel slide" id="myCarousel-1">
             <div class="carousel-inner">
                 <div class="item active">
-                    <div class="col-xs-3"><a href="/comic"><img src="img/Deadpool/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3"><a href="/comic?series=Deadpool"><img src="series/Deadpool/thumbnail.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic"><img src="img/Guardians%20of%20the%20Galaxy/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3"><a href="/comic?series=Guardians%20of%20the%20Galaxy"><img src="series/Guardians%20of%20the%20Galaxy/thumbnail.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic"><img src="img/Judge%20Dredd/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3"><a href="/comic?series=Judge%20Dredd"><img src="series/Judge%20Dredd/thumbnail.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic"><img src="img/The%20Avengers/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3"><a href="/comic?series=The%20Avengers"><img src="series/The%20Avengers/thumbnail.jpg" class="img-responsive"></a></div>
                 </div>
             </div>
             <a class="left carousel-control" href="#myCarousel-1" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
@@ -58,16 +58,16 @@
         <div class="carousel slide" id="myCarousel-2">
             <div class="carousel-inner">
                 <div class="item active">
-                    <div class="col-xs-3"><a href="/comic"><img src="img/Deadpool/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3"><a href="/comic?series=Deadpool"><img src="series/Deadpool/thumbnail.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic"><img src="img/Guardians%20of%20the%20Galaxy/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3"><a href="/comic?series=Guardians%20of%20the%20Galaxy"><img src="series/Guardians%20of%20the%20Galaxy/thumbnail.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic"><img src="img/Judge%20Dredd/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3"><a href="/comic?series=Judge%20Dredd"><img src="series/Judge%20Dredd/thumbnail.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic"><img src="img/The%20Avengers/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3"><a href="/comic?series=The%20Avengers"><img src="series/The%20Avengers/thumbnail.jpg" class="img-responsive"></a></div>
                 </div>
             </div>
             <a class="left carousel-control" href="#myCarousel-2" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
@@ -80,16 +80,16 @@
         <div class="carousel slide" id="myCarousel-3">
             <div class="carousel-inner">
                 <div class="item active">
-                    <div class="col-xs-3"><a href="WEB-INF/comic.jsp"><img src="img/Deadpool/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3"><a href="/comic?series=Deadpool"><img src="series/Deadpool/thumbnail.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="WEB-INF/comic.jsp"><img src="img/Guardians%20of%20the%20Galaxy/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3"><a href="/comic?series=Guardians%20of%20the%20Galaxy"><img src="series/Guardians%20of%20the%20Galaxy/thumbnail.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="WEB-INF/comic.jsp"><img src="img/Judge%20Dredd/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3"><a href="/comic?series=Judge%20Dredd"><img src="series/Judge%20Dredd/thumbnail.jpg" class="img-responsive"></a></div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="WEB-INF/comic.jsp"><img src="img/The%20Avengers/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3"><a href="/comic?series=The%20Avengers"><img src="series/The%20Avengers/thumbnail.jpg" class="img-responsive"></a></div>
                 </div>
             </div>
             <a class="left carousel-control" href="#myCarousel-3" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
