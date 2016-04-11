@@ -1,0 +1,66 @@
+body {
+    height: 100%;
+}
+
+#comic-info {
+    text-align: center;
+}
+
+.well {
+    margin-bottom: 0;
+    border-radius: 0px;
+    text-align: center;
+}
+
+#comic-menu {
+     display: inline-block;
+ }
+
+#comic-menu .dropdown {
+    padding: 0 50px;
+}
+
+#comic-page-wrapper {
+    background-color: lightgray;
+    width: 100%;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+#comic-tools-wrapper {
+    position: fixed;
+    bottom: 4%;
+    left: 2%;
+}
+
+.comic-tool {
+    background-color: #d293a9;
+    opacity: 0.8;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.comic-tool:hover {
+    opacity: 1;
+}
+
+.comic-tool span {
+    line-height: 40px;
+    font-size: 25px;
+}
+.comic-tool .glyphicon {
+    line-height: 40px;
+    font-size: 20px;
+}
+
+#comic-pages img {
+    width: 75%;
+    display: block;
+    margin: 10px auto;
+}
