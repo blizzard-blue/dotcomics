@@ -1,0 +1,33 @@
+#nameContainer{
+    height: 300px;
+    background-color: #245269;
+    text-align: center;
+}
+
+#bioContainer{
+    height: 100px;
+    background-color: #23527c;
+}
+
+#name{
+    color: white;
+    line-height: 125px;
+}
+
+#bioText{
+    float: right;
+    text-align: center;
+    color: white;
+}
+
+#submit{
+    float: left;
+}
+
+#Edit{
+    float: left;
+}
+
+#profilePicture img{
+    border-radius: 50%;
+}
