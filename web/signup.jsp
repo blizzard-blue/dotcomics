@@ -10,11 +10,20 @@
 <head>
     <title>dotComics | Create Account</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/scroll.css" rel="stylesheet">
+    <link href="/css/nav.css" rel="stylesheet">
 </head>
 <body>
     <jsp:directive.include file="/nav.jsp" />
-    
-    <h1>Sign up</h1>
+
+    <div id="signupformbox">
+        <h1>Sign up!</h1>
+        <form action="/signup">
+            Enter desired username: <input type="text" name="desired-un"value="">
+            <input type="submit" value="Join"/>
+        </form>
+    </div>
 
     <jsp:directive.include file="/jslibs.jsp" />
 </body>

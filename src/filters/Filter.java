@@ -16,7 +16,7 @@ public class Filter implements javax.servlet.Filter {
         String path = request.getRequestURI().substring(request.getContextPath().length());
         System.out.println(path);
 
-        if (path.startsWith("/WEB-INF/")) {
+        if (path.startsWith("/WEB-INF/") || path.startsWith("/img")) {
             // Just let container's default servlet do its job.
             chain.doFilter(req, resp);
         } else if (path.startsWith("/_ah")){

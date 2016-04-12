@@ -2,6 +2,7 @@ package controllers;
 
 import com.google.appengine.labs.repackaged.org.json.JSONArray;
 import com.google.appengine.labs.repackaged.org.json.JSONObject;
+import models.UserAcct;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,23 +19,16 @@ public class GetUserInfoAction implements Action {
         response.setContentType("application/json;charset=utf-8");
 
         JSONObject json = new JSONObject();
-        JSONArray array = new JSONArray();
         JSONObject userinfo =  new JSONObject();
-        JSONObject comics =  new JSONObject();
-        String[] s = new String[5];
-        s[0] = "hello";
-        s[1] = "there";
-        s[2] = "how";
-        s[3] = "you";
-        s[4] = "doin'?";
 
         HttpSession session = request.getSession(true);
-        String username = (String) session.getAttribute("user");
+        UserAcct u = (UserAcct) session.getAttribute("user");
+        String username = u.getUsername();
 
         userinfo.put("username", username);
-        array.put(userinfo);
-        array.put(comics);
-        json.put("userinfo", array);
+        userinfo.put("about", u.getAbout());
+        userinfo.put("img", "/img/user/mckenna.jpg");
+        json.put("userinfo", userinfo);
 
         PrintWriter pw = response.getWriter();
         pw.print(json.toString());

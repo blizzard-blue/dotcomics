@@ -23,10 +23,10 @@ public class LoginAction implements Action {
             response.sendRedirect(userService.createLoginURL("/login"));
         } else{
             UserDao ud = new UserDao();
-            String nickname = user.getNickname();
-            boolean userExists = ud.userExists(nickname);
+            String email = user.getEmail();
+            boolean userExists = ud.userExists(email);
             if(userExists){
-                UserAcct u = ud.getUser(nickname);
+                UserAcct u = ud.getUser(email);
                 HttpSession session = request.getSession(true);
                 session.setAttribute("user", u);
                 response.sendRedirect("/");
