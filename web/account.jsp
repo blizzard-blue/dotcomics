@@ -16,8 +16,34 @@
 <body>
     <jsp:directive.include file="/nav.jsp" />
 
-    <h1>Account Settigs</h1>
+    <h1>Account Settings</h1>
 
     <jsp:directive.include file="/jslibs.jsp" />
+    <script>
+        $( document ).ready(function() {
+            $.ajax({
+                url : "/userinfo",
+                dataType : 'json',
+                error : function() {
+                    console.log("Error Occured");
+                },
+                success : function(data) {
+//                    var receivedData = [];
+//
+//                    $.each(data.jsonArray, function(index) {
+//                        $.each(data.jsonArray[index], function(key, value) {
+//                            var point = [];
+//
+//                            point.push(key);
+//                            point.push(value);
+//                            receivedData.push(point);
+//
+//                        });
+//                    });
+                    console.log(data);
+                }
+            });
+        });
+    </script>
 </body>
 </html>

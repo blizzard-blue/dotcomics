@@ -25,6 +25,7 @@ public class ActionFactory {
         actions.put("GET/search", new LoadSearchAction());
         actions.put("GET/comic", new LoadComicAction());
         actions.put("GET/author", new LoadAuthorAction());
+        actions.put("GET/userinfo", new GetUserInfoAction());
     }
 
     public static ActionFactory getInstance() {
