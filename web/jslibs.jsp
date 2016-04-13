@@ -23,4 +23,28 @@
             next.children(':first-child').clone().appendTo($(this));
         }
     });
+
+    $( document ).ready(function() {
+        $.ajax({
+            url : "/getbookmarks",
+            dataType : 'json',
+            error : function() {
+                console.log("Error Occured");
+            },
+            success : function(data) {
+                console.log(data.bookmarks_obj);
+            }
+        });
+
+        $.ajax({
+            url : "/getsubscriptions",
+            dataType : 'json',
+            error : function() {
+                console.log("Error Occured");
+            },
+            success : function(data) {
+                console.log(data.subscriptions_obj);
+            }
+        });
+    });
 </script>
