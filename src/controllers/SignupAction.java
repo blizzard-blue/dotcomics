@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
 public class SignupAction implements Action {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        String desired_un = request.getParameter("desired-un");
+        String desired_un = request.getParameter("displayName");
         UserService userService = UserServiceFactory.getUserService();
         User user = userService.getCurrentUser();
 

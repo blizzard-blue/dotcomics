@@ -21,17 +21,17 @@
     <div id="signupformbox">
         <h1 id="signupHeading">Sign up!</h1>
         <br>
-        <form>
+        <form action="/signup">
 
         <fieldset class="form-group">
             <label for="displayName">Display Name:</label>
-            <input id="nameBox" class="form-control" id="displayName" placeholder="Name">
+            <input id="nameBox" class="form-control" id="displayName" name="displayName" placeholder="Name">
         </fieldset>
 
 
         <fieldset class="form-group">
             <label for="bio">Tell us about yourself:</label>
-            <textarea class="form-control" id="bio" rows="3" placeholder="Your Bio"></textarea>
+            <textarea class="form-control" id="bio" rows="3" name="bio" placeholder="Your Bio"></textarea>
         </fieldset>
 
         <fieldset class="form-group">

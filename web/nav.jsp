@@ -44,26 +44,14 @@
 
                         <li class="dropdown" id="bookmarks">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <span class="glyphicon glyphicon-star"></span>
-                            <ul class="dropdown-menu scroll-dd">
-                                <li><a href="#">Captain America</a></li>
-                                <li><a href="#">The Avengers</a></li>
-                            </ul>
+                                <span class="glyphicon glyphicon-star"></span></a>
+                            <ul class="dropdown-menu scroll-dd"></ul>
                         </li>
 
                         <li class="dropdown" id="subs">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <span class="glyphicon glyphicon-thumbs-up"></span>
-                            <ul class="dropdown-menu scroll-dd">
-                                <li><a href="#">Randall</a></li>
-                                <li><a href="#">Matt</a></li>
-                                <li><a href="#">Jessica</a></li>
-                                <li><a href="#">John</a></li>
-                                <li><a href="#">Guy</a></li>
-                                <li><a href="#">Guy1</a></li>
-                                <li><a href="#">Guy2</a></li>
-                                <li><a href="#">Guy3</a></li>
-                            </ul>
+                                <span class="glyphicon glyphicon-thumbs-up"></span></a>
+                            <ul class="dropdown-menu scroll-dd"></ul>
                         </li>
 
                         <li class="dropdown" id="settingsDropDown">
