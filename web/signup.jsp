@@ -44,9 +44,7 @@
             <button type="submit" class="btn btn-primary">Submit</button>
             <button type="cancel" class="btn btn-primary">Cancel</button>
         </div>
-
         </form>
-
     </div>
 
     <jsp:directive.include file="/jslibs.jsp" />

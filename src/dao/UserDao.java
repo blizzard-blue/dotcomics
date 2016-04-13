@@ -48,11 +48,27 @@ public class UserDao {
         return exists;
     }
 
-    public UserAcct getUser(String nickname){
-        // placeholder code
+    public UserAcct getUser(String email){
+        rs = null;
         UserAcct user = new UserAcct();
-        user.setUsername(nickname);
-        user.setAbout("Hello, I am a person. This is my biography. I like stuffs. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. Stuff. ");
+        try{
+            conn = db.getConnection();
+            stmt = conn.prepareStatement("select * from User where emailaddress = ?");
+            stmt.setString(1, email);
+            rs = stmt.executeQuery();
+
+            if(rs.next()) {
+                user.setUsername(rs.getString("username"));
+                user.setAbout(rs.getString("aboutme"));
+            }
+            conn.close();
+            rs.close();
+            stmt.close();
+
+        }catch(Exception e){
+            System.out.println("connection unsuccessful");
+            e.printStackTrace();
+        }
         return user;
     }
 
@@ -62,14 +78,30 @@ public class UserDao {
 
         try {
             conn = db.getConnection();
-            String scope = "https://www.googleapis.com/auth/userinfo.profile";
 
-
-            stmt = conn.prepareStatement("insert into User(username, firstname, lastname, emailaddress) values (?, ?, ?, ?)");
+            stmt = conn.prepareStatement("insert into User(username, emailaddress) values (?, ?)");
             stmt.setString(1, username);
-            stmt.setString(2, username);
-            stmt.setString(3, username);
-            stmt.setString(4, user.getEmail());
+            stmt.setString(2, user.getEmail());
+            stmt.executeUpdate();
+
+            conn.close();
+            stmt.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
+    public void createUser(String username, String descr){
+        UserService userService = UserServiceFactory.getUserService();
+        User user = userService.getCurrentUser();
+
+        try {
+            conn = db.getConnection();
+
+            stmt = conn.prepareStatement("insert into User(username, emailaddress, description) values (?, ?, ?)");
+            stmt.setString(1, username);
+            stmt.setString(2, user.getEmail());
+            stmt.setString(3, descr);
             stmt.executeUpdate();
 
             conn.close();

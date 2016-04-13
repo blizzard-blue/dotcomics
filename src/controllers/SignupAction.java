@@ -1,5 +1,8 @@
 package controllers;
 
+import com.google.appengine.api.users.User;
+import com.google.appengine.api.users.UserService;
+import com.google.appengine.api.users.UserServiceFactory;
 import dao.UserDao;
 import models.UserAcct;
 
@@ -14,6 +17,9 @@ public class SignupAction implements Action {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String desired_un = request.getParameter("desired-un");
+        UserService userService = UserServiceFactory.getUserService();
+        User user = userService.getCurrentUser();
+
         if(desired_un == null){
             return "signup";
         }else{
@@ -23,7 +29,7 @@ public class SignupAction implements Action {
                 return "signup";
             }else{
                 ud.createUser(desired_un);
-                UserAcct u = ud.getUser(desired_un);
+                UserAcct u = ud.getUser(user.getEmail());
                 HttpSession session = request.getSession(true);
                 session.setAttribute("user", u);
                 response.sendRedirect("/");

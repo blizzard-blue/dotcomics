@@ -48,7 +48,6 @@
                             <ul class="dropdown-menu scroll-dd">
                                 <li><a href="#">Captain America</a></li>
                                 <li><a href="#">The Avengers</a></li>
-                                <li><a href="#">Deadpool</a></li>
                             </ul>
                         </li>
 

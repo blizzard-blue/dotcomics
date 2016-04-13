@@ -18,12 +18,13 @@ import java.util.List;
 public class GetBookmarksAction implements Action {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        BookmarksDao bd = new BookmarksDao();
+        UserAcct u = (UserAcct) request.getSession(true).getAttribute("user");
+        BookmarksDao bd = new BookmarksDao(u.getUsername());
         List<Bookmark> bookmarks = bd.getAllBookmarks();
 
         JSONObject json = new JSONObject();
         JSONObject bm =  new JSONObject();
-        JSONArray bmarray =  new JSONArray();
+        JSONArray bmarray = new JSONArray();
 
         for(int i=0; i<bookmarks.size(); i++){
             Bookmark b = bookmarks.get(i);
@@ -32,6 +33,8 @@ public class GetBookmarksAction implements Action {
                 bm2.put("seriesTitle", b.getSeriesTitle());
                 bm2.put("path", b.getPath());
                 bmarray.put(bm2);
+                System.out.println("bookmarks into jsonobj " + b.getSeriesTitle());
+
             }
         }
 
