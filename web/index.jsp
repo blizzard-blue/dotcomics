@@ -20,7 +20,7 @@
   <body>
     <jsp:directive.include file="/nav.jsp" />
 
-    <header class="intro-header">
+    <!--<header class="intro-header">
         <div class="container">
             <div class="row">
                 <div class="site-heading">
@@ -29,23 +29,49 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header>-->
 
     <div class="col-md-12 text-center"><h3>Featured Series</h3></div>
     <div class="col-md-6 col-md-offset-3">
         <div class="carousel slide" id="myCarousel-1">
             <div class="carousel-inner">
                 <div class="item active">
-                    <div class="col-xs-3"><a href="/comic?series=Deadpool"><img src="series/Deadpool/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3">
+                        <div class="img-wrap">
+                            <a href="/comic?series=Deadpool"><img src="series/Deadpool/thumbnail.jpg" class="img-responsive"></a>
+                            <p class="imgDesc" id="scroll1-1">Dead Pool</p>
+                            <p class="imgDesc" id="scroll2-1">By Stan Lee</p>
+
+
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic?series=Guardians%20of%20the%20Galaxy"><img src="series/Guardians%20of%20the%20Galaxy/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3">
+                        <div class="img-wrap">
+                            <a href="/comic?series=Guardians%20of%20the%20Galaxy"><img src="series/Guardians%20of%20the%20Galaxy/thumbnail.jpg" class="img-responsive"></a>
+                            <p class="imgDesc" id="scroll1-2">Guardians of the Galaxy</p>
+                            <p class="imgDesc" id="scroll2-2">By Stan Lee</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic?series=Judge%20Dredd"><img src="series/Judge%20Dredd/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3">
+                        <div class="img-wrap">
+                            <a href="/comic?series=Judge%20Dredd"><img src="series/Judge%20Dredd/thumbnail.jpg" class="img-responsive"></a>
+                            <p class="imgDesc" id="scroll1-3">Judge Dredd</p>
+                            <p class="imgDesc" id="scroll2-3">By Stan Lee</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic?series=The%20Avengers"><img src="series/The%20Avengers/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3">
+                        <div class="img-wrap">
+                            <a href="/comic?series=The%20Avengers"><img src="series/The%20Avengers/thumbnail.jpg" class="img-responsive"></a>
+                            <p class="imgDesc" id="scroll1-4">The Avengers</p>
+                            <p class="imgDesc" id="scroll2-4">By Stan Lee</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <a class="left carousel-control" href="#myCarousel-1" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
@@ -53,49 +79,103 @@
         </div>
     </div>
 
-    <div class="col-md-12 text-center"><h3>Action</h3></div>
+    <div class="col-md-12 text-center"><h3>Featured Series</h3></div>
     <div class="col-md-6 col-md-offset-3">
-        <div class="carousel slide" id="myCarousel-2">
+        <div class="carousel slide" id="myCarousel-1">
             <div class="carousel-inner">
                 <div class="item active">
-                    <div class="col-xs-3"><a href="/comic?series=Deadpool"><img src="series/Deadpool/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3">
+                        <div class="img-wrap">
+                            <a href="/comic?series=Deadpool"><img src="series/Deadpool/thumbnail.jpg" class="img-responsive"></a>
+                            <p class="imgDesc" id="scroll1-1">Dead Pool</p>
+                            <p class="imgDesc" id="scroll2-1">By Stan Lee</p>
+
+
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic?series=Guardians%20of%20the%20Galaxy"><img src="series/Guardians%20of%20the%20Galaxy/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3">
+                        <div class="img-wrap">
+                            <a href="/comic?series=Guardians%20of%20the%20Galaxy"><img src="series/Guardians%20of%20the%20Galaxy/thumbnail.jpg" class="img-responsive"></a>
+                            <p class="imgDesc" id="scroll1-2">Guardians of the Galaxy</p>
+                            <p class="imgDesc" id="scroll2-2">By Stan Lee</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic?series=Judge%20Dredd"><img src="series/Judge%20Dredd/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3">
+                        <div class="img-wrap">
+                            <a href="/comic?series=Judge%20Dredd"><img src="series/Judge%20Dredd/thumbnail.jpg" class="img-responsive"></a>
+                            <p class="imgDesc" id="scroll1-3">Judge Dredd</p>
+                            <p class="imgDesc" id="scroll2-3">By Stan Lee</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic?series=The%20Avengers"><img src="series/The%20Avengers/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3">
+                        <div class="img-wrap">
+                            <a href="/comic?series=The%20Avengers"><img src="series/The%20Avengers/thumbnail.jpg" class="img-responsive"></a>
+                            <p class="imgDesc" id="scroll1-4">The Avengers</p>
+                            <p class="imgDesc" id="scroll2-4">By Stan Lee</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a class="left carousel-control" href="#myCarousel-2" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-            <a class="right carousel-control" href="#myCarousel-2" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            <a class="left carousel-control" href="#myCarousel-1" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            <a class="right carousel-control" href="#myCarousel-1" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
         </div>
     </div>
 
-    <div class="col-md-12 text-center"><h3>Action</h3></div>
+    <div class="col-md-12 text-center"><h3>Featured Series</h3></div>
     <div class="col-md-6 col-md-offset-3">
-        <div class="carousel slide" id="myCarousel-3">
+        <div class="carousel slide" id="myCarousel-1">
             <div class="carousel-inner">
                 <div class="item active">
-                    <div class="col-xs-3"><a href="/comic?series=Deadpool"><img src="series/Deadpool/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3">
+                        <div class="img-wrap">
+                            <a href="/comic?series=Deadpool"><img src="series/Deadpool/thumbnail.jpg" class="img-responsive"></a>
+                            <p class="imgDesc" id="scroll1-1">Dead Pool</p>
+                            <p class="imgDesc" id="scroll2-1">By Stan Lee</p>
+
+
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic?series=Guardians%20of%20the%20Galaxy"><img src="series/Guardians%20of%20the%20Galaxy/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3">
+                        <div class="img-wrap">
+                            <a href="/comic?series=Guardians%20of%20the%20Galaxy"><img src="series/Guardians%20of%20the%20Galaxy/thumbnail.jpg" class="img-responsive"></a>
+                            <p class="imgDesc" id="scroll1-2">Guardians of the Galaxy</p>
+                            <p class="imgDesc" id="scroll2-2">By Stan Lee</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic?series=Judge%20Dredd"><img src="series/Judge%20Dredd/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3">
+                        <div class="img-wrap">
+                            <a href="/comic?series=Judge%20Dredd"><img src="series/Judge%20Dredd/thumbnail.jpg" class="img-responsive"></a>
+                            <p class="imgDesc" id="scroll1-3">Judge Dredd</p>
+                            <p class="imgDesc" id="scroll2-3">By Stan Lee</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                    <div class="col-xs-3"><a href="/comic?series=The%20Avengers"><img src="series/The%20Avengers/thumbnail.jpg" class="img-responsive"></a></div>
+                    <div class="col-xs-3">
+                        <div class="img-wrap">
+                            <a href="/comic?series=The%20Avengers"><img src="series/The%20Avengers/thumbnail.jpg" class="img-responsive"></a>
+                            <p class="imgDesc" id="scroll1-4">The Avengers</p>
+                            <p class="imgDesc" id="scroll2-4">By Stan Lee</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a class="left carousel-control" href="#myCarousel-3" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-            <a class="right carousel-control" href="#myCarousel-3" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            <a class="left carousel-control" href="#myCarousel-1" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            <a class="right carousel-control" href="#myCarousel-1" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
         </div>
     </div>
+
+
 
     <jsp:directive.include file="/jslibs.jsp" />
   </body>
