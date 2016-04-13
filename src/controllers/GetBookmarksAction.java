@@ -33,6 +33,7 @@ public class GetBookmarksAction implements Action {
                 bm2.put("seriesTitle", b.getSeriesTitle());
                 bm2.put("path", b.getPath());
                 bmarray.put(bm2);
+                System.out.println("bookmarks into jsonobj " + b.getSeriesTitle());
 
             }
         }
