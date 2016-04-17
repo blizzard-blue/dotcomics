@@ -89,5 +89,14 @@
     opacity: 1;
 }
 
+.slide {
+    padding: 0px 30px;
+}
 
+.carousel-control.left {
+    left: -20;
+}
 
+.carousel-control.right {
+    right: -10;
+}

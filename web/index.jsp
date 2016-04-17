@@ -32,7 +32,7 @@
     </header>-->
 
     <div class="col-md-12 text-center"><h3>Featured Series</h3></div>
-    <div class="col-md-6 col-md-offset-3">
+    <div class="container">
         <div class="carousel slide" id="myCarousel-1">
             <div class="carousel-inner">
                 <div class="item active">
@@ -80,7 +80,7 @@
     </div>
 
     <div class="col-md-12 text-center"><h3>Featured Series</h3></div>
-    <div class="col-md-6 col-md-offset-3">
+    <div class="container">
         <div class="carousel slide" id="myCarousel-1">
             <div class="carousel-inner">
                 <div class="item active">
@@ -128,7 +128,7 @@
     </div>
 
     <div class="col-md-12 text-center"><h3>Featured Series</h3></div>
-    <div class="col-md-6 col-md-offset-3">
+    <div class="container">
         <div class="carousel slide" id="myCarousel-1">
             <div class="carousel-inner">
                 <div class="item active">
