@@ -1,0 +1,45 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#toolbar-wrapper {
+    width: auto;
+    float: left;
+    background-color: #2e2e2e;
+}
+
+.toolbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#canvas-wrapper {
+    width: auto;
+    height: auto;
+}
+
+.toolbar-nav li a.active {
+    background-color: #fff;
+}
+
+.toolbar-nav li a.active:hover {
+    background-color: #f2f2f2;
+}
+
+.toolbar-nav li a {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #2e2e2e;
+}
+
+.toolbar-nav li a:hover {
+    cursor: pointer;
+    background-color: #404040;
+}
+
+.toolbar-nav li a img {
+    width: 32px;
+}

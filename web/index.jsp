@@ -175,8 +175,7 @@
         </div>
     </div>
 
-
-
     <jsp:directive.include file="/jslibs.jsp" />
+    <script src="js/carousel.js"></script>
   </body>
 </html>
