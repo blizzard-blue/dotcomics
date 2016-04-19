@@ -1,9 +1,17 @@
 $( document ).ready(function() {
     // toolbar events
     $(".toolbar-nav li a").click(function(){
-        $('.active').not($(this)).removeClass('active');
+        $('.toolbar-nav li a.active').not($(this)).removeClass('active');
         $(this).toggleClass('active');
         event.stopPropagation();
+    });
+
+    $(".toolbar-at-top li").click(function(){
+        $('.toolbar-at-top li.active svg circle').attr("fill" , "white");
+        $('.toolbar-at-top li.active').not($(this)).removeClass('active');
+        $(this).toggleClass('active');
+        $('.toolbar-at-top li.active svg circle').attr("fill","black");
+        event.stopPropagation()
     });
 
     // adjust page elment size

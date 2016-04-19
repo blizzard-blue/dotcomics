@@ -11,6 +11,8 @@
     <body>
         <jsp:directive.include file="/nav.jsp" />
 
+
+
         <!-- toolbar -->
         <div id="toolbar-wrapper">
             <ul class="toolbar-nav">
@@ -34,6 +36,56 @@
                 </li>
             </ul>
         </div>
+
+        <div id="resizeBar-wrapper">
+            <ul class="toolbar-at-top">
+                <li>
+                    <a id="firstSize">
+                        <svg width="52" height="52" version="1.1">
+                            <circle r="0.5" cx="26" cy="26" fill="white"></circle>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a id="secondSize">
+                        <svg width="52" height="52" version="1.1">
+                            <circle r="1.0" cx="26" cy="26" fill="white"></circle>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a id="thirdSize">
+                        <svg width="52" height="52" version="1.1">
+                            <circle r="2.5" cx="26" cy="26" fill="white"></circle>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a id="fourthSize">
+                        <svg width="52" height="52" version="1.1">
+                            <circle r="5.0" cx="26" cy="26" fill="white"></circle>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a id="fifthSize">
+                        <svg width="52" height="52" version="1.1">
+                            <circle r="10.0" cx="26" cy="26" fill="white"></circle>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a id="sixthSize">
+                        <svg width="52" height="52" version="1.1">
+                            <circle r="15.0" cx="26" cy="26" fill="white"></circle>
+                        </svg>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+
         <!-- /#toolbar-wrapper -->
 
         <div id="canvas-wrapper">
