@@ -7,6 +7,7 @@ html, body {
     width: auto;
     float: left;
     background-color: #2e2e2e;
+    position: relative;
 }
 
 .toolbar-nav {
@@ -20,28 +21,65 @@ html, body {
     height: auto;
 }
 
-.toolbar-nav li a.active {
+.toolbar-nav > li  > a.active {
     background-color: #fff;
 }
 
-.toolbar-nav li a.active:hover {
+.toolbar-nav > li > a.active:hover {
     background-color: #f2f2f2;
 }
 
-.toolbar-nav li a {
+.toolbar-nav > li > a {
     display: block;
     width: 100%;
     padding: 10px 20px;
     background-color: #2e2e2e;
 }
 
-.toolbar-nav li a:hover {
+.toolbar-nav > li > a:hover {
     cursor: pointer;
     background-color: #404040;
 }
 
-.toolbar-nav li a img {
+.toolbar-nav > li > a > img {
     width: 32px;
+}
+
+.minimized {
+    display: none;
+}
+
+#speechbub {
+    top: 156;
+}
+
+.tool-slideout {
+    position: absolute;
+    left: 72;
+    width: 200px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #aaaaaa;
+    z-index: 1000;
+}
+
+.tool-wrapper {
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+.tool-item {
+    display: inline-block;
+    margin: 5px;
+}
+
+.tool-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: left;
 }
 
 #resizeBar-wrapper{

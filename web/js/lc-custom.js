@@ -1,12 +1,14 @@
 $( document ).ready(function() {
     // toolbar events
     $(".toolbar-nav li a").click(function(){
+        $('.toolbar-nav li a.active').not($(this)).removeClass('active');
 
-        if($('.toolbar-nav li a.active').not($(this)).length != 0) {
-            $('.toolbar-nav li a.active').not($(this)).removeClass('active');
-            $(this).toggleClass('active');
-            event.stopPropagation();
-        }
+        if(!($(this).hasClass("active")))
+            $(this).addClass('active');
+
+        $(".tool-slideout").addClass("minimized");
+        $(this + ".active + .tool-slideout").toggleClass("minimized");
+        event.stopPropagation();
     });
 
     $(".toolbar-at-top li").click(function(){
@@ -108,7 +110,6 @@ $( document ).ready(function() {
         r = x + w;
         b = y + h;
         radius = w * 0.05;
-        console.log("w: " + w, " h: " + h);
 
         // ctx.scale(1, Math.abs(height / width));
         ctx.beginPath();
