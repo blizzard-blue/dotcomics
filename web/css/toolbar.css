@@ -81,3 +81,39 @@ html, body {
     font-size: 12px;
     text-align: left;
 }
+
+#resizeBar-wrapper{
+    margin-left: 72px;
+    height: 52px;
+    background-color: #2e2e2e;
+}
+
+.toolbar-at-top{
+    padding-left: 0px;
+}
+
+.toolbar-at-top li{
+    display: inline-block;
+    height: 100%;
+    width: 52px;
+    align-content: center;
+}
+
+
+.toolbar-at-top li svg circle{
+    background-color: #2e2e2e;
+
+}
+
+.toolbar-at-top li:hover {
+    cursor: pointer;
+    background-color: #404040;
+}
+
+.toolbar-at-top li.active {
+    background-color: #fff;
+}
+
+.toolbar-at-top li.active:hover {
+    background-color: #f2f2f2;
+}
