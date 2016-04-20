@@ -1,9 +1,12 @@
 $( document ).ready(function() {
     // toolbar events
     $(".toolbar-nav li a").click(function(){
-        $('.toolbar-nav li a.active').not($(this)).removeClass('active');
-        $(this).toggleClass('active');
-        event.stopPropagation();
+
+        if($('.toolbar-nav li a.active').not($(this)).length != 0) {
+            $('.toolbar-nav li a.active').not($(this)).removeClass('active');
+            $(this).toggleClass('active');
+            event.stopPropagation();
+        }
     });
 
     $(".toolbar-at-top li").click(function(){
@@ -294,5 +297,31 @@ $( document ).ready(function() {
         tools[0].tool.strokeWidth = 20;
         tools[1].tool.strokeWidth = 20;
     });
+
+    $("#undo").click(function() {
+        if(lc.canUndo()){
+            lc.undo();
+        }
+    })
+
+    $("#redo").click(function() {
+        if(lc.canRedo()){
+            lc.redo();
+        }
+    })
+
+    $("#tool-zoomin").click(function (){
+        lc.zoom(1);
+        console.log(lc.scale);
+    })
+
+    $("#tool-zoomout").click(function (){
+
+        if(lc.scale != 1.0)
+            lc.zoom(-1);
+            console.log(lc.scale);
+    })
+
+
 
 });

@@ -28,12 +28,22 @@
                 <li>
                     <a id="tool-speechbub"><img src="/img/tools/speechbub.png" alt="speech bubble"></a>
                 </li>
-                <li>
-                    <a id="tool-zoomin"><img src="/img/tools/zoom-in.png" alt="zoom in"></a>
-                </li>
-                <li>
-                    <a id="tool-zoomout"><img src="/img/tools/zoom-out.png" alt="zoom out"></a>
-                </li>
+                <div id="zoomDiv">
+                    <li id="tool-zoomin">
+                        <img src="/img/tools/zoom-in.png" alt="zoom in">
+                    </li>
+                    <li id="tool-zoomout">
+                        <img src="/img/tools/zoom-out.png" alt="zoom out">
+                    </li>
+                </div>
+                <div id="undoDiv">
+                    <li id="undo">
+                        <img src="/img/tools/undo.png">
+                    </li>
+                    <li id="redo">
+                        <img src="/img/tools/redo.png">
+                    </li>
+                </div>
             </ul>
         </div>
 

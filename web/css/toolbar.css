@@ -80,4 +80,18 @@ html, body {
     background-color: #f2f2f2;
 }
 
+.toolbar-nav div li{
+    /*display: inline-block;*/
+    padding: 10px 20px;
+    background-color: #2e2e2e;
+}
+
+.toolbar-nav div li:hover {
+    cursor: pointer;
+    background-color: #404040;
+}
+.toolbar-nav div li img{
+    width: 32px;
+}
+
 
