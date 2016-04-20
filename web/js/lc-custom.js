@@ -7,11 +7,16 @@ $( document ).ready(function() {
     });
 
     $(".toolbar-at-top li").click(function(){
-        $('.toolbar-at-top li.active svg circle').attr("fill" , "white");
-        $('.toolbar-at-top li.active').not($(this)).removeClass('active');
-        $(this).toggleClass('active');
-        $('.toolbar-at-top li.active svg circle').attr("fill","black");
-        event.stopPropagation()
+
+        console.log($('.toolbar-at-top li.active').not($(this)))
+
+        if($('.toolbar-at-top li.active').not($(this)).length != 0){
+            $('.toolbar-at-top li.active svg circle').attr("fill", "white");
+            $('.toolbar-at-top li.active').not($(this)).removeClass('active');
+            $(this).toggleClass('active');
+            $('.toolbar-at-top li.active svg circle').attr("fill","black");
+            event.stopPropagation()
+        }
     });
 
     // adjust page elment size
@@ -227,6 +232,7 @@ $( document ).ready(function() {
 
     var lc = LC.init(document.getElementsByClassName('literally core')[0], {backgroundColor: '#ffffff', tools: LC.defaultTools.concat([Speechbub])});
 
+
     var tools = [
         {
             name: 'pencil',
@@ -236,7 +242,8 @@ $( document ).ready(function() {
         {
             name: 'eraser',
             el: document.getElementById('tool-eraser'),
-            tool: new LC.tools.Eraser(lc)
+            tool: new LC.tools.Eraser(lc),
+            stokeWidth: lc.strokeWidth
         },
         {
             name: 'speechbub',
@@ -257,4 +264,35 @@ $( document ).ready(function() {
         };
     });
     activateTool(tools[0]);
+
+    $("#firstSize").click(function(){
+        tools[0].tool.strokeWidth = 1;
+        tools[1].tool.strokeWidth = 1;
+    });
+
+    $("#secondSize").click(function(){
+        tools[0].tool.strokeWidth = 2;
+        tools[1].tool.strokeWidth = 2;
+    });
+
+    $("#thirdSize").click(function(){
+        tools[0].tool.strokeWidth = 5;
+        tools[1].tool.strokeWidth = 5;
+    });
+
+    $("#fourthSize").click(function(){
+        tools[0].tool.strokeWidth = 10;
+        tools[1].tool.strokeWidth = 10;
+    });
+
+    $("#fifthSize").click(function(){
+        tools[0].tool.strokeWidth = 15;
+        tools[1].tool.strokeWidth = 15;
+    });
+
+    $("#sixthSize").click(function(){
+        tools[0].tool.strokeWidth = 20;
+        tools[1].tool.strokeWidth = 20;
+    });
+
 });

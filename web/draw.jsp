@@ -53,10 +53,10 @@
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a id="thirdSize">
                         <svg width="52" height="52" version="1.1">
-                            <circle r="2.5" cx="26" cy="26" fill="white"></circle>
+                            <circle r="2.5" cx="26" cy="26" fill="black"></circle>
                         </svg>
                     </a>
                 </li>
