@@ -2,7 +2,13 @@ $( document ).ready(function() {
     // toolbar events
     $(".toolbar-nav li a").click(function(){
         $('.active').not($(this)).removeClass('active');
-        $(this).toggleClass('active');
+
+        if(!($(this).hasClass("active")))
+            $(this).addClass('active');
+
+        $(".tool-slideout").addClass("minimized");
+        $(this + ".active + .tool-slideout").toggleClass("minimized");
+
         event.stopPropagation();
     });
 
@@ -92,7 +98,6 @@ $( document ).ready(function() {
         r = x + w;
         b = y + h;
         radius = w * 0.05;
-        console.log("w: " + w, " h: " + h);
 
         // ctx.scale(1, Math.abs(height / width));
         ctx.beginPath();

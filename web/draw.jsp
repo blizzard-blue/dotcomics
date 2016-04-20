@@ -24,7 +24,16 @@
                     <a id="tool-eraser"><img src="/img/tools/eraser.png" alt="erasser"></a>
                 </li>
                 <li>
-                    <a id="tool-speechbub"><img src="/img/tools/speechbub.png" alt="speech bubble"></a>
+                    <a id="tool-speechbub"><img src="/img/tools/round-speechbub.png" alt="speech bubble"></a>
+                    <div class="tool-slideout minimized" id="speechbub">
+                        <span class="tool-header">Shape</span>
+                        <div class="tool-wrapper">
+                            <div class="tool-item"><img src="/img/tools/round-speechbub.png"></div>
+                            <div class="tool-item"><img src="/img/tools/square-speechbub.png"></div>
+                            <div class="tool-item"><img src="/img/tools/fluffy-thoughtbub.png"></div>
+                            <div class="tool-item"><img src="/img/tools/thoughtbub.png"></div>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <a id="tool-zoomin"><img src="/img/tools/zoom-in.png" alt="zoom in"></a>
