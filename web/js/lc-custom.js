@@ -5,14 +5,18 @@ $( document ).ready(function() {
     ///////////////////////////////////////////////////////////////////////////////
 
     $(".toolbar-nav li a").click(function(){
-        $('.toolbar-nav li a.active').not($(this)).removeClass('active');
 
-        if(!($(this).hasClass("active")))
-            $(this).addClass('active');
+        if(($(this).closest(".two").length == 0) && ($(this).closest(".clear").length == 0) ) {
 
-        $(".tool-slideout").addClass("minimized");
-        $(this + ".active + .tool-slideout").toggleClass("minimized");
-        event.stopPropagation();
+            $('.toolbar-nav li a.active').not($(this)).removeClass('active');
+
+            if (!($(this).hasClass("active")))
+                $(this).addClass('active');
+
+            $(".tool-slideout").addClass("minimized");
+            $(this + ".active + .tool-slideout").toggleClass("minimized");
+            event.stopPropagation();
+        }
     });
 
     $(".tool-item").click(function(){
@@ -22,8 +26,6 @@ $( document ).ready(function() {
     });
 
     $(".toolbar-at-top li").click(function(){
-
-        console.log($('.toolbar-at-top li.active').not($(this)))
 
         if($('.toolbar-at-top li.active').not($(this)).length != 0){
             $('.toolbar-at-top li.active svg circle').attr("fill", "white");
@@ -715,14 +717,16 @@ console.log(LC.tools);
 
     $("#tool-zoomin").click(function (){
         lc.zoom(1);
-        console.log(lc.scale);
     })
 
     $("#tool-zoomout").click(function (){
 
         if(lc.scale != 1.0)
             lc.zoom(-1);
-            console.log(lc.scale);
+    })
+
+    $("#clear").click(function(){
+        lc.clear();
     })
 
 

@@ -44,6 +44,9 @@
                     <a id="undo"><img src="/img/tools/undo.png" alt="undo"></a>
                     <a id="redo"><img src="/img/tools/redo.png" alt="redo"></a>
                 </li>
+                <li class="clear">
+                    <a id="clear"><font size="3" color="white">Clear</font></a>
+                </li>
             </ul>
         </div>
 
