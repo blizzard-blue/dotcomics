@@ -36,6 +36,27 @@
                         </div>
                     </div>
                 </li>
+                <li>
+                    <a id="tool-text"><img src="/img/tools/text.png" alt="text"></a>
+                </li>
+                <li>
+                    <a id="tool-eyedropper"><img src="/img/tools/eyedropper.png" alt="eyedropper"></a>
+                </li>
+                <li>
+                    <a id="tool-line"><img src="/img/tools/line.png" alt="line"></a>
+                </li>
+                <li>
+                    <a id="tool-rectangle"><img src="/img/tools/rectangle.png" alt="rectangle"></a>
+                </li>
+                <li>
+                    <a id="tool-polygon"><img src="/img/tools/polygon.png" alt="polygon"></a>
+                </li>
+                <li>
+                    <a id="tool-circle"><img src="/img/tools/ellipse.png" alt="ellipse"></a>
+                </li>
+                <li>
+                    <a id="tool-select"><img src="/img/tools/dashed-line.png" alt="select"></a>
+                </li>
                 <li class="two">
                     <a id="tool-zoomin"><img src="/img/tools/zoom-in.png" alt="zoom in"></a>
                     <a id="tool-zoomout"><img src="/img/tools/zoom-out.png" alt="zoom out"></a>

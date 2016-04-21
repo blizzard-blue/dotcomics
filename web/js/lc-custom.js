@@ -657,7 +657,47 @@ console.log(LC.tools);
             name: 'pan',
             el: document.getElementById('tool-pan'),
             tool: new LC.tools.Pan(lc)
+        },
+        {
+            name: 'text',
+            el: document.getElementById('tool-text'),
+            tool: new LC.tools.Text(lc)
+        },
+        {
+            name: 'eyedropper',
+            el: document.getElementById('tool-eyedropper'),
+            tool: new LC.tools.Eyedropper(lc)
+        },
+        {
+            name: 'polygon',
+            el: document.getElementById('tool-polygon'),
+            tool: new LC.tools.Polygon(lc)
+        },
+        {
+            name: 'rectangle',
+            el: document.getElementById('tool-rectangle'),
+            tool: new LC.tools.Rectangle(lc)
+        },
+        {
+            name: 'line',
+            el: document.getElementById('tool-line'),
+            tool: new LC.tools.Line(lc)
+        },
+        {
+            name: 'circle',
+            el: document.getElementById('tool-circle'),
+            tool: new LC.tools.Ellipse(lc)
+        },
+        {
+            name: new LC.tools.SelectShape(lc),
+            el: document.getElementById('tool-select'),
+            tool: new LC.tools.SelectShape(lc)
         }
+
+
+
+
+
     ];
 
     var activateTool = function(t) {
