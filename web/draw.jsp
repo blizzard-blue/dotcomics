@@ -36,11 +36,13 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="two">
                     <a id="tool-zoomin"><img src="/img/tools/zoom-in.png" alt="zoom in"></a>
-                </li>
-                <li>
                     <a id="tool-zoomout"><img src="/img/tools/zoom-out.png" alt="zoom out"></a>
+                </li>
+                <li class="two">
+                    <a id="undo"><img src="/img/tools/undo.png" alt="undo"></a>
+                    <a id="redo"><img src="/img/tools/redo.png" alt="redo"></a>
                 </li>
             </ul>
         </div>

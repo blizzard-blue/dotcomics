@@ -127,3 +127,20 @@ html, body {
 .toolbar-at-top li.active:hover {
     background-color: #f2f2f2;
 }
+
+.toolbar-nav > .two {
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.toolbar-nav > .two > a{
+    display: inline-block;
+    width: 26px;
+    padding: 5px;
+}
+
+.toolbar-nav > .two > a > img {
+    width: 16px;
+}
+
+

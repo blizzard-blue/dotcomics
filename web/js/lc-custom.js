@@ -618,7 +618,7 @@ $( document ).ready(function() {
 
     var lc = LC.init(document.getElementsByClassName('literally core')[0], {backgroundColor: '#ffffff', tools: LC.defaultTools.concat([Speechbub])});
 
-
+console.log(LC.tools);
     var tools = [
         {
             name: 'pencil',
@@ -650,6 +650,11 @@ $( document ).ready(function() {
             name: 'thoughtbub',
             el: document.getElementById('tool-speechbub3'),
             tool: new Thoughtbub(lc)
+        },
+        {
+            name: 'pan',
+            el: document.getElementById('tool-pan'),
+            tool: new LC.tools.Pan(lc)
         }
     ];
 
@@ -695,5 +700,31 @@ $( document ).ready(function() {
         tools[0].tool.strokeWidth = 20;
         tools[1].tool.strokeWidth = 20;
     });
+
+    $("#undo").click(function() {
+        if(lc.canUndo()){
+            lc.undo();
+        }
+    })
+
+    $("#redo").click(function() {
+        if(lc.canRedo()){
+            lc.redo();
+        }
+    })
+
+    $("#tool-zoomin").click(function (){
+        lc.zoom(1);
+        console.log(lc.scale);
+    })
+
+    $("#tool-zoomout").click(function (){
+
+        if(lc.scale != 1.0)
+            lc.zoom(-1);
+            console.log(lc.scale);
+    })
+
+
 
 });
