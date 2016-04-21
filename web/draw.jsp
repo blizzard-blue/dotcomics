@@ -30,10 +30,9 @@
                     <div class="tool-slideout minimized" id="speechbub">
                         <span class="tool-header">Shape</span>
                         <div class="tool-wrapper">
-                            <div class="tool-item"><img src="/img/tools/round-speechbub.png"></div>
-                            <div class="tool-item"><img src="/img/tools/square-speechbub.png"></div>
-                            <div class="tool-item"><img src="/img/tools/fluffy-thoughtbub.png"></div>
-                            <div class="tool-item"><img src="/img/tools/thoughtbub.png"></div>
+                            <div class="tool-item active" id="tool-speechbub1"><img src="/img/tools/square-speechbub.png"></div>
+                            <div class="tool-item" id="tool-speechbub2"><img src="/img/tools/round-speechbub.png"></div>
+                            <div class="tool-item" id="tool-speechbub3"><img src="/img/tools/thoughtbub.png"></div>
                         </div>
                     </div>
                 </li>

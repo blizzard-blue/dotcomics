@@ -68,11 +68,21 @@ html, body {
     border: 1px solid #aaaaaa;
     background-color: #fff;
     overflow-y: scroll;
+    max-height: 300px;
 }
 
 .tool-item {
     display: inline-block;
-    margin: 5px;
+    padding: 5px;
+}
+
+.tool-item:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.tool-item.active {
+    background-color: #f2f2f2;
 }
 
 .tool-header {

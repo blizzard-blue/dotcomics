@@ -1,5 +1,9 @@
 $( document ).ready(function() {
-    // toolbar events
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // TOOLBAR EVENTS
+    ///////////////////////////////////////////////////////////////////////////////
+
     $(".toolbar-nav li a").click(function(){
         $('.toolbar-nav li a.active').not($(this)).removeClass('active');
 
@@ -9,6 +13,12 @@ $( document ).ready(function() {
         $(".tool-slideout").addClass("minimized");
         $(this + ".active + .tool-slideout").toggleClass("minimized");
         event.stopPropagation();
+    });
+
+    $(".tool-item").click(function(){
+        $('.tool-item.active').not($(this)).removeClass('active');
+        if(!($(this).hasClass("active")))
+            $(this).addClass('active');
     });
 
     $(".toolbar-at-top li").click(function(){
@@ -24,7 +34,10 @@ $( document ).ready(function() {
         }
     });
 
-    // adjust page elment size
+    ///////////////////////////////////////////////////////////////////////////////
+    // ELEMENT ADJUSTMENTS
+    ///////////////////////////////////////////////////////////////////////////////
+
     var sidebarWidth = $("#toolbar-wrapper").outerWidth() + "px";
     $("#canvas-wrapper").css({"margin-left":sidebarWidth});
 
@@ -102,7 +115,7 @@ $( document ).ready(function() {
     /* Define canvas and SVG renderers */
 
     LC.defineCanvasRenderer('Speechbub', function(ctx, shape) {
-        var x, y, r, b, width, height;
+        var x, y, r, b, w, h, radius;
         x = shape.x;
         y = shape.y;
         w = shape.width;
@@ -175,6 +188,265 @@ $( document ).ready(function() {
         return ctx.stroke();
     });
 
+    LC.defineShape('RoundSpeechbub', {
+        /* initialize using the args passed to LC.createShape() */
+        constructor: function(args) {
+            if (args == null) {
+                args = {};
+            }
+            this.x = args.x || 0;
+            this.y = args.y || 0;
+            this.width = args.width || 0;
+            this.height = args.height || 0;
+            this.strokeWidth = args.strokeWidth || 1;
+            this.strokeColor = args.strokeColor || 'black';
+            return this.fillColor = args.fillColor || 'transparent';
+        },
+
+        /* provide a bounding rectangle so getImage() can figure out the image
+         bounds (semi-optional) */
+        getBoundingRect: function() {
+            return {
+                x: this.x - this.strokeWidth / 2,
+                y: this.y - this.strokeWidth / 2,
+                width: this.width + this.strokeWidth,
+                height: this.height + this.strokeWidth
+            };
+        },
+
+        /* return a dictionary representation of the shape from which this instance
+         can be reconstructed */
+        toJSON: function() {
+            return {
+                x: this.x,
+                y: this.y,
+                width: this.width,
+                height: this.height,
+                strokeWidth: this.strokeWidth,
+                strokeColor: this.strokeColor,
+                fillColor: this.fillColor
+            };
+        },
+
+        /* reconstruct the Speechbub from the representation given by
+         toJSON */
+        fromJSON: function(data) {
+            return LC.createShape('RoundSpeechbub', data);
+        },
+        move: function(moveInfo) {
+            if (moveInfo == null) {
+                moveInfo = {};
+            }
+            this.x = this.x - moveInfo.xDiff;
+            return this.y = this.y - moveInfo.yDiff;
+        },
+        setUpperLeft: function(upperLeft) {
+            if (upperLeft == null) {
+                upperLeft = {};
+            }
+            this.x = upperLeft.x;
+            return this.y = upperLeft.y;
+        }
+    });
+
+    /* Define canvas and SVG renderers */
+
+    LC.defineCanvasRenderer('RoundSpeechbub', function(ctx, shape) {
+        var centerX, centerY, halfHeight, halfWidth, x, y;
+        halfWidth = Math.floor(shape.width / 2);
+        halfHeight = Math.floor(shape.height / 2);
+        centerX = shape.x + halfWidth;
+        centerY = shape.y + halfHeight;
+        x = 0-halfWidth;
+        y = 0-halfHeight;
+        x2 = shape.x;
+        y2 = shape.y;
+
+        if(x>0 && y>0){
+            ctx.save();
+            ctx.translate(centerX, centerY);
+            ctx.scale(1, Math.abs(shape.height / shape.width));
+            var y = Math.abs(shape.height / shape.width);
+            ctx.beginPath();
+            ctx.arc(0, 0, Math.abs(halfWidth), Math.PI * 0.4, Math.PI * 0.2);
+            ctx.lineTo(x, y-(2*halfHeight));
+            ctx.closePath();
+            ctx.restore();
+        } else if(x<0 && y>0){
+            ctx.save();
+            ctx.translate(centerX, centerY);
+            ctx.scale(1, Math.abs(shape.height / shape.width));
+            var y = Math.abs(shape.height / shape.width);
+            ctx.beginPath();
+            ctx.arc(0, 0, Math.abs(halfWidth), Math.PI * 0.8, Math.PI * 0.6);
+            ctx.lineTo(x, y-(2*halfHeight));
+            ctx.closePath();
+            ctx.restore();
+        } else if(x<0 && y<0){
+            ctx.save();
+            ctx.translate(centerX, centerY);
+            ctx.scale(1, Math.abs(shape.height / shape.width));
+            var y = Math.abs(shape.height / shape.width);
+            ctx.beginPath();
+            ctx.arc(0, 0, Math.abs(halfWidth), Math.PI * 1.4, Math.PI * 1.3);
+            ctx.lineTo(x, y-(2*halfHeight));
+            ctx.closePath();
+            ctx.restore();
+        } else if(x>0 && y<0){
+            ctx.save();
+            ctx.translate(centerX, centerY);
+            ctx.scale(1, Math.abs(shape.height / shape.width));
+            var y = Math.abs(shape.height / shape.width);
+            ctx.beginPath();
+            ctx.arc(0, 0, Math.abs(halfWidth), Math.PI * 1.8, Math.PI * 1.6);
+            ctx.lineTo(x, y-(2*halfHeight));
+            ctx.closePath();
+            ctx.restore();
+        }
+
+        ctx.fillStyle = shape.fillColor;
+        ctx.fill();
+        ctx.lineWidth = shape.strokeWidth;
+        ctx.strokeStyle = shape.strokeColor;
+        return ctx.stroke();
+    });
+
+    LC.defineShape('Thoughtbub', {
+        /* initialize using the args passed to LC.createShape() */
+        constructor: function(args) {
+            if (args == null) {
+                args = {};
+            }
+            this.x = args.x || 0;
+            this.y = args.y || 0;
+            this.width = args.width || 0;
+            this.height = args.height || 0;
+            this.strokeWidth = args.strokeWidth || 1;
+            this.strokeColor = args.strokeColor || 'black';
+            return this.fillColor = args.fillColor || 'transparent';
+        },
+
+        /* provide a bounding rectangle so getImage() can figure out the image
+         bounds (semi-optional) */
+        getBoundingRect: function() {
+            return {
+                x: this.x - this.strokeWidth / 2,
+                y: this.y - this.strokeWidth / 2,
+                width: this.width + this.strokeWidth,
+                height: this.height + this.strokeWidth
+            };
+        },
+
+        /* return a dictionary representation of the shape from which this instance
+         can be reconstructed */
+        toJSON: function() {
+            return {
+                x: this.x,
+                y: this.y,
+                width: this.width,
+                height: this.height,
+                strokeWidth: this.strokeWidth,
+                strokeColor: this.strokeColor,
+                fillColor: this.fillColor
+            };
+        },
+
+        /* reconstruct the Speechbub from the representation given by
+         toJSON */
+        fromJSON: function(data) {
+            return LC.createShape('Thoughtbub', data);
+        },
+        move: function(moveInfo) {
+            if (moveInfo == null) {
+                moveInfo = {};
+            }
+            this.x = this.x - moveInfo.xDiff;
+            return this.y = this.y - moveInfo.yDiff;
+        },
+        setUpperLeft: function(upperLeft) {
+            if (upperLeft == null) {
+                upperLeft = {};
+            }
+            this.x = upperLeft.x;
+            return this.y = upperLeft.y;
+        }
+    });
+
+    /* Define canvas and SVG renderers */
+
+    LC.defineCanvasRenderer('Thoughtbub', function(ctx, shape) {
+        var centerX, centerY, halfHeight, halfWidth, x, y;
+        halfWidth = Math.floor(shape.width / 2);
+        halfHeight = Math.floor(shape.height / 2);
+        centerX = shape.x + halfWidth;
+        centerY = shape.y + halfHeight;
+        x = 0-halfWidth;
+        y = 0-halfHeight;
+        x2 = Math.abs(halfWidth)+5;
+        y2 = Math.abs(halfHeight)+5;
+        r2 = 15;
+        x3 = Math.abs(halfWidth)+(2*r2)+5;
+        y3 = Math.abs(halfHeight)+(2*r2);
+        r3 = 10;
+
+        ctx.beginPath();
+        if((x < 0) && (y < 0)){
+            ctx.save();
+            ctx.translate(centerX, centerY);
+            ctx.scale(1, Math.abs(shape.height / shape.width));
+            var y = Math.abs(shape.height / shape.width);
+            ctx.beginPath();
+            ctx.arc(0, 0, Math.abs(halfWidth), 0, Math.PI * 2);
+            ctx.moveTo(x2+r2, y2)
+            ctx.arc(x2, y2, r2, 0, Math.PI * 2);
+            ctx.moveTo(x3+r3, y3)
+            ctx.arc(x3, y3, r3, 0, Math.PI * 2);
+            ctx.restore();
+        } else if((x < 0) && (y > 0)) {
+            ctx.save();
+            ctx.translate(centerX, centerY);
+            ctx.scale(1, Math.abs(shape.height / shape.width));
+            var y = Math.abs(shape.height / shape.width);
+            ctx.beginPath();
+            ctx.arc(0, 0, Math.abs(halfWidth), 0, Math.PI * 2);
+            ctx.moveTo(x2+r2, 0-y2)
+            ctx.arc(x2, 0-y2, r2, 0, Math.PI * 2);
+            ctx.moveTo(x3+r3, 0-y3)
+            ctx.arc(x3, 0-y3, r3, 0, Math.PI * 2);
+            ctx.restore();
+        } else if((x>0) && (y<0)){
+            ctx.save();
+            ctx.translate(centerX, centerY);
+            ctx.scale(1, Math.abs(shape.height / shape.width));
+            var y = Math.abs(shape.height / shape.width);
+            ctx.beginPath();
+            ctx.arc(0, 0, Math.abs(halfWidth), 0, Math.PI * 2);
+            ctx.moveTo(0-x2+r2, y2)
+            ctx.arc(0-x2, y2, r2, 0, Math.PI * 2);
+            ctx.moveTo(0-x3+r3, y3)
+            ctx.arc(0-x3, y3, r3, 0, Math.PI * 2);
+            ctx.restore();
+        } else if((x>0) && (y>0)){
+            ctx.save();
+            ctx.translate(centerX, centerY);
+            ctx.scale(1, Math.abs(shape.height / shape.width));
+            var y = Math.abs(shape.height / shape.width);
+            ctx.beginPath();
+            ctx.arc(0, 0, Math.abs(halfWidth), 0, Math.PI * 2);
+            ctx.moveTo(0-x2+r2, 0-y2)
+            ctx.arc(0-x2, 0-y2, r2, 0, Math.PI * 2);
+            ctx.moveTo(0-x3+r3, 0-y3)
+            ctx.arc(0-x3, 0-y3, r3, 0, Math.PI * 2);
+            ctx.restore();
+        }
+
+        ctx.fillStyle = shape.fillColor;
+        ctx.fill();
+        ctx.lineWidth = shape.strokeWidth;
+        ctx.strokeStyle = shape.strokeColor;
+        return ctx.stroke();
+    });
+
     ///////////
 
     var Speechbub = function(lc) {  // take lc as constructor arg
@@ -190,6 +462,116 @@ $( document ).ready(function() {
             didBecomeActive: function(lc) {
                 var onPointerDown = function(pt) {
                     self.currentShape = LC.createShape('Speechbub', {
+                        x: pt.x,
+                        y: pt.y,
+                        strokeWidth: self.strokeWidth,
+                        strokeColor: lc.getColor('primary'),
+                        fillColor: lc.getColor('secondary')
+                    });
+                    lc.setShapesInProgress([self.currentShape]);
+                    lc.repaintLayer('main');
+                };
+
+                var onPointerDrag = function(pt) {
+                    self.currentShape.width = pt.x - self.currentShape.x;
+                    self.currentShape.height = pt.y - self.currentShape.y;
+                    lc.drawShapeInProgress(self.currentShape);
+                    lc.repaintLayer('main');
+                };
+
+                var onPointerUp = function(pt) {
+                    // lc.setShapesInProgress([]);
+                    lc.saveShape(self.currentShape);
+                };
+
+                var onPointerMove = function(pt) {
+                    // console.log("Mouse moved to", pt);
+                };
+
+                // lc.on() returns a function that unsubscribes us. capture it.
+                self.unsubscribeFuncs = [
+                    lc.on('lc-pointerdown', onPointerDown),
+                    lc.on('lc-pointerdrag', onPointerDrag),
+                    lc.on('lc-pointerup', onPointerUp),
+                    lc.on('lc-pointermove', onPointerMove)
+                ];
+            },
+
+            willBecomeInactive: function(lc) {
+                // call all the unsubscribe functions
+                self.unsubscribeFuncs.map(function(f) { f() });
+            }
+        }
+    };
+
+    var RoundSpeechbub = function(lc) {  // take lc as constructor arg
+        var self = this;
+
+        return {
+            usesSimpleAPI: false,  // DO NOT FORGET THIS!!!
+            name: 'RoundSpeechbub',
+            iconName: 'line',
+            strokeWidth: lc.opts.defaultStrokeWidth,
+            optionsStyle: 'stroke-width',
+
+            didBecomeActive: function(lc) {
+                var onPointerDown = function(pt) {
+                    self.currentShape = LC.createShape('RoundSpeechbub', {
+                        x: pt.x,
+                        y: pt.y,
+                        strokeWidth: self.strokeWidth,
+                        strokeColor: lc.getColor('primary'),
+                        fillColor: lc.getColor('secondary')
+                    });
+                    lc.setShapesInProgress([self.currentShape]);
+                    lc.repaintLayer('main');
+                };
+
+                var onPointerDrag = function(pt) {
+                    self.currentShape.width = pt.x - self.currentShape.x;
+                    self.currentShape.height = pt.y - self.currentShape.y;
+                    lc.drawShapeInProgress(self.currentShape);
+                    lc.repaintLayer('main');
+                };
+
+                var onPointerUp = function(pt) {
+                    // lc.setShapesInProgress([]);
+                    lc.saveShape(self.currentShape);
+                };
+
+                var onPointerMove = function(pt) {
+                    // console.log("Mouse moved to", pt);
+                };
+
+                // lc.on() returns a function that unsubscribes us. capture it.
+                self.unsubscribeFuncs = [
+                    lc.on('lc-pointerdown', onPointerDown),
+                    lc.on('lc-pointerdrag', onPointerDrag),
+                    lc.on('lc-pointerup', onPointerUp),
+                    lc.on('lc-pointermove', onPointerMove)
+                ];
+            },
+
+            willBecomeInactive: function(lc) {
+                // call all the unsubscribe functions
+                self.unsubscribeFuncs.map(function(f) { f() });
+            }
+        }
+    };
+
+    var Thoughtbub = function(lc) {  // take lc as constructor arg
+        var self = this;
+
+        return {
+            usesSimpleAPI: false,  // DO NOT FORGET THIS!!!
+            name: 'RoundSpeechbub',
+            iconName: 'line',
+            strokeWidth: lc.opts.defaultStrokeWidth,
+            optionsStyle: 'stroke-width',
+
+            didBecomeActive: function(lc) {
+                var onPointerDown = function(pt) {
+                    self.currentShape = LC.createShape('Thoughtbub', {
                         x: pt.x,
                         y: pt.y,
                         strokeWidth: self.strokeWidth,
@@ -253,6 +635,21 @@ $( document ).ready(function() {
             name: 'speechbub',
             el: document.getElementById('tool-speechbub'),
             tool: new Speechbub(lc)
+        },
+        {
+            name: 'speechbub',
+            el: document.getElementById('tool-speechbub1'),
+            tool: new Speechbub(lc)
+        },
+        {
+            name: 'roundspeechbub',
+            el: document.getElementById('tool-speechbub2'),
+            tool: new RoundSpeechbub(lc)
+        },
+        {
+            name: 'thoughtbub',
+            el: document.getElementById('tool-speechbub3'),
+            tool: new Thoughtbub(lc)
         }
     ];
 
