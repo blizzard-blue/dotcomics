@@ -789,6 +789,7 @@ console.log(LC.tools);
             setCurrentByName(colors, clr.name);
         })
     });
+
     setCurrentByName(colors, colors[0].name);
 
     var activateTool = function(t) {
@@ -861,7 +862,7 @@ console.log(LC.tools);
     })
 
     $("#tool-fillcolor").click(function(){
-        lc.setColor('secondary', '#000000');
+        lc.setColor('secondary', lc.getColor('primary'));
     })
 
 
