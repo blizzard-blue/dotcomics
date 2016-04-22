@@ -46,7 +46,7 @@ $( document ).ready(function() {
     var navbarHeight = $(".navbar").outerHeight(true);
     var totalHeight = document.body.offsetHeight;
     var canvasHeight = totalHeight-navbarHeight;
-    $(".literally").height(canvasHeight);
+    $(".literally").height(canvasHeight-navbarHeight-2);
     $("#toolbar-wrapper").height(canvasHeight);
 
     ///////////////////////////////////////////////////////////////////////////////
@@ -617,8 +617,13 @@ $( document ).ready(function() {
     };
 
     ///////////////
-
-    var lc = LC.init(document.getElementsByClassName('literally core')[0], {backgroundColor: '#ffffff', tools: LC.defaultTools.concat([Speechbub])});
+    //var backgroundImage = new Image();
+    //backgroundImage.src = '/img/tools/paneltemplates/template1.png';
+    //var backgroundShape = LC.createShape(
+    //    'Image', {x: 20, y: 20, image: backgroundImage, scale: 1}
+    //);
+    var lc = LC.init(document.getElementsByClassName('literally core')[0], {backgroundColor: '#ffffff',
+        tools: LC.defaultTools.concat([Speechbub]), backgroundShapes: []});
 
 console.log(LC.tools);
     var tools = [
@@ -768,6 +773,58 @@ console.log(LC.tools);
     $("#clear").click(function(){
         lc.clear();
     })
+
+    ///////////////////////////////////////////////////////////////////////////
+    //BACKGROUND IMAGE (TEMPLATE)////
+    ///////////////////////////////////////////////////////////////////////
+
+    ////////////////////////////////////////////
+    //SELECT A TEMPLATE
+    ///////////////////////////////////////////
+    $("#tool-template").click(function() {
+
+            $("#template-popup").dialog( //opens popup menu
+                {
+                    title: "Choose a template!",
+                    width: 450,
+                    height: 550,
+                    modal: true,
+                    buttons: {
+                        Choose: function () {
+                            $(this).dialog('close'); //Button closes popup
+
+                        }
+                    }
+                }
+            );
+
+
+
+    });
+
+    $(".template-ref").click(function(){ //Template option clicked
+        var backgroundImage = new Image();
+        backgroundImage.src = '/img/tools/paneltemplates/' + this.id +  '.png';
+
+        lc.saveShape(LC.createShape(
+                'Image', {x: 20, y: 20, image: backgroundImage, scale: 1}));
+
+        //var backgroundShape = LC.createShape(
+        //        'Image', {x: 20, y: 20, image: backgroundImage, scale: 1}
+        //);
+        //
+        //lc.backgroundShapes = backgroundShape;
+
+        //the background image is not included in the shape list that is
+        //saved/loaded here
+        //var localStorageKey = 'drawing-with-background';
+        //if (localStorage.getItem(localStorageKey)) {
+        //    lc.loadSnapshotJSON(localStorage.getItem(localStorageKey));
+        //}
+        //lc.on('drawingChange', function() {
+        //    localStorage.setItem(localStorageKey, lc.getSnapshotJSON());
+        //});
+    });
 
 
 

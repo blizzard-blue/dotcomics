@@ -7,6 +7,8 @@
         <link href="/css/nav.css" rel="stylesheet">
         <link href="/css/literallycanvas.css" rel="stylesheet">
         <link href="/css/toolbar.css" rel="stylesheet">
+        <link href="/css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
     </head>
     <body>
         <jsp:directive.include file="/nav.jsp" />
@@ -35,6 +37,9 @@
                             <div class="tool-item" id="tool-speechbub3"><img src="/img/tools/thoughtbub.png"></div>
                         </div>
                     </div>
+                </li>
+                <li>
+                    <a id="tool-template"><img src="/img/tools/template.png" alt="templates"></a>
                 </li>
                 <li>
                     <a id="tool-text"><img src="/img/tools/text.png" alt="text"></a>
@@ -126,7 +131,21 @@
             <div class="literally core"></div>
         </div>
 
+        <div class="popup-window" id="template-popup" style="display: none">
+            <table id="template-table">
+                <tr>
+                    <td><a id="template1" class="template-ref"><img src="img/tools/paneltemplates/template1.png"></a> </td>
+                    <td><a id="template2" class="template-ref"><img src="img/tools/paneltemplates/template2.png"></a></td>
+                </tr>
+                <tr>
+                    <td><a id="template3" class="template-ref"><img src="img/tools/paneltemplates/template3.png"></a></td>
+                    <td><a id="template4" class="template-ref"><img src="img/tools/paneltemplates/template4.png"></a></td>
+                </tr>
+            </table>
+        </div>
+
         <jsp:directive.include file="/jslibs.jsp" />
+        <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
         <script src="js/literallycanvas-core.js"></script>
         <script src="js/lc-custom.js"></script>
     </body>
