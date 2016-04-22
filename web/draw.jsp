@@ -48,6 +48,9 @@
                     <a id="tool-eyedropper"><img src="/img/tools/eyedropper.png" alt="eyedropper"></a>
                 </li>
                 <li>
+                    <a id="tool-fillcolor"><img src="/img/tools/polygon-closed.png" alt="fill color"></a>
+                </li>
+                <li>
                     <a id="tool-line"><img src="/img/tools/line.png" alt="line"></a>
                 </li>
                 <li>
@@ -140,6 +143,9 @@
                 <tr>
                     <td><a id="template3" class="template-ref"><img src="img/tools/paneltemplates/template3.png"></a></td>
                     <td><a id="template4" class="template-ref"><img src="img/tools/paneltemplates/template4.png"></a></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><a id="none" class="template-ref"><p id="template-none">None</p></a></td>
                 </tr>
             </table>
         </div>

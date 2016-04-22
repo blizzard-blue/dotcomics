@@ -617,14 +617,42 @@ $( document ).ready(function() {
     };
 
     ///////////////
-    //var backgroundImage = new Image();
-    //backgroundImage.src = '/img/tools/paneltemplates/template1.png';
-    //var backgroundShape = LC.createShape(
-    //    'Image', {x: 20, y: 20, image: backgroundImage, scale: 1}
-    //);
-    var lc = LC.init(document.getElementsByClassName('literally core')[0], {backgroundColor: '#ffffff',
-        tools: LC.defaultTools.concat([Speechbub]), backgroundShapes: []});
 
+
+    var lc;
+    startNewTemplate(null);
+    function startNewTemplate(id){ //Template option clicked
+        if(id == null){
+            id = "none";
+        }
+        chooseTemplate();
+        var backgroundImage = new Image();
+        backgroundImage.src = '/img/tools/paneltemplates/' + id +  '.png';
+
+        //lc.saveShape(LC.createShape(
+        //        'Image', {x: 20, y: 20, image: backgroundImage, scale: 1}));
+
+        var backgroundShape = LC.createShape(
+            'Image', {x: 20, y: 20, image: backgroundImage, scale: 1}
+        );
+        //
+        //lc.backgroundShapes = backgroundShape;
+
+        lc = LC.init(document.getElementsByClassName('literally core')[0], {backgroundColor: '#ffffff',
+            tools: LC.defaultTools.concat([Speechbub]), backgroundShapes: [backgroundShape]});
+
+        //the background image is not included in the shape list that is
+        //saved/loaded here
+        //var localStorageKey = 'drawing-with-background';
+        //if (localStorage.getItem(localStorageKey)) {
+        //    lc.loadSnapshotJSON(localStorage.getItem(localStorageKey));
+        //}
+        //lc.on('drawingChange', function() {
+        //    localStorage.setItem(localStorageKey, lc.getSnapshotJSON());
+        //});
+
+
+    }
 console.log(LC.tools);
     var tools = [
         {
@@ -774,6 +802,10 @@ console.log(LC.tools);
         lc.clear();
     })
 
+    $("#tool-fillcolor").click(function(){
+        lc.setColor('secondary', '#000000');
+    })
+
     ///////////////////////////////////////////////////////////////////////////
     //BACKGROUND IMAGE (TEMPLATE)////
 ///////////////////////////////////////////////////////////////////////
@@ -782,8 +814,12 @@ console.log(LC.tools);
     //SELECT A TEMPLATE
 ///////////////////////////////////////////
     $("#tool-template").click(function() {
+        chooseTemplate();
+    });
 
-            $("#template-popup").dialog( //opens popup menu
+
+    function chooseTemplate(){
+        $("#template-popup").dialog( //opens popup menu
                 {
                     title: "Choose a template!",
                     width: 450,
@@ -795,35 +831,12 @@ console.log(LC.tools);
 
                         }
                     }
-                }
-            );
+                });
+    }
 
-
-
-    });
-
-    $(".template-ref").click(function(){ //Template option clicked
-        var backgroundImage = new Image();
-        backgroundImage.src = '/img/tools/paneltemplates/' + this.id +  '.png';
-
-        lc.saveShape(LC.createShape(
-                'Image', {x: 20, y: 20, image: backgroundImage, scale: 1}));
-
-        //var backgroundShape = LC.createShape(
-        //        'Image', {x: 20, y: 20, image: backgroundImage, scale: 1}
-        //);
-        //
-        //lc.backgroundShapes = backgroundShape;
-
-        //the background image is not included in the shape list that is
-        //saved/loaded here
-        //var localStorageKey = 'drawing-with-background';
-        //if (localStorage.getItem(localStorageKey)) {
-        //    lc.loadSnapshotJSON(localStorage.getItem(localStorageKey));
-        //}
-        //lc.on('drawingChange', function() {
-        //    localStorage.setItem(localStorageKey, lc.getSnapshotJSON());
-        //});
+    $(".template-ref").click(function(){
+        lc.clear();
+        startNewTemplate(this.id);
     });
 
 
