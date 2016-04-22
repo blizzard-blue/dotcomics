@@ -32,8 +32,9 @@ html, body {
 .toolbar-nav > li > a {
     display: block;
     width: 100%;
-    padding: 10px 20px;
+    padding: 5px 20px;
     background-color: #2e2e2e;
+    text-align: center;
 }
 
 .toolbar-nav > li > a:hover {
@@ -42,7 +43,7 @@ html, body {
 }
 
 .toolbar-nav > li > a > img {
-    width: 32px;
+    width: 20px;
 }
 
 .minimized {
@@ -64,7 +65,7 @@ html, body {
 }
 
 .tool-wrapper {
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #aaaaaa;
     background-color: #fff;
     overflow-y: scroll;

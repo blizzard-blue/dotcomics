@@ -5,14 +5,18 @@ $( document ).ready(function() {
     ///////////////////////////////////////////////////////////////////////////////
 
     $(".toolbar-nav li a").click(function(){
-        $('.toolbar-nav li a.active').not($(this)).removeClass('active');
 
-        if(!($(this).hasClass("active")))
-            $(this).addClass('active');
+        if(($(this).closest(".two").length == 0) && ($(this).closest(".clear").length == 0) ) {
 
-        $(".tool-slideout").addClass("minimized");
-        $(this + ".active + .tool-slideout").toggleClass("minimized");
-        event.stopPropagation();
+            $('.toolbar-nav li a.active').not($(this)).removeClass('active');
+
+            if (!($(this).hasClass("active")))
+                $(this).addClass('active');
+
+            $(".tool-slideout").addClass("minimized");
+            $(this + ".active + .tool-slideout").toggleClass("minimized");
+            event.stopPropagation();
+        }
     });
 
     $(".tool-item").click(function(){
@@ -22,8 +26,6 @@ $( document ).ready(function() {
     });
 
     $(".toolbar-at-top li").click(function(){
-
-        console.log($('.toolbar-at-top li.active').not($(this)))
 
         if($('.toolbar-at-top li.active').not($(this)).length != 0){
             $('.toolbar-at-top li.active svg circle').attr("fill", "white");
@@ -655,7 +657,47 @@ console.log(LC.tools);
             name: 'pan',
             el: document.getElementById('tool-pan'),
             tool: new LC.tools.Pan(lc)
+        },
+        {
+            name: 'text',
+            el: document.getElementById('tool-text'),
+            tool: new LC.tools.Text(lc)
+        },
+        {
+            name: 'eyedropper',
+            el: document.getElementById('tool-eyedropper'),
+            tool: new LC.tools.Eyedropper(lc)
+        },
+        {
+            name: 'polygon',
+            el: document.getElementById('tool-polygon'),
+            tool: new LC.tools.Polygon(lc)
+        },
+        {
+            name: 'rectangle',
+            el: document.getElementById('tool-rectangle'),
+            tool: new LC.tools.Rectangle(lc)
+        },
+        {
+            name: 'line',
+            el: document.getElementById('tool-line'),
+            tool: new LC.tools.Line(lc)
+        },
+        {
+            name: 'circle',
+            el: document.getElementById('tool-circle'),
+            tool: new LC.tools.Ellipse(lc)
+        },
+        {
+            name: new LC.tools.SelectShape(lc),
+            el: document.getElementById('tool-select'),
+            tool: new LC.tools.SelectShape(lc)
         }
+
+
+
+
+
     ];
 
     var activateTool = function(t) {
@@ -715,14 +757,16 @@ console.log(LC.tools);
 
     $("#tool-zoomin").click(function (){
         lc.zoom(1);
-        console.log(lc.scale);
     })
 
     $("#tool-zoomout").click(function (){
 
         if(lc.scale != 1.0)
             lc.zoom(-1);
-            console.log(lc.scale);
+    })
+
+    $("#clear").click(function(){
+        lc.clear();
     })
 
 
