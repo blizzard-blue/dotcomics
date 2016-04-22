@@ -46,7 +46,7 @@ $( document ).ready(function() {
     var navbarHeight = $(".navbar").outerHeight(true);
     var totalHeight = document.body.offsetHeight;
     var canvasHeight = totalHeight-navbarHeight;
-    $(".literally").height(canvasHeight);
+    $(".literally").height(canvasHeight-navbarHeight-2);
     $("#toolbar-wrapper").height(canvasHeight);
 
     ///////////////////////////////////////////////////////////////////////////////
@@ -806,17 +806,18 @@ console.log(LC.tools);
         lc.setColor('secondary', '#000000');
     })
 
-    ///////////////////////////////////////////////////////////////////////////
-    //BACKGROUND IMAGE (TEMPLATE)////
-///////////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////
-    //SELECT A TEMPLATE
-///////////////////////////////////////////
+    ////////////////////////////////////////////
+    //POP UP TEMPLATE SELECTION
+    ///////////////////////////////////////////
     $("#tool-template").click(function() {
         chooseTemplate();
     });
 
+    $(".template-ref").click(function(){
+        lc.clear();
+        startNewTemplate(this.id);
+    });
 
     function chooseTemplate(){
         $("#template-popup").dialog( //opens popup menu
@@ -833,12 +834,5 @@ console.log(LC.tools);
                     }
                 });
     }
-
-    $(".template-ref").click(function(){
-        lc.clear();
-        startNewTemplate(this.id);
-    });
-
-
 
 });
