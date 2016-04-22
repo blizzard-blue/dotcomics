@@ -20,10 +20,6 @@ public class Issue implements java.io.Serializable {
         return seriesTitle;
     }
 
-    public String getPage(int page){
-        return path + "/" + page + ".jpg";
-    }
-
     public int getNumPages(){
         return numPages;
     }

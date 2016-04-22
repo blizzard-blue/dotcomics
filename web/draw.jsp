@@ -7,6 +7,8 @@
         <link href="/css/nav.css" rel="stylesheet">
         <link href="/css/literallycanvas.css" rel="stylesheet">
         <link href="/css/toolbar.css" rel="stylesheet">
+        <link href="/css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
     </head>
     <body>
         <jsp:directive.include file="/nav.jsp" />
@@ -30,10 +32,9 @@
                     <div class="tool-slideout minimized" id="speechbub">
                         <span class="tool-header">Shape</span>
                         <div class="tool-wrapper">
-                            <div class="tool-item"><img src="/img/tools/round-speechbub.png"></div>
-                            <div class="tool-item"><img src="/img/tools/square-speechbub.png"></div>
-                            <div class="tool-item"><img src="/img/tools/fluffy-thoughtbub.png"></div>
-                            <div class="tool-item"><img src="/img/tools/thoughtbub.png"></div>
+                            <div class="tool-item active" id="tool-speechbub1"><img src="/img/tools/square-speechbub.png"></div>
+                            <div class="tool-item" id="tool-speechbub2"><img src="/img/tools/round-speechbub.png"></div>
+                            <div class="tool-item" id="tool-speechbub3"><img src="/img/tools/thoughtbub.png"></div>
                         </div>
                     </div>
                 </li>
@@ -55,22 +56,44 @@
                         </div>
                     </div>
                 </li>
-                <div id="zoomDiv">
-                    <li id="tool-zoomin">
-                        <img src="/img/tools/zoom-in.png" alt="zoom in">
-                    </li>
-                    <li id="tool-zoomout">
-                        <img src="/img/tools/zoom-out.png" alt="zoom out">
-                    </li>
-                </div>
-                <div id="undoDiv">
-                    <li id="undo">
-                        <img src="/img/tools/undo.png">
-                    </li>
-                    <li id="redo">
-                        <img src="/img/tools/redo.png">
-                    </li>
-                </div>
+                <li>
+                    <a id="tool-template"><img src="/img/tools/template.png" alt="templates"></a>
+                </li>
+                <li>
+                    <a id="tool-text"><img src="/img/tools/text.png" alt="text"></a>
+                </li>
+                <li>
+                    <a id="tool-eyedropper"><img src="/img/tools/eyedropper.png" alt="eyedropper"></a>
+                </li>
+                <li>
+                    <a id="tool-fillcolor"><img src="/img/tools/polygon-closed.png" alt="fill color"></a>
+                </li>
+                <li>
+                    <a id="tool-line"><img src="/img/tools/line.png" alt="line"></a>
+                </li>
+                <li>
+                    <a id="tool-rectangle"><img src="/img/tools/rectangle.png" alt="rectangle"></a>
+                </li>
+                <li>
+                    <a id="tool-polygon"><img src="/img/tools/polygon.png" alt="polygon"></a>
+                </li>
+                <li>
+                    <a id="tool-circle"><img src="/img/tools/ellipse.png" alt="ellipse"></a>
+                </li>
+                <li>
+                    <a id="tool-select"><img src="/img/tools/dashed-line.png" alt="select"></a>
+                </li>
+                <li class="two">
+                    <a id="tool-zoomin"><img src="/img/tools/zoom-in.png" alt="zoom in"></a>
+                    <a id="tool-zoomout"><img src="/img/tools/zoom-out.png" alt="zoom out"></a>
+                </li>
+                <li class="two">
+                    <a id="undo"><img src="/img/tools/undo.png" alt="undo"></a>
+                    <a id="redo"><img src="/img/tools/redo.png" alt="redo"></a>
+                </li>
+                <li class="clear">
+                    <a id="clear"><font size="3" color="white">Clear</font></a>
+                </li>
             </ul>
         </div>
 
@@ -129,7 +152,24 @@
             <div class="literally core"></div>
         </div>
 
+        <div class="popup-window" id="template-popup" style="display: none">
+            <table id="template-table">
+                <tr>
+                    <td><a id="template1" class="template-ref"><img src="img/tools/paneltemplates/template1.png"></a> </td>
+                    <td><a id="template2" class="template-ref"><img src="img/tools/paneltemplates/template2.png"></a></td>
+                </tr>
+                <tr>
+                    <td><a id="template3" class="template-ref"><img src="img/tools/paneltemplates/template3.png"></a></td>
+                    <td><a id="template4" class="template-ref"><img src="img/tools/paneltemplates/template4.png"></a></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><a id="none" class="template-ref"><p id="template-none">None</p></a></td>
+                </tr>
+            </table>
+        </div>
+
         <jsp:directive.include file="/jslibs.jsp" />
+        <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
         <script src="js/literallycanvas-core.js"></script>
         <script src="js/lc-custom.js"></script>
     </body>
