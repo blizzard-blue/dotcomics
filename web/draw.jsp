@@ -37,6 +37,24 @@
                         </div>
                     </div>
                 </li>
+                <li>
+                    <a id="tool-colors"><img src="/img/tools/saturation.png" alt="colors"></a>
+                    <div class="tool-slideout minimized" id="colors">
+                        <span class="tool-header">Shape</span>
+                        <div class="tool-wrapper">
+                            <a class='tool' id="colorTool-black"><img src="/img/colors/black.png" alt="black" height="50" width="50"></a>
+                            <a class='tool' id="colorTool-red"><img src="/img/colors/red.png" alt="red" height="50" width="50"></a>
+                            <a class='tool' id="colorTool-blue"><img src="/img/colors/blue.png" alt="blue" height="50" width="50"></a>
+                            <a class='tool' id="colorTool-white"><img src="/img/colors/white.png" alt="white" height="50" width="50"></a>
+                            <a class='tool' id="colorTool-pink"><img src="/img/colors/pink.png" alt="pink" height="50" width="50"></a>
+                            <a class='tool' id="colorTool-orange"><img src="/img/colors/orange.png" alt="orange" height="50" width="50"></a>
+                            <a class='tool' id="colorTool-yellow"><img src="/img/colors/yellow.png" alt="yellow" height="50" width="50"></a>
+                            <a class='tool' id="colorTool-green"><img src="/img/colors/green.png" alt="green" height="50" width="50"></a>
+                            <a class='tool' id="colorTool-indigo"><img src="/img/colors/indigo.png" alt="indigo" height="50" width="50"></a>
+                            <a class='tool' id="colorTool-violet"><img src="/img/colors/violet.png" alt="violet" height="50" width="50"></a>
+                        </div>
+                    </div>
+                </li>
                 <div id="zoomDiv">
                     <li id="tool-zoomin">
                         <img src="/img/tools/zoom-in.png" alt="zoom in">

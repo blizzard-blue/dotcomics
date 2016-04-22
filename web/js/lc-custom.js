@@ -256,6 +256,64 @@ $( document ).ready(function() {
         }
     ];
 
+    var colors = [
+        {
+            name: 'black',
+            el: document.getElementById('colorTool-black'),
+            color: '#000000'
+        },{
+            name: 'blue',
+            el: document.getElementById('colorTool-blue'),
+            color: '#0000FF'
+        },{
+            name: 'red',
+            el: document.getElementById('colorTool-red'),
+            color: '#ff0000'
+        },{
+            name: 'white',
+            el: document.getElementById("colorTool-white"),
+            color: '#FFFFFF'
+        },{
+            name: 'pink',
+            el: document.getElementById("colorTool-pink"),
+            color: '#FFC0CB'
+        },{
+            name: 'orange',
+            el: document.getElementById("colorTool-orange"),
+            color: '#FFA500'
+        },{
+            name: 'yellow',
+            el: document.getElementById("colorTool-yellow"),
+            color: '#FFFF00'
+        },{
+            name: 'green',
+            el: document.getElementById("colorTool-green"),
+            color: '#008000'
+        },{
+            name: 'indigo',
+            el: document.getElementById("colorTool-indigo"),
+            color: '#191970'
+        },{
+            name: 'violet',
+            el: document.getElementById("colorTool-violet"),
+            color: '#4B0082'
+        }
+    ];
+
+    var setCurrentByName = function(ary, val){
+        ary.forEach(function(i){
+            $(i.el).toggleClass('current',(i.name == val));
+        });
+    };
+
+    colors.forEach(function(clr) {
+        $(clr.el).click(function() {
+            lc.setColor('primary', clr.color)
+            setCurrentByName(colors, clr.name);
+        })
+    });
+    setCurrentByName(colors, colors[0].name);
+
     var activateTool = function(t) {
         lc.setTool(t.tool);
     }
