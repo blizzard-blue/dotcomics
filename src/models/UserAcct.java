@@ -6,6 +6,9 @@ package models;
 public class UserAcct implements java.io.Serializable {
     private String username;
     private String about;
+    private String userid;
+
+    public String getUserid() { return userid; }
 
     public String getUsername(){
         return username;
@@ -21,4 +24,6 @@ public class UserAcct implements java.io.Serializable {
     public void setAbout(String about){
         this.about = about;
     }
+    public void setUserid(String userid) { this.userid = userid; }
+
 }

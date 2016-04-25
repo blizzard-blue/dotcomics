@@ -7,6 +7,7 @@ import models.UserAcct;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.File;
 import java.io.PrintWriter;
 
 /**
@@ -24,10 +25,18 @@ public class GetUserInfoAction implements Action {
         HttpSession session = request.getSession(true);
         UserAcct u = (UserAcct) session.getAttribute("user");
         String username = u.getUsername();
+        String userid = u.getUserid();
+
+        File f = new File("img/user/" + userid + ".jpg");
+        if(f.exists() && !f.isDirectory()) {
+
+        }else{
+            userid = "default";
+        }
 
         userinfo.put("username", username);
         userinfo.put("about", u.getAbout());
-        userinfo.put("img", "/img/user/mckenna.jpg");
+        userinfo.put("img", "/img/user/" + userid + ".jpg");
         json.put("userinfo", userinfo);
 
         PrintWriter pw = response.getWriter();

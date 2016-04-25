@@ -60,6 +60,7 @@ public class UserDao {
             if(rs.next()) {
                 user.setUsername(rs.getString("username"));
                 user.setAbout(rs.getString("aboutme"));
+                user.setUserid(rs.getString("userid"));
             }
             conn.close();
             rs.close();
@@ -98,7 +99,7 @@ public class UserDao {
         try {
             conn = db.getConnection();
 
-            stmt = conn.prepareStatement("insert into User(username, emailaddress, description) values (?, ?, ?)");
+            stmt = conn.prepareStatement("insert into User(username, emailaddress, aboutme) values (?, ?, ?)");
             stmt.setString(1, username);
             stmt.setString(2, user.getEmail());
             stmt.setString(3, descr);

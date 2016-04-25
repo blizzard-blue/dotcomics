@@ -27,16 +27,14 @@
             <label for="displayName">Display Name:</label>
             <input id="nameBox" class="form-control" id="displayName" name="displayName" placeholder="Name">
         </fieldset>
-
-
         <fieldset class="form-group">
             <label for="bio">Tell us about yourself:</label>
             <textarea class="form-control" id="bio" rows="3" name="bio" placeholder="Your Bio"></textarea>
         </fieldset>
 
         <fieldset class="form-group">
-            <label for="exampleInputFile">Upload a profile picture:</label>
-            <input type="file" class="form-control-file" id="exampleInputFile">
+            <label for="profilePic">Upload a profile picture:</label>
+            <input type="file" class="form-control-file" id="profilePic" name="profilePic" accept="image/*">
             <small class="text-muted">This will be displayed on your author page.</small>
         </fieldset>
 
