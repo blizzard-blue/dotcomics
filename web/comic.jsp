@@ -94,6 +94,16 @@
                 if((width <= (document.body.offsetWidth * 1.2)) && (width >= (document.body.offsetWidth * 0.2)))
                     $("#comic-pages img").css({"width":width});
             });
+
+            $("#comic-bookmark").click(function(){
+                $.ajax({
+                    url : "/bookmark",
+                    error : function() {
+                        console.log("Error Occured");
+                    }
+                });
+
+            });
         });
     </script>
 </body>

@@ -45,7 +45,7 @@ public class BookmarksDao {
                 stmt.setInt(1, seriesid);
                 rs = stmt.executeQuery();
                 if (rs.next()) {
-                    addBookmark(username, rs.getString("title"), "/comics?series=" + rs.getString("title"));
+                    addBookmark(username, rs.getString("title"), "/comic?series=" + rs.getString("title"));
                     System.out.println(rs.getString("title"));
                 }
             }
@@ -64,6 +64,9 @@ public class BookmarksDao {
             e.printStackTrace();
         }
     }
+
+    public BookmarksDao(){  }
+
     public List<Bookmark> getAllBookmarks(){
         return bookmarks;
     }
@@ -76,5 +79,40 @@ public class BookmarksDao {
         b.toggleBookmarked();
 
         bookmarks.add(b);
+    }
+
+    public void bookmarkSeries(String uI, String sT){
+        try{
+            conn = db.getConnection();
+            stmt = conn.prepareStatement("select * from Series where title = ?");
+            stmt.setString(1, sT);
+            rs = stmt.executeQuery();
+
+            String seriesid = "";
+            if(rs.next())
+                seriesid = rs.getString("seriesid");
+
+            stmt = conn.prepareStatement("select * from Bookmark where userid = ? and seriesid = ?");
+            stmt.setString(1, uI);
+            stmt.setString(2, seriesid);
+            rs = stmt.executeQuery();
+
+            boolean bookmarkValid = false;  //if bookmark already exists, bookmarkValid is false
+            if(!rs.next())
+                bookmarkValid = true;
+
+            if(bookmarkValid){
+                stmt = conn.prepareStatement("insert into Bookmark(userid, seriesid) values (?, ?)");
+                stmt.setString(1, uI);
+                stmt.setString(2, seriesid);
+                stmt.executeUpdate();
+            }
+
+            conn.close();
+            rs.close();
+            stmt.close();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 }

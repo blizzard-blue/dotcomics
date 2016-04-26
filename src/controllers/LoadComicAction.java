@@ -26,7 +26,7 @@ public class LoadComicAction implements Action {
         Issue i = cd.getIssue(series, issueTitle);
 
         HttpSession session = request.getSession(true);
-        session.setAttribute("issue", i);;
+        session.setAttribute("issue", i);
         session.setAttribute("series", s);
 
         return "comic";
