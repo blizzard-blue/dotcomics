@@ -45,7 +45,7 @@
 
     <jsp:directive.include file="/jslibs.jsp" />
     <script>
-        var newHTML;
+        var newHTML = "";
 
         $( document ).ready(function() {
             $.ajax({
@@ -79,6 +79,13 @@
         $('#submit').click(function(){
             $(this).hide();
             $('#Edit').show();
+//
+            $.ajax({
+                url : "/updatebio?bio=" + newHTML,
+                error : function(){
+                    console.log("Update bio error occurred.");
+                }
+            });
             $('#bioRow').html("<p id=\"bioText\">" + newHTML + "</p>");
         });
     </script>

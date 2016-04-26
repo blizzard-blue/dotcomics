@@ -27,6 +27,7 @@ public class ActionFactory {
         actions.put("GET/author", new LoadAuthorAction());
         actions.put("GET/userinfo", new GetUserInfoAction());
         actions.put("GET/bookmark", new BookmarkAction());
+        actions.put("GET/updatebio", new UpdateBioAction());
     }
 
     public static ActionFactory getInstance() {

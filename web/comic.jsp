@@ -57,7 +57,7 @@
 
     <div id="comic-page-wrapper">
         <div id="comic-tools-wrapper">
-            <div class="comic-tool" id="comic-bookmark"><span class="glyphicon glyphicon-star"></span></div>
+            <div class="comic-tool" id="comic-bookmark"><span class="glyphicon glyphicon-star" id="comic-tool-star"></span></div>
             <div class="comic-tool" id="comic-zoom-in"><span>+</span></div>
             <div class="comic-tool" id="comic-zoom-out"><span>-</span></div>
         </div>
@@ -98,10 +98,17 @@
             $("#comic-bookmark").click(function(){
                 $.ajax({
                     url : "/bookmark",
+                    dataType : 'json',
                     error : function() {
                         console.log("Error Occured");
+                    },
+                    success : function(data) {
+                        console.log(data.newbookmark);
+                        $("#bookmarks > ul").append("<li><a href=\"" + data.newbookmark.path + "\"> " + data.newbookmark.seriesTitle +"</a></li>");
                     }
                 });
+
+
 
             });
         });

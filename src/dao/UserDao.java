@@ -139,6 +139,27 @@ public class UserDao {
 
     }
 
+    public void updateBio(String bio){
+        UserService userService = UserServiceFactory.getUserService();
+        User user = userService.getCurrentUser();
+        try{
+            conn = db.getConnection();
+            stmt = conn.prepareStatement("update User set aboutme = ? where emailaddress = ?");
+            stmt.setString(1, bio);
+            stmt.setString(2, user.getEmail());
+            stmt.executeUpdate();
+
+            System.out.println("Current user's bio updated: " + bio);
+
+            conn.close();
+            stmt.close();
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
+    }
+
 
 
 }
