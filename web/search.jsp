@@ -18,6 +18,35 @@
 
     <h1>Search</h1>
 
+    <form action="/search" method="POST">
+        <select id="sortby" name="sortby">
+            <option>Title A-Z</option>
+            <option>Title Z-A</option>
+            <option>Date (Most Recent)</option>
+            <option>Date (Least Recent)</option>
+        </select>
+
+        <label for="superhero">Superhero</label>
+        <input type="checkbox"  name="genres" value="Superhero" id="superhero"  />
+        <label for="action">Action</label>
+        <input type="checkbox"  name="genres" value="Action" id="action"  />
+        <label for="romance">Romance</label>
+        <input type="checkbox"  name="genres" value="Romance" id="romance"  />
+        <input type="submit" value="Apply">
+    </form>
+
     <jsp:directive.include file="/jslibs.jsp" />
+    <script>
+        $.ajax({
+            url : "/search",
+            dataType : 'json',
+            error : function() {
+                console.log("Error Occured");
+            },
+            success : function(data) {
+                console.log(data);
+            }
+        });
+    </script>
 </body>
 </html>

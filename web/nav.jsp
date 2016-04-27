@@ -21,9 +21,9 @@
                     <jsp:setProperty name="user" property="*"/>
                 </jsp:useBean>
 
-                <form action="/search" class="navbar-form navbar-left" role="search">
+                <form action="/search" method="POST" class="navbar-form navbar-left" role="search">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
                     </div>
                     <button type="submit" class="btn btn-default" id="search-btn"><span class="glyphicon glyphicon-search"></span></button>
                 </form>

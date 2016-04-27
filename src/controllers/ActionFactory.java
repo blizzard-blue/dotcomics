@@ -22,7 +22,8 @@ public class ActionFactory {
         actions.put("GET/account", new LoadAccountAction());
         actions.put("GET/getbookmarks", new GetBookmarksAction());
         actions.put("GET/getsubscriptions", new GetSubscriptionsAction());
-        actions.put("GET/search", new LoadSearchAction());
+        actions.put("GET/search", new SearchAction());
+        actions.put("POST/search", new SearchAction());
         actions.put("GET/comic", new LoadComicAction());
         actions.put("GET/author", new LoadAuthorAction());
         actions.put("GET/userinfo", new GetUserInfoAction());
