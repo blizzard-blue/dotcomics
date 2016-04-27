@@ -46,7 +46,7 @@ public class BookmarksDao {
                 rs = stmt.executeQuery();
                 if (rs.next()) {
                     addBookmark(username, rs.getString("title"), "/comic?series=" + rs.getString("title"));
-                    System.out.println(rs.getString("title"));
+
                 }
             }
 
@@ -81,7 +81,7 @@ public class BookmarksDao {
         bookmarks.add(b);
     }
 
-    public void bookmarkSeries(String uI, String sT){
+    public void bookmarkSeries(String uI, String sT){     //Bookmarks a series (star click on comic page)
         try{
             conn = db.getConnection();
             stmt = conn.prepareStatement("select * from Series where title = ?");
