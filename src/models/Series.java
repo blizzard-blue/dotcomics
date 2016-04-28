@@ -10,9 +10,9 @@ import java.util.Map;
 public class Series implements java.io.Serializable {
     private String title;
     private LinkedHashMap<String, Issue> issues;
-    private String coverImg;
     private String author;
     private String description;
+    private String genre;
 
     public String getTitle(){
         return title;
@@ -41,14 +41,6 @@ public class Series implements java.io.Serializable {
         this.title = title;
     }
 
-    public String getCoverImg() {
-        return coverImg;
-    }
-
-    public void setCoverImg(String coverImg) {
-        this.coverImg = coverImg;
-    }
-
     public String getAuthor() {
         return author;
     }
@@ -63,5 +55,13 @@ public class Series implements java.io.Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getGenre(){
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 }

@@ -47,7 +47,7 @@ public class SearchDao {
                 s.setAuthor(rs.getString("author"));
                 String desc = rs.getString("description");
                 s.setDescription(desc);
-                s.setCoverImg("/series/" + s.getTitle() + "/thumbnail.jpg");
+
                 series.add(s);
             }
 
