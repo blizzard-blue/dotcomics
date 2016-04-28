@@ -56,7 +56,7 @@ public class SearchAction implements Action {
                 JSONObject o = new JSONObject();
                 o.put("title", s.getTitle());
                 o.put("author", s.getAuthor());
-                o.put("img", s.getCoverImg());
+                o.put("img", ("/series/"+s.getTitle()));
                 o.put("description", s.getDescription());
                 array.put(o);
             }

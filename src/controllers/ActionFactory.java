@@ -14,6 +14,7 @@ public class ActionFactory {
     public ActionFactory() {
         actions = new HashMap<>();
         actions.put("GET/", new StartupAction());
+        actions.put("GET/dashboardcontent", new LoadDashboardAction());
         actions.put("GET/login", new LoginAction());
         actions.put("GET/logout", new LogoutAction());
         actions.put("GET/signup", new SignupAction());
