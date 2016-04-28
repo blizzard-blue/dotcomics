@@ -35,8 +35,13 @@
         <input type="submit" value="Apply">
     </form>
 
+    <div class="container" id="searched-comics">
+        <h3>Search Results</h3>
+    </div>
+
     <jsp:directive.include file="/jslibs.jsp" />
     <script>
+
         $.ajax({
             url : "/search",
             dataType : 'json',
@@ -44,7 +49,12 @@
                 console.log("Error Occured");
             },
             success : function(data) {
-                console.log(data);
+                //console.log(data);
+                var sarray = data.series;
+                for(var i = 0; i < sarray.length; i++){
+                    $("#searched-comics").append("<div class=\"col-md-3 user-published-item\">" +
+                            "<a href=\"/comic?series="+ sarray[i].title + "\"><img src=\"" + sarray[i].img + "\" class=\"img-responsive\"></a></div>");
+                }
             }
         });
     </script>

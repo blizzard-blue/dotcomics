@@ -193,5 +193,17 @@
 
     <jsp:directive.include file="/jslibs.jsp" />
     <script src="js/carousel.js"></script>
+    <script>
+        $.ajax({
+            url : "/dashboardcontent",
+            dataType : 'json',
+            error : function() {
+                console.log("Error Occured");
+            },
+            success : function(data) {
+                console.log(data.all_series);
+            }
+        });
+    </script>
   </body>
 </html>

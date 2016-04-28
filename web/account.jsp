@@ -1,4 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="com.google.appengine.api.blobstore.BlobstoreServiceFactory" %>
+<%@ page import="com.google.appengine.api.blobstore.BlobstoreService" %>
+
+<% BlobstoreService blobstoreService = BlobstoreServiceFactory.getBlobstoreService(); %>
+
 <html>
 <head>
     <title>dotComics | MyAccount</title>
@@ -27,6 +32,10 @@
         <button id="Edit" class="btn btn-primary">Edit</button>
         <button id="submit" class="btn btn-primary" style="display: none">Submit</button>
         <div class="container">
+            <form method="post" id="imgSubmitForm" enctype="multipart/form-data" action="/" style="display: none;">
+                <input type="file" class="form-control-file" id="profilePic" name="profilePic" accept="image/*">
+                <input type="submit" value="Submit">
+            </form>
             <div class="row" id="bioRow">
                 <p id="bioText"></p>
             </div>
@@ -67,6 +76,7 @@
         $('#Edit').click(function(){
 
             $(this).hide();
+            $('#imgSubmitForm').show();
             $('#submit').show();
 
             $('#bioRow').html("<textarea id=\"newBio\" class=\"form-control\" onchange=\"biochange()\" rows=\"4\" >" + newHTML + "</textarea>");
@@ -78,6 +88,7 @@
 
         $('#submit').click(function(){
             $(this).hide();
+            $('#imgSubmitForm').hide();
             $('#Edit').show();
 //
             $.ajax({
