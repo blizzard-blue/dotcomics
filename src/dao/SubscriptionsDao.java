@@ -45,7 +45,7 @@ public class SubscriptionsDao {
                 stmt.setString(1, un);
                 rs = stmt.executeQuery();
                 if (rs.next()) {
-                    addSubscription(username, rs.getString("username"), "/author?author=" + rs.getString("username"));
+                    addSubscription(username, rs.getString("username"), "/account?author=" + rs.getString("username"));
                     System.out.println("Authors subscribed to" + rs.getString("username"));
                 }
             }
@@ -69,5 +69,33 @@ public class SubscriptionsDao {
         s.toggleSubscribed();
 
         subscriptions.add(s);
+    }
+
+    public void subscribeAuthor(String uI, String uN){     //uN is the author current user is subscribing to
+        try{
+            conn = db.getConnection();
+
+            stmt = conn.prepareStatement("select * from Subscription where userid = ? and author = ?");
+            stmt.setString(1, uI);
+            stmt.setString(2, uN);
+            rs = stmt.executeQuery();
+
+            boolean subscriptionValid = false;  //if bookmark already exists, bookmarkValid is false
+            if(!rs.next())
+                subscriptionValid = true;
+
+            if(subscriptionValid){
+                stmt = conn.prepareStatement("insert into Subscription(userid, author) values (?, ?)");
+                stmt.setString(1, uI);
+                stmt.setString(2, uN);
+                stmt.executeUpdate();
+            }
+
+            conn.close();
+            rs.close();
+            stmt.close();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 }

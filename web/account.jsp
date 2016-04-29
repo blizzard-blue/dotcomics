@@ -29,6 +29,9 @@
                     <h2 id="name">${author.username}</h2>
                 </div>
             </div>
+            <div id="subscribe-container">
+                <button id="Subscribe" class="btn btn-primary">Subscribe</button>
+            </div>
         </div>
     </header>
 
@@ -106,6 +109,21 @@
                 }
             });
             $('#bioRow').html("<p id=\"bioText\">" + newHTML + "</p>");
+        });
+
+        $('#Subscribe').click(function(){
+            var author = document.getElementById("#name");
+            $.ajax({
+                url : "/subscribe?author=" + author,
+                dataType : 'json',
+                error : function() {
+                    console.log("Error Occured");
+                },
+                success: function(data){
+                    console.log(data.newsubscription);
+                    $("#subs > ul").append("<li><a href=\"" + data.newsubscription.path + "\"> " + data.newsubscription.authorName +"</a></li>")
+            }
+            });
         });
     </script>
 </body>
