@@ -19,4 +19,20 @@
         <servlet-name>Router</servlet-name>
         <url-pattern>/pages/*</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>UploadImg</servlet-name>
+        <servlet-class>servlets.UploadImg</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadImg</servlet-name>
+        <url-pattern>/uploadprofpic</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Serve</servlet-name>
+        <servlet-class>servlets.Serve</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Serve</servlet-name>
+        <url-pattern>/serve</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -30,6 +30,7 @@ public class ActionFactory {
         actions.put("GET/userinfo", new GetUserInfoAction());
         actions.put("GET/bookmark", new BookmarkAction());
         actions.put("GET/updatebio", new UpdateBioAction());
+        actions.put("GET/subscribe", new SubscribeAction());
     }
 
     public static ActionFactory getInstance() {

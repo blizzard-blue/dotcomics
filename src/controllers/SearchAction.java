@@ -15,6 +15,7 @@ import java.util.List;
  * Created by Jessica on 4/25/2016.
  */
 public class SearchAction implements Action {
+
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
         HttpSession session = request.getSession(true);
@@ -25,28 +26,32 @@ public class SearchAction implements Action {
             String sortby = (String) session.getAttribute("sortby");
             System.out.println(sortby);
 
-            SearchDao sd = new SearchDao();
 
+            SearchDao sd = new SearchDao();
             // narrow down search results by query
             List<Series> results = sd.search(query);
 
             // if genre filters are chosen, filter results by genre
             if(genres != null){
                 results = sd.filterByGenre(genres);
+//                for(String genre : genres){
+//                    if(genre.equals("Action"))
+//                        request.setAttribute("Action", "checked");
+//                }
             }
 
             // sort the results
-            if(sortby == null)
-                results = sd.sortByTitleAZ();
-            else{
-                if(sortby.equals("sortByTitleAZ"))
+            if(sortby != null) {
+                if (sortby.equals("AZ"))
                     results = sd.sortByTitleAZ();
-                else if(sortby.equals("sortByTitleZA"))
+                else if (sortby.equals("ZA"))
                     results = sd.sortByTitleZA();
-                else if(sortby.equals("sortByDateMostRecent"))
+                else if (sortby.equals("MostRecent"))
                     results = sd.sortByDateMostRecent();
-                else if(sortby.equals("sortByDateLeastRecent"))
+                else if (sortby.equals("LeastRecent"))
                     results = sd.sortByDateLeastRecent();
+            }else{
+                results = sd.sortByDateMostRecent();
             }
 
             // convert result into json
@@ -66,9 +71,9 @@ public class SearchAction implements Action {
             pw.print(json.toString());
             pw.close();
 
-            session.removeAttribute("search");
-            session.removeAttribute("genres");
-            session.removeAttribute("sortby");
+//            session.removeAttribute("search");
+//            session.removeAttribute("genres");
+//            session.removeAttribute("sortby");
 
             return null;
         }
