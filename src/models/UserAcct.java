@@ -29,6 +29,6 @@ public class UserAcct implements java.io.Serializable {
         this.about = about;
     }
     public void setUserid(String userid) { this.userid = userid; }
-    public void setProfileImg(String profileimg) { this.profileimg = profileimg; }
+    public void setProfileImg(String path) { this.profileimg = path; }
 
 }

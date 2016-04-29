@@ -32,15 +32,14 @@ public class Serve extends HttpServlet {
         ImagesService services = ImagesServiceFactory.getImagesService();
         ServingUrlOptions serve = ServingUrlOptions.Builder.withBlobKey(blobKey);
         String url = services.getServingUrl(serve);
-        System.out.println("URL: " + url);
-        int index = url.indexOf("/_ah");
 
         UserDao ud = new UserDao();
-        ud.updateImg(url);
+        ud.updateImg(url, request.getParameter("email"));
+
         UserAcct u = ud.getUser(request.getParameter("email"));
         HttpSession session = request.getSession(true);
         session.setAttribute("user", u);
-        session.setAttribute("imgurl", url);
+        session.setAttribute("imgurl", u.getProfileImg());
 
         response.sendRedirect("/");
     }

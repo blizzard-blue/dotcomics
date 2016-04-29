@@ -19,6 +19,8 @@ public class GetUserInfoAction implements Action {
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
         response.setContentType("application/json;charset=utf-8");
 
+        String user = request.getParameter("author");
+        System.out.println("author parameter passed on" + user);
         JSONObject json = new JSONObject();
         JSONObject userinfo =  new JSONObject();
 

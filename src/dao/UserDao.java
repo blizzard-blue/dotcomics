@@ -74,6 +74,32 @@ public class UserDao {
         return user;
     }
 
+    public UserAcct getUserByUsername(String username){
+        rs = null;
+        UserAcct user = new UserAcct();
+        try{
+            conn = db.getConnection();
+            stmt = conn.prepareStatement("select * from User where username = ?");
+            stmt.setString(1, username);
+            rs = stmt.executeQuery();
+
+            if(rs.next()) {
+                user.setUsername(rs.getString("username"));
+                user.setAbout(rs.getString("aboutme"));
+                user.setProfileImg(rs.getString("profileimg"));
+                user.setUserid(rs.getString("userid"));
+            }
+            conn.close();
+            rs.close();
+            stmt.close();
+
+        }catch(Exception e){
+            System.out.println("connection unsuccessful");
+            e.printStackTrace();
+        }
+        return user;
+    }
+
     public void createUser(String username){
         UserService userService = UserServiceFactory.getUserService();
         User user = userService.getCurrentUser();
@@ -104,6 +130,27 @@ public class UserDao {
             stmt.setString(1, username);
             stmt.setString(2, user.getEmail());
             stmt.setString(3, descr);
+            stmt.executeUpdate();
+
+            conn.close();
+            stmt.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
+    public void createUser(String username, String descr, String imgpath){
+        UserService userService = UserServiceFactory.getUserService();
+        User user = userService.getCurrentUser();
+
+        try {
+            conn = db.getConnection();
+
+            stmt = conn.prepareStatement("insert into User(username, emailaddress, aboutme, profileimg) values (?, ?, ?, ?)");
+            stmt.setString(1, username);
+            stmt.setString(2, user.getEmail());
+            stmt.setString(3, descr);
+            stmt.setString(4, imgpath);
             stmt.executeUpdate();
 
             conn.close();
@@ -161,14 +208,12 @@ public class UserDao {
 
     }
 
-    public void updateImg(String path){
-        UserService userService = UserServiceFactory.getUserService();
-        User user = userService.getCurrentUser();
+    public void updateImg(String path, String email){
         try{
             conn = db.getConnection();
             stmt = conn.prepareStatement("update User set profileimg = ? where emailaddress = ?");
             stmt.setString(1, path);
-            stmt.setString(2, user.getEmail());
+            stmt.setString(2, email);
             stmt.executeUpdate();
 
             System.out.println("Current user's image path updated: " + path);

@@ -1,0 +1,28 @@
+#toolbar-wrapper{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+label{
+    color: white;
+}
+
+#upload{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#browse{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
