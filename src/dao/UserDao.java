@@ -61,6 +61,7 @@ public class UserDao {
                 user.setUsername(rs.getString("username"));
                 user.setAbout(rs.getString("aboutme"));
                 user.setUserid(rs.getString("userid"));
+                user.setProfileImg(rs.getString("profileimg"));
             }
             conn.close();
             rs.close();
@@ -150,6 +151,27 @@ public class UserDao {
             stmt.executeUpdate();
 
             System.out.println("Current user's bio updated: " + bio);
+
+            conn.close();
+            stmt.close();
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
+    }
+
+    public void updateImg(String path){
+        UserService userService = UserServiceFactory.getUserService();
+        User user = userService.getCurrentUser();
+        try{
+            conn = db.getConnection();
+            stmt = conn.prepareStatement("update User set profileimg = ? where emailaddress = ?");
+            stmt.setString(1, path);
+            stmt.setString(2, user.getEmail());
+            stmt.executeUpdate();
+
+            System.out.println("Current user's image path updated: " + path);
 
             conn.close();
             stmt.close();

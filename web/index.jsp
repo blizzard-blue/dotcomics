@@ -174,6 +174,7 @@
             <a class="right carousel-control" href="#myCarousel-1" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
         </div>
     </div>
+    <p><img src="${imgurl}" alt="Author Image"></p>
 
     <jsp:directive.include file="/jslibs.jsp" />
     <script src="js/carousel.js"></script>
