@@ -60,15 +60,14 @@
 
                 for(var i = 0; i < data.all_series.length;i++){
                     if(i == 0) {
-                        $(".carousel-inner").append("<div class=\"item active\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.all_series[i].title + "\"><img src=\"" + data.all_series[i].cover_img + "/thumbnail.jpg\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.all_series[i].title + "\">" + data.all_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"#\">" + data.all_series[i].author + "</a></p></div></div></div>")
+                        $(".carousel-inner").append("<div class=\"item active\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.all_series[i].title + "\"><img src=\"" + data.all_series[i].cover_img + "/thumbnail.jpg\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.all_series[i].title + "\">" + data.all_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.all_series[i].author +"\">" + data.all_series[i].author + "</a></p></div></div></div>")
                     }
                     else {
-                        $(".carousel-inner").append("<div class=\"item\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.all_series[i].title + "\"><img src=\"" + data.all_series[i].cover_img + "/thumbnail.jpg\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.all_series[i].title + "\">" + data.all_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"#\">" + data.all_series[i].author + "</a></p></div></div></div>")
+                        $(".carousel-inner").append("<div class=\"item\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.all_series[i].title + "\"><img src=\"" + data.all_series[i].cover_img + "/thumbnail.jpg\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.all_series[i].title + "\">" + data.all_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.all_series[i].author +"\">" + data.all_series[i].author + "</a></p></div></div></div>")
                     }
                 }
 
                 $("#myCarousel-1").append("<a class=\"left carousel-control\" href=\"#myCarousel-1\" data-slide=\"prev\"><i class=\"glyphicon glyphicon-chevron-left\"></i></a><a class=\"right carousel-control\" href=\"#myCarousel-1\" data-slide=\"next\"><i class=\"glyphicon glyphicon-chevron-right\"></i></a>")
-
                 $('#myCarousel').carousel({
                     interval: false
                 })

@@ -17,27 +17,45 @@
 <body>
     <jsp:directive.include file="/nav.jsp" />
 
+    <jsp:useBean id="author" class="models.UserAcct" scope="session">
+        <jsp:setProperty name="author" property="*"/>
+    </jsp:useBean>
+
     <header class="intro-header" id="nameContainer">
         <div class="container">
             <div class="row" >
-                <div id="profilePicture"></div>
+                <c:choose>
+                    <c:when test="${author.profileImg != null}">
+                        <div id="profilePicture" style="background-image:url('${author.profileImg}')"></div>
+                    </c:when>
+                    <c:otherwise>
+                        <div id="profilePicture" style="background-image:url('img/user/default.jpg')"></div>
+                    </c:otherwise>
+                </c:choose>
                 <div class="site-heading">
-                    <h2 id="name"></h2>
+                    <h2 id="name">${author.username}</h2>
                 </div>
+            </div>
+            <div id="subscribe-container">
+                <button id="Subscribe" class="btn btn-primary">Subscribe</button>
             </div>
         </div>
     </header>
 
     <div id="bioContainer">
-        <button id="Edit" class="btn btn-primary">Edit</button>
+    <c:choose>
+        <c:when test="${user.username == author.username}">
+            <button id="Edit" class="btn btn-primary">Edit</button>
+        </c:when>
+    </c:choose>
         <button id="submit" class="btn btn-primary" style="display: none">Submit</button>
         <div class="container">
-            <form method="post" id="imgSubmitForm" enctype="multipart/form-data" action="/" style="display: none;">
+            <!--<form method="post" id="imgSubmitForm" enctype="multipart/form-data" action="/" style="display: none;">
                 <input type="file" class="form-control-file" id="profilePic" name="profilePic" accept="image/*">
                 <input type="submit" value="Submit">
-            </form>
+            </form>-->
             <div class="row" id="bioRow">
-                <p id="bioText"></p>
+                <p id="bioText">${author.about}</p>
             </div>
         </div>
     </div>
@@ -54,24 +72,24 @@
 
     <jsp:directive.include file="/jslibs.jsp" />
     <script>
-        var newHTML = "";
+        var newHTML = document.getElementById("bioText").textContent;
 
-        $( document ).ready(function() {
-            $.ajax({
-                url : "/userinfo",
-                dataType : 'json',
-                error : function() {
-                    console.log("Error Occured");
-                },
-                success : function(data) {
-                    console.log(data.userinfo);
-                    $("#name").html(data.userinfo.username);
-                    $("#profilePicture").html("<img src=\"" + data.userinfo.img +"\">");
-                    $("#bioText").html(data.userinfo.about);
-                    newHTML = data.userinfo.about;
-                }
-            });
-        });
+//        $( document ).ready(function() {
+//            $.ajax({
+//                url : "/userinfo",
+//                dataType : 'json',
+//                error : function() {
+//                    console.log("Error Occured");
+//                },
+//                success : function(data) {
+//                    console.log(data.userinfo);
+//                    $("#name").html(data.userinfo.username);
+//                    $("#profilePicture").html("<img src=\"" + data.userinfo.img +"\">");
+//                    $("#bioText").html(data.userinfo.about);
+//                    newHTML = data.userinfo.about;
+//                }
+//            });
+//        });
 
         $('#Edit').click(function(){
 
@@ -98,6 +116,21 @@
                 }
             });
             $('#bioRow').html("<p id=\"bioText\">" + newHTML + "</p>");
+        });
+
+        $('#Subscribe').click(function(){
+            var author = document.getElementById("#name");
+            $.ajax({
+                url : "/subscribe?author=" + author,
+                dataType : 'json',
+                error : function() {
+                    console.log("Error Occured");
+                },
+                success: function(data){
+                    console.log(data.newsubscription);
+                    $("#subs > ul").append("<li><a href=\"" + data.newsubscription.path + "\"> " + data.newsubscription.authorName +"</a></li>")
+            }
+            });
         });
     </script>
 </body>
