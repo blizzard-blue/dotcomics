@@ -1,7 +1,10 @@
 $('#myCarousel').carousel({
     interval: false
 })
-
+$(document).on('mouseleave', '.carousel', function() {
+    $(this).carousel('pause');
+});
+console.log("help")
 $('.carousel .item').each(function(){
     var next = $(this).next();
     if (!next.length) {
@@ -16,5 +19,6 @@ $('.carousel .item').each(function(){
         }
 
         next.children(':first-child').clone().appendTo($(this));
+        console.log("help")
     }
 });
