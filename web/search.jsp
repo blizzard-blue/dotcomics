@@ -14,49 +14,51 @@
     <link href="/css/nav.css" rel="stylesheet">
 </head>
 <body>
-    <jsp:directive.include file="/nav.jsp" />
+<jsp:directive.include file="/nav.jsp" />
 
-    <h1>Search</h1>
+<h1>Search</h1>
 
-    <form action="/search" method="POST">
-        <select id="sortby" name="sortby">
-            <option>Title A-Z</option>
-            <option>Title Z-A</option>
-            <option>Date (Most Recent)</option>
-            <option>Date (Least Recent)</option>
-        </select>
+<form action="/search" method="POST">
+    <select id="sortby" name="sortby">
+        <option value="AZ" ${param.sortby == 'AZ' ? 'selected' : ''}>Title A-Z</option>
+        <option value="ZA" ${param.sortby == 'ZA' ? 'selected' : ''}>Title Z-A</option>
+        <option value="MostRecent" ${param.sortby == 'MostRecent' ? 'selected' : ''}>Date (Most Recent)</option>
+        <option value="LeastRecent" ${param.sortby == 'LeastRecent' ? 'selected' : ''}>Date (Least Recent)</option>
+    </select>
 
-        <label for="superhero">Superhero</label>
-        <input type="checkbox"  name="genres" value="Superhero" id="superhero"  />
-        <label for="action">Action</label>
-        <input type="checkbox"  name="genres" value="Action" id="action"  />
-        <label for="romance">Romance</label>
-        <input type="checkbox"  name="genres" value="Romance" id="romance"  />
-        <input type="submit" value="Apply">
-    </form>
 
-    <div class="container" id="searched-comics">
-        <h3>Search Results</h3>
-    </div>
+    <input type="checkbox"  name="genres" value="Superhero" id="superhero"/>
+    <label for="superhero">Superhero</label>
+    <input type="checkbox"  name="genres" value="Action" id="action" />
+    <label for="action">Action</label>
+    <input type="checkbox"  name="genres" value="Romance" id="romance"/>
+    <label for="romance">Romance</label>
 
-    <jsp:directive.include file="/jslibs.jsp" />
-    <script>
+    <input type="submit" value="Apply">
+</form>
 
-        $.ajax({
-            url : "/search",
-            dataType : 'json',
-            error : function() {
-                console.log("Error Occured");
-            },
-            success : function(data) {
-                //console.log(data);
-                var sarray = data.series;
-                for(var i = 0; i < sarray.length; i++){
-                    $("#searched-comics").append("<div class=\"col-md-3 user-published-item\">" +
-                            "<a href=\"/comic?series="+ sarray[i].title + "\"><img src=\"" + sarray[i].img + "\" class=\"img-responsive\"></a></div>");
-                }
+<div class="container" id="searched-comics">
+    <h3>Search Results</h3>
+</div>
+
+<jsp:directive.include file="/jslibs.jsp" />
+<script>
+
+    $.ajax({
+        url : "/search",
+        dataType : 'json',
+        error : function() {
+            console.log("Error Occured");
+        },
+        success : function(data) {
+            //console.log(data);
+            var sarray = data.series;
+            for(var i = 0; i < sarray.length; i++){
+                $("#searched-comics").append("<div class=\"col-md-3 user-published-item\">" +
+                        "<a href=\"/comic?series="+ sarray[i].title + "\"><img src=\"" + sarray[i].img + "\" class=\"img-responsive\"></a></div>");
             }
-        });
-    </script>
+        }
+    });
+</script>
 </body>
 </html>

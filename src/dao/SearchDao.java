@@ -6,8 +6,7 @@ import models.Series;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Jessica on 4/25/2016.
@@ -47,7 +46,7 @@ public class SearchDao {
                 s.setAuthor(rs.getString("author"));
                 String desc = rs.getString("description");
                 s.setDescription(desc);
-
+                s.setGenre(rs.getString("genre"));
                 series.add(s);
             }
 
@@ -57,36 +56,90 @@ public class SearchDao {
             return series;
 
         }catch(Exception e){
-                e.printStackTrace();
-        }
-        return series;
-    }
-
-    public List<Series> filterByGenre(String[] genres){
-        try{
-//            conn = db.getConnection();
-//            stmt = conn.prepareStatement("select * from")
-        }catch(Exception e){
             e.printStackTrace();
         }
         return series;
     }
 
+    public List<Series> filterByGenre(String[] genres){
+        List<Series> filteredseries = new ArrayList<Series>();
+
+        for(Series s : series){
+            for(String genre : genres){
+                if(genre.equalsIgnoreCase(s.getGenre()))
+                    filteredseries.add(s);
+            }
+        }
+
+        series = filteredseries;
+        return series;
+    }
+
     public List<Series> sortByTitleAZ() {
         List<Series> azseries = new ArrayList<Series>();
+        List<String> titles = new ArrayList<String>();
 
+        for(Series s : series){
+            titles.add(s.getTitle());
+        }
 
+        Collections.sort(titles);
+
+        for(String title : titles){
+            for(Series s : series){
+                if(title.equals(s.getTitle()))
+                    azseries.add(s);
+            }
+        }
+
+        series = azseries;
         return series;
     }
 
     public List<Series> sortByTitleZA() {
+        List<Series> zaseries = new ArrayList<Series>();
+        List<String> titles = new ArrayList<String>();
+        List<String> zatitles = new ArrayList<String>();
+
+        for(Series s : series){
+            titles.add(s.getTitle());
+        }
+
+        Collections.sort(titles, Collections.<String>reverseOrder());
+
+
+
+        for(String title : titles){
+            for(Series s : series){
+                if(title.equals(s.getTitle()))
+                    zaseries.add(s);
+            }
+        }
+
+        series = zaseries;
         return series;
     }
 
     public List<Series> sortByDateMostRecent() {
+        List<Series> filteredseries = new ArrayList<Series>();
+
         try{
-//            conn = db.getConnection();
-//            stmt = conn.prepareStatement("select * from")
+            conn = db.getConnection();
+            stmt = conn.prepareStatement("select * from Series order by seriesid desc");
+            rs = stmt.executeQuery();
+
+            while(rs.next()){
+                for(Series s : series){
+                    if(s.getTitle().equals(rs.getString("title")))
+                        filteredseries.add(s);
+                }
+            }
+
+            series = filteredseries;
+            rs.close();
+            stmt.close();
+            conn.close();
+
         }catch(Exception e){
             e.printStackTrace();
         }
@@ -94,6 +147,28 @@ public class SearchDao {
     }
 
     public List<Series> sortByDateLeastRecent() {
+        List<Series> filteredseries = new ArrayList<Series>();
+
+        try{
+            conn = db.getConnection();
+            stmt = conn.prepareStatement("select * from Series order by seriesid asc");
+            rs = stmt.executeQuery();
+
+            while(rs.next()){
+                for(Series s : series){
+                    if(s.getTitle().equals(rs.getString("title")))
+                        filteredseries.add(s);
+                }
+            }
+
+            series = filteredseries;
+            rs.close();
+            stmt.close();
+            conn.close();
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }
         return series;
     }
 }
