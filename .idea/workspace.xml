@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b921b4d-812a-4aa2-892e-53c5f34f5b3f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controllers/SubscribeAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/search.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/upload.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/ActionFactory.java" afterPath="$PROJECT_DIR$/src/controllers/ActionFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/GetUserInfoAction.java" afterPath="$PROJECT_DIR$/src/controllers/GetUserInfoAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/LoadAccountAction.java" afterPath="$PROJECT_DIR$/src/controllers/LoadAccountAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/SearchAction.java" afterPath="$PROJECT_DIR$/src/controllers/SearchAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/SearchDao.java" afterPath="$PROJECT_DIR$/src/dao/SearchDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/SubscriptionsDao.java" afterPath="$PROJECT_DIR$/src/dao/SubscriptionsDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/UserAcct.java" afterPath="$PROJECT_DIR$/src/models/UserAcct.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/Serve.java" afterPath="$PROJECT_DIR$/src/servlets/Serve.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/account.jsp" afterPath="$PROJECT_DIR$/web/account.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/account.css" afterPath="$PROJECT_DIR$/web/css/account.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/scroll.css" afterPath="$PROJECT_DIR$/web/css/scroll.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/nav.jsp" afterPath="$PROJECT_DIR$/web/nav.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.jsp" afterPath="$PROJECT_DIR$/web/search.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/upload.css" afterPath="$PROJECT_DIR$/web/css/upload.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/upload.jsp" afterPath="$PROJECT_DIR$/web/upload.jsp" />
     </list>
     <ignored path="dotcomics.iws" />
@@ -44,92 +29,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="account.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/account.jsp">
+      <file leaf-file-name="upload.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/upload.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.1538463">
-              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="48" column="85" selection-start-line="48" selection-start-column="85" selection-end-line="48" selection-end-column="85" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5555556">
-              <caret line="191" column="10" selection-start-line="191" selection-start-column="10" selection-end-line="191" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/nav.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.73077">
-              <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="account.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/account.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.730769">
-              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadAccountAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controllers/LoadAccountAction.java">
+      <file leaf-file-name="UploadComic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlets/UploadComic.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="218" column="77" selection-start-line="218" selection-start-column="77" selection-end-line="218" selection-end-column="77" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1461935158724" expanded="true" signature="660:712" placeholder="select email... User" />
-                <marker date="1461935158724" expanded="true" signature="1493:1534" placeholder="select * fro... User" />
-                <marker date="1461935158724" expanded="true" signature="2338:2375" placeholder="select * fro... User" />
-                <marker date="1461935158724" expanded="true" signature="3236:3290" placeholder="insert into User... " />
-                <marker date="1461935158724" expanded="true" signature="3827:3893" placeholder="insert into User... " />
-                <marker date="1461935158724" expanded="true" signature="4484:4565" placeholder="insert into User... " />
-                <marker date="1461935158724" expanded="true" signature="5090:5127" placeholder="select * fro... User" />
-                <marker date="1461935158724" expanded="true" signature="5777:5827" placeholder="update User " />
-                <marker date="1461935158724" expanded="true" signature="6302:6355" placeholder="update User " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserAcct.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/UserAcct.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Serve.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlets/Serve.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+              <caret line="35" column="81" selection-start-line="35" selection-start-column="81" selection-end-line="35" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -139,7 +53,27 @@
         <entry file="file://$PROJECT_DIR$/src/servlets/UploadImg.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+              <caret line="44" column="121" selection-start-line="44" selection-start-column="121" selection-end-line="46" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/signup.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="65" selection-start-line="0" selection-start-column="65" selection-end-line="7" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Serve.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/servlets/Serve.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6337522">
+              <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -168,8 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/controllers/LoadUploadAction.java" />
-        <option value="$PROJECT_DIR$/src/controllers/LoadDrawAction.java" />
         <option value="$PROJECT_DIR$/src/controllers/LoadAuthorAction.java" />
         <option value="$PROJECT_DIR$/src/conf/Router.java" />
         <option value="$PROJECT_DIR$/src/controllers/LoginAction.java" />
@@ -203,8 +135,6 @@
         <option value="$PROJECT_DIR$/src/controllers/LoadDashboardAction.java" />
         <option value="$PROJECT_DIR$/src/dao/SearchDao.java" />
         <option value="$PROJECT_DIR$/web/js/filter.js" />
-        <option value="$PROJECT_DIR$/web/upload.jsp" />
-        <option value="$PROJECT_DIR$/web/css/upload.css" />
         <option value="$PROJECT_DIR$/web/css/search.css" />
         <option value="$PROJECT_DIR$/web/search.jsp" />
         <option value="$PROJECT_DIR$/src/controllers/ActionFactory.java" />
@@ -214,11 +144,15 @@
         <option value="$PROJECT_DIR$/src/controllers/LoadAccountAction.java" />
         <option value="$PROJECT_DIR$/web/css/account.css" />
         <option value="$PROJECT_DIR$/web/account.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/UploadImg.java" />
         <option value="$PROJECT_DIR$/src/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/servlets/Serve.java" />
         <option value="$PROJECT_DIR$/src/models/UserAcct.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/css/upload.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/servlets/UploadImg.java" />
+        <option value="$PROJECT_DIR$/src/servlets/UploadComic.java" />
+        <option value="$PROJECT_DIR$/web/upload.jsp" />
+        <option value="$PROJECT_DIR$/src/servlets/Serve.java" />
       </list>
     </option>
   </component>
@@ -307,64 +241,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dotcomics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dotcomics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dotcomics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dotcomics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dotcomics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dotcomics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -420,24 +296,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dotcomics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dotcomics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1069,12 +927,12 @@
       <workItem from="1461903559738" duration="30000" />
       <workItem from="1461906855892" duration="4772000" />
       <workItem from="1461913493978" duration="4218000" />
-      <workItem from="1461932959462" duration="3193000" />
+      <workItem from="1461932959462" duration="5261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194743000" />
+    <option name="totallyTimeSpent" value="196811000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1103,8 +961,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20953101" sideWeight="0.3164557" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19213313" sideWeight="0.6835443" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20953101" sideWeight="0.3164557" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19213313" sideWeight="0.67045456" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19213313" sideWeight="0.32954547" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1179,28 +1037,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/css/search.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/upload.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/upload.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/upload.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1326,13 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/upload.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.307692">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/upload.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7">
@@ -1360,14 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.1923075">
           <caret line="64" column="68" selection-start-line="64" selection-start-column="68" selection-end-line="64" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/upload.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.617647">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1496,9 +1317,25 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/account.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.1538463">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44821092">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/nav.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.73077">
+        <state vertical-scroll-proportion="1.259887">
           <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
           <folding />
         </state>
@@ -1506,23 +1343,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/account.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.730769">
+        <state vertical-scroll-proportion="0.6478343">
           <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/Serve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/LoadAccountAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.513465">
           <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
           <folding />
         </state>
@@ -1530,7 +1359,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.42728904">
           <caret line="218" column="77" selection-start-line="218" selection-start-column="77" selection-end-line="218" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1547,34 +1376,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/UploadImg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/UserAcct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.5798923">
           <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/account.jsp">
+    <entry file="file://$PROJECT_DIR$/web/css/upload.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.1538463">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.3523316">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5555556">
-          <caret line="191" column="10" selection-start-line="191" selection-start-column="10" selection-end-line="191" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.7797927">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/signup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="65" selection-start-line="0" selection-start-column="65" selection-end-line="7" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/UploadImg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="121" selection-start-line="44" selection-start-column="121" selection-end-line="46" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/UploadComic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="81" selection-start-line="35" selection-start-column="81" selection-end-line="35" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/upload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="48" column="85" selection-start-line="48" selection-start-column="85" selection-end-line="48" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/Serve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6337522">
+          <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
           <folding />
         </state>
       </provider>

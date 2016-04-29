@@ -35,4 +35,12 @@
         <servlet-name>Serve</servlet-name>
         <url-pattern>/serve</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>UploadComic</servlet-name>
+        <servlet-class>servlets.UploadComic</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadComic</servlet-name>
+        <url-pattern>/uploadcomic</url-pattern>
+    </servlet-mapping>
 </web-app>

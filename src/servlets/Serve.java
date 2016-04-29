@@ -33,13 +33,14 @@ public class Serve extends HttpServlet {
         ServingUrlOptions serve = ServingUrlOptions.Builder.withBlobKey(blobKey);
         String url = services.getServingUrl(serve);
 
-        UserDao ud = new UserDao();
-        ud.updateImg(url, request.getParameter("email"));
-
-        UserAcct u = ud.getUser(request.getParameter("email"));
-        HttpSession session = request.getSession(true);
-        session.setAttribute("user", u);
-        session.setAttribute("imgurl", u.getProfileImg());
+        if(request.getParameter("email") != null){
+            UserDao ud = new UserDao();
+            ud.updateImg(url, request.getParameter("email"));
+            UserAcct u = ud.getUser(request.getParameter("email"));
+            HttpSession session = request.getSession(true);
+            session.setAttribute("user", u);
+            session.setAttribute("imgurl", u.getProfileImg());
+        }
 
         response.sendRedirect("/");
     }
