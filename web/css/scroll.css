@@ -9,7 +9,7 @@
 }
 
 .col-xs-3:hover img{
-    opacity: .40;
+    opacity: .20;
 }
 
 .imgDesc {
@@ -22,7 +22,6 @@
     opacity: 0;
 }
 
-
 #scroll1-1 {
     top: 0;
     left: 0;
@@ -32,10 +31,18 @@
 
 #scroll2-1 {
     text-align: center;
-    bottom: 0;
+    bottom: 315px;
     left: 0;
     right:0;
-
+}
+#scroll3-1 {
+    text-align: left;
+    top: 100px;
+    left:30px;
+    right:0;
+    font-family: Arial;
+    font-size: 12px;
+    width: 200px;
 }
 
 #scroll1-2 {
@@ -47,10 +54,18 @@
 
 #scroll2-2 {
     text-align: center;
-    bottom: 0;
+    bottom: 315px;
     left: 0;
     right:0;
-
+}
+#scroll3-2 {
+    text-align: left;
+    top: 100px;
+    left:30px;
+    right:0;
+    font-family: Arial;
+    font-size: 12px;
+    width: 200px;
 }
 
 #scroll1-3 {
@@ -62,10 +77,18 @@
 
 #scroll2-3 {
     text-align: center;
-    bottom: 0;
+    bottom: 315px;
     left: 0;
     right:0;
-
+}
+#scroll3-3 {
+    text-align: left;
+    top: 100px;
+    left:30px;
+    right:0;
+    font-family: Arial;
+    font-size: 12px;
+    width: 200px;
 }
 
 #scroll1-4 {
@@ -77,13 +100,19 @@
 
 #scroll2-4 {
     text-align: center;
-    bottom: 0;
+    bottom: 315px;
     left: 0;
     right:0;
-
 }
-
-
+#scroll3-4 {
+    text-align: left;
+    top: 100px;
+    left:30px;
+    right:0;
+    font-family: Arial;
+    font-size: 12px;
+    width: 200px;
+}
 .img-wrap:hover .imgDesc {
     visibility: visible;
     opacity: 1;

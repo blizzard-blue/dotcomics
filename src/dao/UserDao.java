@@ -73,6 +73,31 @@ public class UserDao {
         return user;
     }
 
+    public UserAcct getUserByUsername(String username){
+        rs = null;
+        UserAcct user = new UserAcct();
+        try{
+            conn = db.getConnection();
+            stmt = conn.prepareStatement("select * from User where username = ?");
+            stmt.setString(1, username);
+            rs = stmt.executeQuery();
+
+            if(rs.next()) {
+                user.setUsername(rs.getString("username"));
+                user.setAbout(rs.getString("aboutme"));
+                user.setUserid(rs.getString("userid"));
+            }
+            conn.close();
+            rs.close();
+            stmt.close();
+
+        }catch(Exception e){
+            System.out.println("connection unsuccessful");
+            e.printStackTrace();
+        }
+        return user;
+    }
+
     public void createUser(String username){
         UserService userService = UserServiceFactory.getUserService();
         User user = userService.getCurrentUser();
