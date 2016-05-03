@@ -50,10 +50,10 @@
     </c:choose>
         <button id="submit" class="btn btn-primary" style="display: none">Submit</button>
         <div class="container">
-            <!--<form method="post" id="imgSubmitForm" enctype="multipart/form-data" action="/" style="display: none;">
+            <form method="post" id="imgSubmitForm" enctype="multipart/form-data" action="<%= blobstoreService.createUploadUrl("/updateprofpic") %>" style="display: none;">
                 <input type="file" class="form-control-file" id="profilePic" name="profilePic" accept="image/*">
                 <input type="submit" value="Submit">
-            </form>-->
+            </form>
             <div class="row" id="bioRow">
                 <p id="bioText">${author.about}</p>
             </div>

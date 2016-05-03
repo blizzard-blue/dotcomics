@@ -28,6 +28,15 @@
         <url-pattern>/uploadprofpic</url-pattern>
     </servlet-mapping>
     <servlet>
+        <servlet-name>UpdateImg</servlet-name>
+        <servlet-class>servlets.UpdateImg</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateImg</servlet-name>
+        <url-pattern>/updateprofpic</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Serve</servlet-name>
         <servlet-class>servlets.Serve</servlet-class>
     </servlet>
