@@ -117,9 +117,8 @@
             });
             $('#bioRow').html("<p id=\"bioText\">" + newHTML + "</p>");
         });
-
+        var author = document.getElementById("#name");
         $('#Subscribe').click(function(){
-            var author = document.getElementById("#name");
             $.ajax({
                 url : "/subscribe?author=" + author,
                 dataType : 'json',
@@ -132,6 +131,9 @@
             }
             });
         });
+//        $.ajax({
+//            url:
+//        })
     </script>
 </body>
 </html>

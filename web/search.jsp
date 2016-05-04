@@ -18,6 +18,8 @@
 
 <jsp:directive.include file="/nav.jsp" />
 
+
+
 <div class="container" id="searched-comics">
     <h3 id="searchheader">Search Results</h3>
 
@@ -30,6 +32,7 @@
             </div>
             <div id="collapse1" class="panel-collapse collapse">
                 <form action="/search" method="POST">
+
                     <div id="sortbydropdown">
                         <label for="sortby">Sort by:</label>
                         <select id="sortby" name="sortby">
@@ -69,6 +72,7 @@
                             </li>
                         </ul>
                     </div>
+                    <input name="search" type="text" value="${search}"/>
                     <input id="applyfilter" type="submit" value="Apply">
                 </form>
             </div>
