@@ -6,6 +6,7 @@ import com.google.appengine.api.blobstore.BlobstoreServiceFactory;
 import com.google.appengine.api.users.User;
 import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
+import dao.ComicDao;
 import dao.UserDao;
 
 import javax.servlet.ServletException;
@@ -26,14 +27,15 @@ public class UploadComic extends HttpServlet {
         UserService userService = UserServiceFactory.getUserService();
         User user = userService.getCurrentUser();
 
+        String series = request.getParameter("series");
         String title = request.getParameter("title");
         String genre = request.getParameter("genre");
-        String text = request.getParameter("text");
+        String description = request.getParameter("description");
 
         Map<String, List<BlobKey>> blobs = blobstoreService.getUploads(request);
         List<BlobKey> blobKeys = blobs.get("page");
 
-        response.sendRedirect("/serve?blob-key=" + blobKeys.get(0).getKeyString());
+        response.sendRedirect("/serve?blob-key=" + blobKeys.get(0).getKeyString() + "&email=" + user.getEmail() + "&uploadcomic=true&title=" + title + "&series=" + series + "&genre=" + genre + "&description=" + description);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

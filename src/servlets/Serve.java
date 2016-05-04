@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.List;
 
 import com.google.appengine.api.blobstore.BlobKey;
 import com.google.appengine.api.blobstore.BlobstoreService;
@@ -13,7 +14,9 @@ import com.google.appengine.api.blobstore.BlobstoreServiceFactory;
 import com.google.appengine.api.images.ImagesService;
 import com.google.appengine.api.images.ImagesServiceFactory;
 import com.google.appengine.api.images.ServingUrlOptions;
+import dao.ComicDao;
 import dao.UserDao;
+import models.Series;
 import models.UserAcct;
 
 /**
@@ -33,18 +36,42 @@ public class Serve extends HttpServlet {
         ServingUrlOptions serve = ServingUrlOptions.Builder.withBlobKey(blobKey);
         String url = services.getServingUrl(serve);
         UserAcct u = new UserAcct();
-        if(request.getParameter("email") != null){
-            UserDao ud = new UserDao();
-            ud.updateImg(url, request.getParameter("email"));
-            u = ud.getUser(request.getParameter("email"));
-            HttpSession session = request.getSession(true);
-            session.setAttribute("user", u);
-            session.setAttribute("imgurl", u.getProfileImg());
-        }
 
-        if(request.getParameter("updateImg").equals("true"))
-            response.sendRedirect("/account?author=" + u.getUsername());
-        else
-            response.sendRedirect("/");
+        HttpSession session = request.getSession(true);
+
+        if(request.getParameter("uploadcomic").equals("true")){
+            System.out.println("upload comics");
+            ComicDao cd = new ComicDao();
+            String series = request.getParameter("series");
+            String title = request.getParameter("title");
+            String genre = request.getParameter("genre");
+            String description = request.getParameter("description");
+            String email = request.getParameter("email");
+
+            Series s = cd.getSeries(series);
+            // check if series exists for current user in session, if not create one
+            int comicid = cd.getIssueId(series, title);
+            if(s == null){
+                cd.addSeries(series, email, description, genre, url);
+                cd.addIssue(title, email, series);
+                cd.addPage(comicid, 1, url);
+            } else{
+
+            }
+            response.sendRedirect("/upload?series=" + series + "&issue=" + title);
+        }else{
+            if(request.getParameter("email") != null){
+                UserDao ud = new UserDao();
+                ud.updateImg(url, request.getParameter("email"));
+                u = ud.getUser(request.getParameter("email"));
+                session.setAttribute("user", u);
+                session.setAttribute("imgurl", u.getProfileImg());
+            }
+
+            if(request.getParameter("updateImg").equals("true"))
+                response.sendRedirect("/account?author=" + u.getUsername());
+            else
+                response.sendRedirect("/");
+        }
     }
 }
