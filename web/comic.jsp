@@ -35,7 +35,7 @@
                         <%--<li><a href="#"><c:out value="${i}"/></a></li>--%>
                     <%--</c:forEach>--%>
                     <c:forEach var="i" items="${series.issues}">
-                        <li><a href="/comic?series=${series.title}&issue=${i.key}"><c:out value="${i.key}"/></a></li>
+                        <li><a href="/comic?series=${series.title}&issue=${i.title}"><c:out value="${i.title}"/></a></li>
                     </c:forEach>
                 </ul>
             </div>
