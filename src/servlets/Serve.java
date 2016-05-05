@@ -16,6 +16,7 @@ import com.google.appengine.api.images.ImagesServiceFactory;
 import com.google.appengine.api.images.ServingUrlOptions;
 import dao.ComicDao;
 import dao.UserDao;
+import models.Issue;
 import models.Series;
 import models.UserAcct;
 
@@ -55,7 +56,17 @@ public class Serve extends HttpServlet {
                 int comicid = cd.getIssueId(series, title);
                 cd.addPage(comicid, 1, url);
             } else{
-
+                Issue i = cd.getIssue(series, title);
+                if(i == null){
+                    System.out.println("I'm null! WTF.");
+                    cd.addIssue(title, email, series);
+                    int comicid = cd.getIssueId(series, title);
+                    cd.addPage(comicid, 1, url);
+                } else {
+                    int comicid = cd.getIssueId(series, title);
+                    int pagenum = cd.getNextIssuePage(comicid);
+                    cd.addPage(comicid, pagenum, url);
+                }
             }
             response.sendRedirect("/upload?series=" + series + "&issue=" + title);
         }else{

@@ -82,6 +82,7 @@
         },
         success : function(data) {
             var pages = data.page_urls;
+            console.log(pages);
 
             for(var i=0; i<pages.length; i++){
                 $('#page-wrapper').append("<img src=\"" + pages[i] + "\">");

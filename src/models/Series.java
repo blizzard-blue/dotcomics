@@ -1,15 +1,13 @@
 package models;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by Jessica on 3/30/2016.
  */
 public class Series implements java.io.Serializable {
     private String title;
-    private LinkedHashMap<String, Issue> issues;
+    private List<Issue> issues;
     private String author;
     private String description;
     private String genre;
@@ -20,22 +18,32 @@ public class Series implements java.io.Serializable {
     }
 
     public Issue getIssue(String title){
-        return issues.get(title);
+        Issue i = null;
+
+        for(int j=0; j<issues.size(); j++){
+            i = issues.get(j);
+            if(i.getTitle().equals(title))
+                return i;
+        }
+
+        return null;
     }
 
     public int getNumIssues(){
         return issues.size();
     }
 
-    public Map<String, Issue> getIssues(){
+    public List<Issue> getIssues(){
         return issues;
     }
 
     public void addIssue(String title, Issue issue){
         if(issues == null)
-            issues = new LinkedHashMap<String, Issue>();
-
-        issues.put(title, issue);
+            issues = new ArrayList<Issue>();
+        System.out.println("size of issues: " + issues.size());
+        issues.add(issue);
+        System.out.println("new size of issues: " + issues.size());
+        System.out.println("Issue title just added: " + issue.getTitle());
     }
 
     public void setTitle(String title){

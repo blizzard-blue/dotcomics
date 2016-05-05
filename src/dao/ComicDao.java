@@ -69,16 +69,13 @@ public class ComicDao {
     }
 
     public Issue getIssue(String seriesTitle, String issueTitle){
-        Issue issue = null;
-        for(int i=0; i<series.size(); i++){
-            Series s = series.get(i);
-            if(s.getTitle().equals(seriesTitle)){
-                issue = s.getIssue(issueTitle);
-                break;
-            }
-        }
+        Series s = getSeries(seriesTitle);
+        System.out.println("Series title: " + s.getTitle());
+        Issue issue = s.getIssue(issueTitle);
+        if(issue != null)
+            return issue;
 
-        return issue;
+        return null;
     }
 
     public int getIssueId(String seriesTitle, String issueTitle){
@@ -103,12 +100,6 @@ public class ComicDao {
         }
 
         return id;
-    }
-
-    public List<Issue> getIssues(String series){
-        List<Issue> issues = new ArrayList<Issue>();
-
-        return issues;
     }
 
 
@@ -158,10 +149,7 @@ public class ComicDao {
         series.add(s);
     }
 
-    public void addIssue(String title, String email, String series){
-        UserService userService = UserServiceFactory.getUserService();
-        User user = userService.getCurrentUser();
-
+    public void addIssue(String title, String email, String seriesTitle){
         UserDao ud = new UserDao();
         UserAcct u = ud.getUser(email);
         String username = u.getUsername();
@@ -172,7 +160,7 @@ public class ComicDao {
             stmt = conn.prepareStatement("insert into ComicBook(title, author, series) values (?, ?, ?)");
             stmt.setString(1, title);
             stmt.setString(2, username);
-            stmt.setString(3, series);
+            stmt.setString(3, seriesTitle);
             stmt.executeUpdate();
 
             conn.close();
@@ -181,11 +169,12 @@ public class ComicDao {
             e.printStackTrace();
         }
 
-        Series s = getSeries(series);
+        Series s = getSeries(seriesTitle);
         Issue i = new Issue();
         i.setTitle(title);
-        i.setSeriesTitle(series);
-        s.addIssue(i.getTitle(), i);
+        i.setSeriesTitle(seriesTitle);
+        s.addIssue(title, i);
+
     }
 
     public void addPage(int comicid, int pagenum, String pagepath){
@@ -226,5 +215,30 @@ public class ComicDao {
         }
 
         return pages;
+    }
+
+    public int getNextIssuePage(int comicid){
+        int page = -1;
+
+        try{
+            conn = db.getConnection();
+
+            stmt = conn.prepareStatement("select * from Page where comicid=?");
+            stmt.setInt(1, comicid);
+            stmt.executeQuery();
+
+            while(rs.next()){
+                int num = rs.getInt("pagenumber");
+                if(num > page)
+                    page = num;
+            }
+
+            conn.close();
+            stmt.close();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
+        return page;
     }
 }
