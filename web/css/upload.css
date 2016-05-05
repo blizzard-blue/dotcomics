@@ -1,5 +1,4 @@
 #toolbar-wrapper{
-    width: 20%;
     height: 100%;
     background-color: #020c2d;
     padding: 20px;
@@ -24,4 +23,9 @@ label{
 
 .form-group {
     display: block;
+}
+
+#page-wrapper {
+    height: 100%;
+    overflow-x: scroll;
 }

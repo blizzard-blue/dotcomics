@@ -18,7 +18,7 @@
 <body>
 <jsp:directive.include file="/nav.jsp" />
 
-<div id="toolbar-wrapper">
+<div class="col-md-2" id="toolbar-wrapper">
     <form action="<%= blobstoreService.createUploadUrl("/uploadcomic") %>" method="POST" enctype="multipart/form-data">
         <div id="leftDiv" class="toolbar-nav">
             <div class="form-group">
@@ -56,7 +56,38 @@
     </form>
 </div>
 
+<div class="col-md-10" id="page-wrapper">
+
+</div>
+
 
 <jsp:directive.include file="/jslibs.jsp" />
+<script>
+    function getQueryVariable(variable)
+    {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+
+    $.ajax({
+        url : "/upload?loadpage=true&series=" + getQueryVariable("series") + "&issue=" + getQueryVariable("issue"),
+        dataType : 'json',
+        error : function() {
+            console.log("Error Occured");
+        },
+        success : function(data) {
+            var pages = data.page_urls;
+
+            for(var i=0; i<pages.length; i++){
+                $('#page-wrapper').append("<img src=\"" + pages[i] + "\">");
+            }
+        }
+    });
+</script>
 </body>
 </html>
