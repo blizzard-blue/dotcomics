@@ -22,22 +22,26 @@
     <form action="<%= blobstoreService.createUploadUrl("/uploadcomic") %>" method="POST" enctype="multipart/form-data">
         <div id="leftDiv" class="toolbar-nav">
             <div class="form-group">
-                <label for="title">Title:</label>
-                <input type="text" class="form-control" id="title" name="title">
+                <label for="series">Series Title:</label>
+                <input type="text" class="form-control" id="series" name="series" value="${param.series}">
+            </div>
+            <div class="form-group">
+                <label for="title">Issue Title:</label>
+                <input type="text" class="form-control" id="title" name="title" value="${param.issue}">
             </div>
             <div class="form-group">
                 <label for="genre">Genre:</label>
                 <select class="form-control" id="genre" name="genre">
                     <option>Select One</option>
-                    <option>Action</option>
-                    <option>Comedy</option>
-                    <option>Horror</option>
-                    <option>Romance</option>
+                    <option ${genre == 'Action' ? 'selected' : ''}>Action</option>
+                    <option ${genre == 'Comedy' ? 'selected' : ''}>Comedy</option>
+                    <option ${genre == 'Horror' ? 'selected' : ''}>Horror</option>
+                    <option ${genre == 'Romance' ? 'selected' : ''}>Romance</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="description">Description:</label>
-                <textarea type="text" class="form-control" id="description" name="text"></textarea>
+                <textarea type="text" class="form-control" id="description" name="description">${description}</textarea>
             </div>
             <div class="form-group">
                 <label for="browse">File Upload:</label>

@@ -13,6 +13,7 @@ public class Series implements java.io.Serializable {
     private String author;
     private String description;
     private String genre;
+    private String coverimgpath;
 
     public String getTitle(){
         return title;
@@ -63,5 +64,13 @@ public class Series implements java.io.Serializable {
 
     public void setGenre(String genre) {
         this.genre = genre;
+    }
+
+    public String getCoverimgpath() {
+        return coverimgpath;
+    }
+
+    public void setCoverimgpath(String coverimgpath) {
+        this.coverimgpath = coverimgpath;
     }
 }
