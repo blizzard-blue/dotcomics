@@ -14,6 +14,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.TreeMap;
 
 /**
  * Created by Jessica on 3/30/2016.
@@ -54,6 +55,7 @@ public class ComicDao {
                 iss.setNumPages(rs.getInt("pages"));
                 iss.setPath("/series" + "/" + iss.getSeriesTitle() + "/" + iss.getTitle());
                 s = getSeries(iss.getSeriesTitle());
+
                 s.addIssue(iss.getTitle(), iss);
             }
             conn.close();
@@ -195,17 +197,17 @@ public class ComicDao {
         }
     }
 
-    public HashMap getPages(int comicid){
-        HashMap pages = new HashMap();
+    public TreeMap getPages(int comicid){
+        TreeMap pages = new TreeMap();
 
         try{
             conn = db.getConnection();
-            stmt = conn.prepareStatement("select filepath from Page where comicid=?");
+            stmt = conn.prepareStatement("select * from Page where comicid=?");
             stmt.setInt(1, comicid);
             rs = stmt.executeQuery();
 
             while(rs.next()){
-                //pages.add(rs.getString("filepath"));
+                pages.put(rs.getInt("pagenumber"), rs.getString("filepath"));
             }
             conn.close();
             stmt.close();
@@ -217,6 +219,29 @@ public class ComicDao {
 
         return pages;
     }
+//
+//    public HashMap getPagesByTitle(String title){
+//        HashMap pages = new HashMap();
+//
+//        try{
+//            conn = db.getConnection();
+//            stmt = conn.prepareStatement("select * from Page where comicid=?");
+//            stmt.setInt(1, comicid);
+//            rs = stmt.executeQuery();
+//
+//            while(rs.next()){
+//                pages.put(rs.getInt("pagenumber"), rs.getString("filepath"));
+//            }
+//            conn.close();
+//            stmt.close();
+//            rs.close();
+//
+//        }catch(Exception e){
+//            e.printStackTrace();
+//        }
+//
+//        return pages;
+//    }
 
     public int getNextIssuePage(int comicid){
         int page = -1;
@@ -231,7 +256,7 @@ public class ComicDao {
             while(rs.next()){
                 int num = rs.getInt("pagenumber");
                 if(num > page)
-                    page = num;
+                    page = num + 1;
             }
 
             rs.close();

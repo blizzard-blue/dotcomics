@@ -11,6 +11,9 @@ public class Issue implements java.io.Serializable {
     private String path;
     private String seriesTitle;
     private int numPages;
+    //private String comicid;
+
+   // public String getComicid(){ return this.comicid }
 
     public String getTitle(){
         return title;
@@ -43,4 +46,6 @@ public class Issue implements java.io.Serializable {
     public void setNumPages(int pages){
         this.numPages = pages;
     }
+
+   // public void setComicid(String comicid) { this.comicid = comicid; }
 }
