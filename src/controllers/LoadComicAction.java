@@ -7,6 +7,7 @@ import models.Series;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 /**
  * Created by sicaz on 4/10/2016.
@@ -24,6 +25,7 @@ public class LoadComicAction implements Action {
 
         Series s = cd.getSeries(series);
         Issue i = cd.getIssue(series, issueTitle);
+
 
         HttpSession session = request.getSession(true);
         session.setAttribute("issue", i);

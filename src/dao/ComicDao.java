@@ -12,6 +12,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -48,7 +49,7 @@ public class ComicDao {
 
             while(rs.next()){
                 iss = new Issue();
-                iss.setTitle(Integer.toString(rs.getInt("issue")));
+                iss.setTitle(rs.getString("title"));
                 iss.setSeriesTitle(rs.getString("series"));
                 iss.setNumPages(rs.getInt("pages"));
                 iss.setPath("/series" + "/" + iss.getSeriesTitle() + "/" + iss.getTitle());
@@ -194,8 +195,8 @@ public class ComicDao {
         }
     }
 
-    public List<String> getPages(int comicid){
-        List<String> pages = new ArrayList<String>();
+    public HashMap getPages(int comicid){
+        HashMap pages = new HashMap();
 
         try{
             conn = db.getConnection();
@@ -204,7 +205,7 @@ public class ComicDao {
             rs = stmt.executeQuery();
 
             while(rs.next()){
-                pages.add(rs.getString("filepath"));
+                //pages.add(rs.getString("filepath"));
             }
             conn.close();
             stmt.close();
@@ -225,7 +226,7 @@ public class ComicDao {
 
             stmt = conn.prepareStatement("select * from Page where comicid=?");
             stmt.setInt(1, comicid);
-            stmt.executeQuery();
+            rs = stmt.executeQuery();
 
             while(rs.next()){
                 int num = rs.getInt("pagenumber");
@@ -233,6 +234,7 @@ public class ComicDao {
                     page = num;
             }
 
+            rs.close();
             conn.close();
             stmt.close();
         }catch(Exception e){

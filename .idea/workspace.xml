@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4b921b4d-812a-4aa2-892e-53c5f34f5b3f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/LoadUploadAction.java" afterPath="$PROJECT_DIR$/src/controllers/LoadUploadAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/LoadComicAction.java" afterPath="$PROJECT_DIR$/src/controllers/LoadComicAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/ComicDao.java" afterPath="$PROJECT_DIR$/src/dao/ComicDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/Series.java" afterPath="$PROJECT_DIR$/src/models/Series.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/Serve.java" afterPath="$PROJECT_DIR$/src/servlets/Serve.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/comic.jsp" afterPath="$PROJECT_DIR$/web/comic.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/upload.css" afterPath="$PROJECT_DIR$/web/css/upload.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/upload.jsp" afterPath="$PROJECT_DIR$/web/upload.jsp" />
     </list>
     <ignored path="dotcomics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,31 +28,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="upload.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/upload.jsp">
+      <file leaf-file-name="Series.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/models/Series.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-43.46154">
-              <caret line="84" column="31" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.75">
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComicDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/ComicDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-              <folding>
-                <marker date="1462468266817" expanded="true" signature="742:762" placeholder="select * fro... Series" />
-                <marker date="1462468266817" expanded="true" signature="1266:1289" placeholder="select * fro... ComicBook" />
-                <marker date="1462468266817" expanded="true" signature="2490:2546" placeholder="select comic... ComicBook" />
-                <marker date="1462468266817" expanded="true" signature="3647:3737" placeholder="insert into Series... " />
-                <marker date="1462468266817" expanded="true" signature="4612:4673" placeholder="insert into ComicBook... " />
-                <marker date="1462468266817" expanded="true" signature="5301:5365" placeholder="insert into Page... " />
-                <marker date="1462468266817" expanded="true" signature="5846:5887" placeholder="select filep... Page" />
-                <marker date="1462468266817" expanded="true" signature="6408:6442" placeholder="select * fro... Page" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -66,16 +43,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/search.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="13.423077">
-              <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -91,12 +58,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Router.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/conf/Router.java">
+      <file leaf-file-name="Serve.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlets/Serve.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComicDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/ComicDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="207" column="18" selection-start-line="207" selection-start-column="18" selection-end-line="207" selection-end-column="18" />
+              <folding>
+                <marker date="1462483399621" expanded="true" signature="768:788" placeholder="select * fro... Series" />
+                <marker date="1462483399621" expanded="true" signature="1292:1315" placeholder="select * fro... ComicBook" />
+                <marker date="1462483399621" expanded="true" signature="2501:2557" placeholder="select comic... ComicBook" />
+                <marker date="1462483399621" expanded="true" signature="3658:3748" placeholder="insert into Series... " />
+                <marker date="1462483399621" expanded="true" signature="4623:4684" placeholder="insert into ComicBook... " />
+                <marker date="1462483399621" expanded="true" signature="5312:5376" placeholder="insert into Page... " />
+                <marker date="1462483399621" expanded="true" signature="5837:5878" placeholder="select filep... Page" />
+                <marker date="1462483399621" expanded="true" signature="6401:6435" placeholder="select * fro... Page" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comic.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="comic.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/comic.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6465969">
-              <caret line="37" column="77" selection-start-line="37" selection-start-column="77" selection-end-line="37" selection-end-column="77" />
+            <state vertical-scroll-proportion="5.230769">
+              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -135,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/controllers/LoadComicAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -183,7 +169,6 @@
         <option value="$PROJECT_DIR$/web/js/lc-custom.js" />
         <option value="$PROJECT_DIR$/src/controllers/SignupAction.java" />
         <option value="$PROJECT_DIR$/src/models/Issue.java" />
-        <option value="$PROJECT_DIR$/src/controllers/LoadComicAction.java" />
         <option value="$PROJECT_DIR$/src/controllers/GetBookmarksAction.java" />
         <option value="$PROJECT_DIR$/src/controllers/BookmarkAction.java" />
         <option value="$PROJECT_DIR$/src/dao/BookmarksDao.java" />
@@ -195,7 +180,6 @@
         <option value="$PROJECT_DIR$/src/controllers/ActionFactory.java" />
         <option value="$PROJECT_DIR$/src/controllers/SubscribeAction.java" />
         <option value="$PROJECT_DIR$/src/dao/SubscriptionsDao.java" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/controllers/LoadAccountAction.java" />
         <option value="$PROJECT_DIR$/web/css/account.css" />
         <option value="$PROJECT_DIR$/src/dao/UserDao.java" />
@@ -210,10 +194,12 @@
         <option value="$PROJECT_DIR$/web/css/upload.css" />
         <option value="$PROJECT_DIR$/web/upload.jsp" />
         <option value="$PROJECT_DIR$/src/servlets/Serve.java" />
-        <option value="$PROJECT_DIR$/src/dao/ComicDao.java" />
         <option value="$PROJECT_DIR$/src/models/Series.java" />
         <option value="$PROJECT_DIR$/src/controllers/SearchAction.java" />
         <option value="$PROJECT_DIR$/web/comic.jsp" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/controllers/LoadComicAction.java" />
+        <option value="$PROJECT_DIR$/src/dao/ComicDao.java" />
       </list>
     </option>
   </component>
@@ -469,6 +455,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dotcomics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dotcomics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1015,12 +1015,12 @@
       <workItem from="1462378983781" duration="9899000" />
       <workItem from="1462410226033" duration="12772000" />
       <workItem from="1462462461153" duration="262000" />
-      <workItem from="1462468517981" duration="4691000" />
+      <workItem from="1462468517981" duration="6681000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227678000" />
+    <option name="totallyTimeSpent" value="229668000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1033,7 +1033,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1047,7 +1047,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20953101" sideWeight="0.3164557" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19347496" sideWeight="0.67045456" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19347496" sideWeight="0.67045456" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19213313" sideWeight="0.32954547" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1123,12 +1123,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/controllers/LoadComicAction.java</url>
-          <line>24</line>
+          <line>25</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dao/ComicDao.java</url>
+          <line>221</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1229,13 +1235,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2331606">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1418,22 +1417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/Serve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Series.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/upload.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-43.46154">
@@ -1458,43 +1441,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/LoadDashboardAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ComicDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <marker date="1462468266817" expanded="true" signature="742:762" placeholder="select * fro... Series" />
-            <marker date="1462468266817" expanded="true" signature="1266:1289" placeholder="select * fro... ComicBook" />
-            <marker date="1462468266817" expanded="true" signature="2490:2546" placeholder="select comic... ComicBook" />
-            <marker date="1462468266817" expanded="true" signature="3647:3737" placeholder="insert into Series... " />
-            <marker date="1462468266817" expanded="true" signature="4612:4673" placeholder="insert into ComicBook... " />
-            <marker date="1462468266817" expanded="true" signature="5301:5365" placeholder="insert into Page... " />
-            <marker date="1462468266817" expanded="true" signature="5846:5887" placeholder="select filep... Page" />
-            <marker date="1462468266817" expanded="true" signature="6408:6442" placeholder="select * fro... Page" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/conf/Router.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/LoadComicAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1507,10 +1457,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/SearchAction.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="241" column="14" selection-start-line="241" selection-start-column="14" selection-end-line="241" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/comic.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.230769">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/LoadDashboardAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="70" selection-start-line="63" selection-start-column="70" selection-end-line="63" selection-end-column="70" />
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/LoadComicAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1523,10 +1497,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/comic.jsp">
+    <entry file="file://$PROJECT_DIR$/src/controllers/SearchAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6465969">
-          <caret line="37" column="77" selection-start-line="37" selection-start-column="77" selection-end-line="37" selection-end-column="77" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="70" selection-start-line="63" selection-start-column="70" selection-end-line="63" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ComicDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="207" column="18" selection-start-line="207" selection-start-column="18" selection-end-line="207" selection-end-column="18" />
+          <folding>
+            <marker date="1462483399621" expanded="true" signature="768:788" placeholder="select * fro... Series" />
+            <marker date="1462483399621" expanded="true" signature="1292:1315" placeholder="select * fro... ComicBook" />
+            <marker date="1462483399621" expanded="true" signature="2501:2557" placeholder="select comic... ComicBook" />
+            <marker date="1462483399621" expanded="true" signature="3658:3748" placeholder="insert into Series... " />
+            <marker date="1462483399621" expanded="true" signature="4623:4684" placeholder="insert into ComicBook... " />
+            <marker date="1462483399621" expanded="true" signature="5312:5376" placeholder="insert into Page... " />
+            <marker date="1462483399621" expanded="true" signature="5837:5878" placeholder="select filep... Page" />
+            <marker date="1462483399621" expanded="true" signature="6401:6435" placeholder="select * fro... Page" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/Serve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Series.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding />
         </state>
       </provider>
