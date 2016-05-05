@@ -48,7 +48,7 @@ public class ComicDao {
 
             while(rs.next()){
                 iss = new Issue();
-                iss.setTitle(Integer.toString(rs.getInt("issue")));
+                iss.setTitle(rs.getString("title"));
                 iss.setSeriesTitle(rs.getString("series"));
                 iss.setNumPages(rs.getInt("pages"));
                 iss.setPath("/series" + "/" + iss.getSeriesTitle() + "/" + iss.getTitle());

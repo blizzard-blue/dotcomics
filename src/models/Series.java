@@ -40,10 +40,7 @@ public class Series implements java.io.Serializable {
     public void addIssue(String title, Issue issue){
         if(issues == null)
             issues = new ArrayList<Issue>();
-        System.out.println("size of issues: " + issues.size());
         issues.add(issue);
-        System.out.println("new size of issues: " + issues.size());
-        System.out.println("Issue title just added: " + issue.getTitle());
     }
 
     public void setTitle(String title){
