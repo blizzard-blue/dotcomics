@@ -1,0 +1,45 @@
+#nameContainer{
+    height: auto;
+    background-color: #0e193e;
+    text-align: center;
+    padding: 30px;
+}
+
+#bioContainer{
+    height: auto;
+    background-color: #111e4c;
+}
+
+#name{
+    color: white;
+}
+
+#bioRow {
+    padding: 30px;
+}
+
+#bioText{
+    text-align: center;
+    color: white;
+}
+
+#submit{
+    float: left;
+}
+
+#Edit{
+    float: left;
+}
+
+#profilePicture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    background-size: cover;
+}
+
+.user-published-item > a > img {
+    width: 75%;
+    margin: auto;
+}
