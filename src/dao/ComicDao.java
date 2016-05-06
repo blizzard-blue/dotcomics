@@ -72,6 +72,20 @@ public class ComicDao {
         return series;
     }
 
+    public List<Series> getAuthorSeries(String author) {
+        List<Series> l = new ArrayList<Series>();
+        Series s = null;
+
+        for(int i=0; i<series.size(); i++){
+            s = series.get(i);
+            if(s.getAuthor().equals(author)){
+                l.add(s);
+            }
+        }
+
+        return l;
+    }
+
     public Issue getIssue(String seriesTitle, String issueTitle){
         Series s = getSeries(seriesTitle);
         Issue issue = s.getIssue(issueTitle);

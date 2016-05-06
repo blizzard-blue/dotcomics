@@ -62,34 +62,37 @@
 
     <div class="container" id="published-comics">
         <h3>Published Comics</h3>
-        <div class="row">
-            <div class="col-md-3 user-published-item"><a href="/comic?series=Deadpool"><img src="series/Deadpool/thumbnail.jpg" class="img-responsive"></a></div>
-            <div class="col-md-3 user-published-item"><a href="/comic?series=Guardians%20of%20the%20Galaxy"><img src="series/Guardians%20of%20the%20Galaxy/thumbnail.jpg" class="img-responsive"></a></div>
-            <div class="col-md-3 user-published-item"><a href="/comic?series=Judge%20Dredd"><img src="series/Judge%20Dredd/thumbnail.jpg" class="img-responsive"></a></div>
-            <div class="col-md-3 user-published-item"><a href="/comic?series=The%20Avengers"><img src="series/The%20Avengers/thumbnail.jpg" class="img-responsive"></a></div>
-        </div>
     </div>
 
     <jsp:directive.include file="/jslibs.jsp" />
     <script>
         var newHTML = document.getElementById("bioText").textContent;
 
-//        $( document ).ready(function() {
-//            $.ajax({
-//                url : "/userinfo",
-//                dataType : 'json',
-//                error : function() {
-//                    console.log("Error Occured");
-//                },
-//                success : function(data) {
-//                    console.log(data.userinfo);
-//                    $("#name").html(data.userinfo.username);
-//                    $("#profilePicture").html("<img src=\"" + data.userinfo.img +"\">");
-//                    $("#bioText").html(data.userinfo.about);
-//                    newHTML = data.userinfo.about;
-//                }
-//            });
-//        });
+        $( document ).ready(function() {
+            console.log(getQueryVariable("author"));
+            $.ajax({
+                url : "/getwork?author=" + getQueryVariable("author"),
+                dataType : 'json',
+                error : function() {
+                    console.log("Error Occured");
+                },
+                success : function(data) {
+                    console.log(data.author_series);
+                    var series = data.author_series;
+                    for(var i=0; i<series.length; i++){
+                        if(i % 4 == 0){
+                            $("#published-comics").append("<div class=\"row\">");
+                            $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"></a></div>");
+                        } else if(i % 4 == 3){
+                            $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"></a></div>");
+                            $("#published-comics").append("</div>");
+                        } else{
+                            $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"></a></div>");
+                        }
+                    }
+                }
+            });
+        });
 
         $('#Edit').click(function(){
 

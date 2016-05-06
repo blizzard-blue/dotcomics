@@ -1,5 +1,6 @@
 package controllers;
 
+import dao.ComicDao;
 import dao.UserDao;
 import models.UserAcct;
 
@@ -19,16 +20,6 @@ public class LoadAccountAction implements Action {
 
         UserDao ud = new UserDao();
         UserAcct author = ud.getUserByUsername(authorparam);
-//        String userid = author.getUserid();
-//
-//        File f = new File("img/user/" + userid + ".jpg");
-//        if(f.exists() && !f.isDirectory()) {
-//        }else{
-//            userid = "default";
-//        }
-//
-//        String authorimgpath = "/img/user/" + userid + ".jpg";
-        System.out.println(author.getProfileImg());
 
         HttpSession session = request.getSession(true);
         session.setAttribute("author", author);
