@@ -97,6 +97,7 @@
             console.log(pages);
 
             for(var i=0; i<pages.length; i++){
+
                 $('#page-numbers').append("<label id=\"lbl" + (i+1) + "\">Page " + (i + 1) + "</label>")
                 $('#images').append("<img id=\"img" + (i+1) + "\" src=\"" + pages[i] + "\">");
 

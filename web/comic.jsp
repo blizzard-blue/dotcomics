@@ -47,8 +47,8 @@
                     <span class="caret"></span>
                 </button>
                 <ul id="pagedropdown-menu" class="dropdown-menu" aria-labelledby="pagedropdown">
-                    <c:forEach var="i" begin="1" end="${issue.numPages}">
-                        <li><a href="#page${i}"><c:out value="${i}"/></a></li>
+                    <c:forEach var="item" items="${pages}">
+                        <li><a href="#page${item.key}"><c:out value="${item.key}"/></a></li>
                     </c:forEach>
                 </ul>
             </div>
@@ -62,8 +62,8 @@
             <div class="comic-tool" id="comic-zoom-out"><span>-</span></div>
         </div>
         <div id="comic-pages">
-            <c:forEach var="i" begin="1" end="${issue.numPages}">
-                <img id="page${i}" src="${issue.path}/${i}.jpg">
+            <c:forEach var="item" items="${pages}">
+                <img id="page${item.key}" src="${item.value}">
             </c:forEach>
         </div>
     </div>
