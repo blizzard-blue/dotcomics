@@ -14,6 +14,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/nav.css" rel="stylesheet">
     <link href="/css/upload.css" rel="stylesheet">
+
 </head>
 <body>
 <jsp:directive.include file="/nav.jsp" />
@@ -58,10 +59,21 @@
 
 <div class="col-md-10" id="page-wrapper">
 
+    <div id="page-numbers">
+
+    </div>
+
+    <div id="images">
+
+
+    </div>
+
+
 </div>
 
 
 <jsp:directive.include file="/jslibs.jsp" />
+
 <script>
 
     $.ajax({
@@ -75,10 +87,23 @@
             console.log(pages);
 
             for(var i=0; i<pages.length; i++){
-                $('#page-wrapper').append("<img src=\"" + pages[i].url  + "\">");
+
+                $('#page-numbers').append("<label id=\"lbl" + (i+1) + "\">Page " + (i + 1) + "</label>")
+                $('#images').append("<img id=\"img" + (i+1) + "\" src=\"" + pages[i] + "\">");
+
+                var width = $('#img' + (i+1)).width();
+                console.log($('#img1').outerWidth());
+                $('#lbl' + (i+1)).attr("margin-left" , (width/2));
+                $('#lbl' + (i+1)).attr("margin-right" , (width/2));
             }
         }
     });
+
+    $(function() {
+        $( "#images" ).sortable();
+        $( "#images" ).disableSelection();
+    });
+
 </script>
 </body>
 </html>

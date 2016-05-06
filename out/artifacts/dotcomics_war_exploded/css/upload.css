@@ -28,4 +28,26 @@ label{
 #page-wrapper {
     height: 100%;
     overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    border-radius: 0px;
+}
+
+#images img{
+    margin: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#page-numbers{
+    border-left: 10px;
+}
+
+
+#page-numbers label{
+    display: inline;
+    margin-left: 15px;
+    padding-left: 140px;
+    margin-right: 150px;
 }
