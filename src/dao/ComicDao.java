@@ -41,6 +41,7 @@ public class ComicDao {
                 s.setAuthor(rs.getString("author"));
                 s.setDescription(rs.getString("description"));
                 s.setGenre(rs.getString("genre"));
+                s.setCoverimgpath(rs.getString("coverimgpath"));
                 series.add(i, s);
                 i++;
             }
@@ -73,8 +74,16 @@ public class ComicDao {
 
     public Issue getIssue(String seriesTitle, String issueTitle){
         Series s = getSeries(seriesTitle);
-        System.out.println("Series title: " + s.getTitle());
         Issue issue = s.getIssue(issueTitle);
+        if(issue != null)
+            return issue;
+
+        return null;
+    }
+
+    public Issue getFirstIssue(String seriesTitle){
+        Series s = getSeries(seriesTitle);
+        Issue issue = s.getIssues().get(0);
         if(issue != null)
             return issue;
 
@@ -255,7 +264,7 @@ public class ComicDao {
 
             while(rs.next()){
                 int num = rs.getInt("pagenumber");
-                if(num > page)
+                if(num >= page)
                     page = num + 1;
             }
 

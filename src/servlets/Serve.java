@@ -40,7 +40,7 @@ public class Serve extends HttpServlet {
 
         HttpSession session = request.getSession(true);
 
-        if(request.getParameter("uploadcomic").equals("true")){
+        if(request.getParameter("uploadcomic").equals("true") && request.getParameter("uploadcomic") != null){
             ComicDao cd = new ComicDao();
             String series = request.getParameter("series");
             String title = request.getParameter("title");
@@ -58,7 +58,6 @@ public class Serve extends HttpServlet {
             } else{
                 Issue i = cd.getIssue(series, title);
                 if(i == null){
-                    System.out.println("I'm null! WTF.");
                     cd.addIssue(title, email, series);
                     int comicid = cd.getIssueId(series, title);
                     cd.addPage(comicid, 1, url);

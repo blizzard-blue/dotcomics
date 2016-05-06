@@ -27,7 +27,7 @@ public class LoadDashboardAction implements Action {
             JSONObject jo = new JSONObject();
             jo.put("title", s.getTitle());
             jo.put("author", s.getAuthor());
-            jo.put("cover_img", ("/series/"+s.getTitle()));
+            jo.put("cover_img", s.getCoverimgpath());
             jo.put("description", s.getDescription());
             jo.put("genre", s.getGenre());
             allseries.put(jo);

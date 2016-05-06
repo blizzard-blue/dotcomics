@@ -18,16 +18,18 @@ import java.util.TreeMap;
 public class LoadComicAction implements Action {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        String issueTitle = request.getParameter("issue");
-        if(issueTitle == null){
-            issueTitle = "1";
-        }
 
         String series = request.getParameter("series");
         ComicDao cd = new ComicDao();
 
+        Issue i = null;
+        String issueTitle = request.getParameter("issue");
+        if(issueTitle == null){
+            i = cd.getFirstIssue(series);
+            issueTitle = i.getTitle();
+        }
+
         Series s = cd.getSeries(series);
-        Issue i = cd.getIssue(series, issueTitle);
 
         int comicid = cd.getIssueId(s.getTitle(), issueTitle);
         TreeMap pages = cd.getPages(comicid);
