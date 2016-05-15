@@ -2,245 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1981085a-6f6b-4b7c-912c-a5beee488900" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/-_E7WyZXuFhS9hMNZA9Q6w" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/0xUxx8TvttLZ7-oFJt49Mw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/1lJd6lxeEsasSfPAInWukA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/8QfUevhu2GUFY5UjIL8OGA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/AZ_b_ukgYS7q98YK8duwEg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/D3hV8rcAFNxVoGr6_ziHDg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/E1PAwEDjW97p_Tewf75OHA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/HRb01F8qQw2oW-uGheSENw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/I8npY5TzMrM726W9a1fTqw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/JBVZWgWZ68B6iPDiWrXwkg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/OrFIgxV0AFebcBcO3L4GcQ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/QsKjFhw74L8y1LnYmFuTPQ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/WAGXk1ui9iLrckOGaDkD5g" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/WHatlnJq6iLV0O1zsfgxXg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/Y4mugmOiI1CdxOJ4UDyxTw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/_cyRs0Lb0JgmiPsDsjwoiw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/c4Ml_Y_FsgEWpaQsCF2j1A" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/ewLWJgcN8-QFpIIzXmnB0w" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/gS9ce9tIBvNhpeKUoKsFEw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/i2qMI517oapagVNQwJh5bA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/iIO2BMp3Y-S--Fq-ySbzbw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/iutbaSCgqzN0tkX93okRVA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/liwWJ6wPH42kOqZkrCDAgw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/local_db.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/mQE9YpG11l87HF-00hdglw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/o7Y5UEIfWNJUVPvLHZHrsg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/qouoguYERCiecO0ySIsL2A" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/rjQyvGTmNJoTsIc9-9dGjQ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/wJY7KEf5-lsrjrI3EVxjzg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/xQmnyaE2GKDn6ibLAQ7AZA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/META-INF/persistence.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/conf/Router.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/Action.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/ActionFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/BookmarkAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/GetBookmarksAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/GetSubscriptionsAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/GetUserComicsAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/GetUserInfoAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoadAccountAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoadAuthorAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoadComicAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoadDashboardAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoadDrawAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoadUploadAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoginAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LogoutAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/SearchAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/SignupAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/StartupAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/SubscribeAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/UpdateBioAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/dao/BookmarksDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/dao/ComicDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/dao/SearchDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/dao/SubscriptionsDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/dao/UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/db/db.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/filters/Filter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/models/Bookmark.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/models/Issue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/models/Series.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/models/Subscription.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/models/UserAcct.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/servlets/Serve.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/servlets/ServeUpdateImg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/servlets/UpdateImg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/servlets/UploadComic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/servlets/UploadImg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/appengine-api-1.0-sdk-1.9.32.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/appengine-api-labs-1.9.32.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/appengine-endpoints-deps.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/appengine-endpoints.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/appengine-jsr107cache-1.9.32.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/datanucleus-appengine-1.0.10.final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/datanucleus-core-1.1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/datanucleus-jpa-1.1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/geronimo-jpa_3.0_spec-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/jdo2-api-2.3-eb.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/jsr107cache-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/libservice.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.35-bin.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/account.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/author.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/comic.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/account.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/comic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/literallycanvas.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/nav.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/scroll.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/search.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/signup.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/toolbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/upload.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/draw.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/indigo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/pink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/violet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/checkerboard-8x8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/dashed-line.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/ellipse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/eraser.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/eyedropper.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/fluffy-thoughtbub.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/hue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/line-with-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/line.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/pan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/paneltemplates/none.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/paneltemplates/template1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/paneltemplates/template2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/paneltemplates/template3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/paneltemplates/template4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/pencil.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/polygon-cancel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/polygon-closed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/polygon-open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/polygon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/rectangle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/redo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/round-speechbub.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/saturation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/screenshot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/square-speechbub.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/template.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/text.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/thoughtbub.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/undo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/zoom-in.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/zoom-out.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/user/10000.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/user/default.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/user/mckenna.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/lc-custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/literallycanvas-core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/literallycanvas-core.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/jslibs.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/nav.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/search.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/1/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/1/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/1/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/1/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/1/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/2/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/2/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/2/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/2/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/2/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/3/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/3/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/3/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/3/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/3/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/thumbnail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/1/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/1/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/2/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/2/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/2/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/2/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/thumbnail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Judge Dredd/1/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Judge Dredd/2/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Judge Dredd/thumbnail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/The Avengers/1/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/The Avengers/thumbnail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/signup.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/upload.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/META-INF/persistence.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/conf/Router.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/Action.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/ActionFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/BookmarkAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/GetBookmarksAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/GetSubscriptionsAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/GetUserComicsAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/GetUserInfoAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoadAccountAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoadAuthorAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoadComicAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoadDashboardAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoadDrawAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoadUploadAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoginAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LogoutAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/SearchAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/SignupAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/StartupAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/SubscribeAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/UpdateBioAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/dao/BookmarksDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/dao/ComicDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/dao/SearchDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/dao/SubscriptionsDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/dao/UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/db/db.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/filters/Filter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/models/Bookmark.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/models/Issue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/models/Series.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/models/Subscription.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/models/UserAcct.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/servlets/Serve.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/servlets/ServeUpdateImg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/servlets/UpdateImg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/servlets/UploadComic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/servlets/UploadImg.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/filters/Filter.java" afterPath="$PROJECT_DIR$/src/filters/Filter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/ServeUploadComic.java" afterPath="$PROJECT_DIR$/src/servlets/ServeUploadComic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/UploadComic.java" afterPath="$PROJECT_DIR$/src/servlets/UploadComic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/upload.jsp" afterPath="$PROJECT_DIR$/web/upload.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/toolbar.css" afterPath="$PROJECT_DIR$/web/css/toolbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/draw.jsp" afterPath="$PROJECT_DIR$/web/draw.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/lc-custom.js" afterPath="$PROJECT_DIR$/web/js/lc-custom.js" />
     </list>
     <ignored path="dotcomics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -263,81 +28,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="UploadImg.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlets/UploadImg.java">
+      <file leaf-file-name="draw.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/draw.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+            <state vertical-scroll-proportion="-11.307693">
+              <caret line="158" column="16" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <file leaf-file-name="lc-custom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/lc-custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.576923">
-              <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+            <state vertical-scroll-proportion="-7.6896553">
+              <caret line="1119" column="12" selection-start-line="1119" selection-start-column="12" selection-end-line="1119" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/upload.jsp">
+      <file leaf-file-name="toolbar.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/css/toolbar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45808968">
-              <caret line="95" column="66" selection-start-line="95" selection-start-column="66" selection-end-line="95" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Serve.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlets/Serve.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServeUpdateImg.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlets/ServeUpdateImg.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Filter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/filters/Filter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="52" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UploadComic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlets/UploadComic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="48" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServeUploadComic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlets/ServeUploadComic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="76" selection-start-line="59" selection-start-column="76" selection-end-line="59" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.44837758">
+              <caret line="151" column="21" selection-start-line="151" selection-start-column="21" selection-end-line="151" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -373,14 +88,7 @@
         <option value="$PROJECT_DIR$/src/controllers/GetSubscriptionsAction.java" />
         <option value="$PROJECT_DIR$/src/models/Subscription.java" />
         <option value="$PROJECT_DIR$/web/css/nav.css" />
-        <option value="$PROJECT_DIR$/web/css/toolbar.css" />
-        <option value="$PROJECT_DIR$/web/css/toolbar.css" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
-        <option value="$PROJECT_DIR$/web/css/toolbar.css" />
-        <option value="$PROJECT_DIR$/web/css/toolbar.css" />
-        <option value="$PROJECT_DIR$/web/draw.jsp" />
-        <option value="$PROJECT_DIR$/web/js/lc-custom.js" />
-        <option value="$PROJECT_DIR$/web/js/lc-custom.js" />
         <option value="$PROJECT_DIR$/src/controllers/SignupAction.java" />
         <option value="$PROJECT_DIR$/src/controllers/GetBookmarksAction.java" />
         <option value="$PROJECT_DIR$/src/controllers/BookmarkAction.java" />
@@ -415,6 +123,13 @@
         <option value="$PROJECT_DIR$/src/filters/Filter.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/upload.jsp" />
+        <option value="$PROJECT_DIR$/web/css/toolbar.css" />
+        <option value="$PROJECT_DIR$/web/css/toolbar.css" />
+        <option value="$PROJECT_DIR$/web/css/toolbar.css" />
+        <option value="$PROJECT_DIR$/web/js/lc-custom.js" />
+        <option value="$PROJECT_DIR$/web/js/lc-custom.js" />
+        <option value="$PROJECT_DIR$/web/draw.jsp" />
+        <option value="$PROJECT_DIR$/web/css/toolbar.css" />
       </list>
     </option>
   </component>
@@ -431,10 +146,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1364" />
-    <option name="height" value="726" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -461,9 +176,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -524,11 +236,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="servlets" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -542,12 +254,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -572,7 +291,7 @@
       <recent name="C:\Users\Jessica\Documents\Repositories\dotcomics\src\filters" />
     </key>
   </component>
-  <component name="RunManager" selected="Google App Engine Deployment.Google App Engine Deployment">
+  <component name="RunManager" selected="Google AppEngine Dev Server.AppEngine Dev 1.9.32">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -918,36 +637,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1042,21 +731,6 @@
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
-    </configuration>
-    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
       <method />
     </configuration>
     <configuration default="false" name="Google App Engine Deployment" type="google-app-engine-deploy" factoryName="Google App Engine Deployment" server-name="Google App Engine">
@@ -1185,11 +859,12 @@
       <workItem from="1462513283079" duration="243000" />
       <workItem from="1462513800891" duration="4313000" />
       <workItem from="1463275200652" duration="4522000" />
+      <workItem from="1463341054200" duration="7943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244081000" />
+    <option name="totallyTimeSpent" value="252024000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1201,37 +876,37 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3305174" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18098159" sideWeight="0.49382716" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18098159" sideWeight="0.50617284" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935154" sideWeight="0.48865354" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18078668" sideWeight="0.49382716" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18098159" sideWeight="0.50617284" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1276,6 +951,80 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/servlets/UploadImg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/upload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/Serve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/ServeUpdateImg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filters/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="52" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/UploadComic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="48" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/ServeUploadComic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="76" selection-start-line="59" selection-start-column="76" selection-end-line="59" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/account.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1288,7 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1304,7 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1335,7 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1351,15 +1097,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="915" column="104" selection-start-line="915" selection-start-column="104" selection-end-line="915" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8435013">
-          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1389,7 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.5827587">
           <caret line="901" column="25" selection-start-line="901" selection-start-column="25" selection-end-line="901" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1397,7 +1133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1425,19 +1160,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/Serve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/LoadUploadAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.54545456">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1461,7 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.11079545">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1469,54 +1194,157 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.576923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/ServeUpdateImg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/UploadComic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="48" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/filters/Filter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="52" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/ServeUploadComic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="76" selection-start-line="59" selection-start-column="76" selection-end-line="59" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/upload.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45808968">
+        <state vertical-scroll-proportion="0.4793233">
           <caret line="95" column="66" selection-start-line="95" selection-start-column="66" selection-end-line="95" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/Serve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03046595">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/ServeUpdateImg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7258065">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filters/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36021507">
+          <caret line="33" column="52" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/UploadComic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60394263">
+          <caret line="37" column="48" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/ServeUploadComic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7258065">
+          <caret line="59" column="76" selection-start-line="59" selection-start-column="76" selection-end-line="59" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69863015">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/literallycanvas-core.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="25.40548">
+          <caret line="1371" column="45" selection-start-line="1371" selection-start-column="40" selection-end-line="1371" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/scroll.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="68.46154">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/literallycanvas-core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3345935">
+          <caret line="3498" column="12" selection-start-line="3498" selection-start-column="12" selection-end-line="3498" selection-end-column="12" />
+          <folding>
+            <marker date="1463341045304" expanded="true" signature="141588:141613" placeholder="..." />
+            <marker date="1463341045304" expanded="true" signature="141614:142025" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2781955">
+          <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/draw.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.307693">
+          <caret line="158" column="16" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/lc-custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6896553">
+          <caret line="1119" column="12" selection-start-line="1119" selection-start-column="12" selection-end-line="1119" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/toolbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44837758">
+          <caret line="151" column="21" selection-start-line="151" selection-start-column="21" selection-end-line="151" selection-end-column="21" />
           <folding />
         </state>
       </provider>
