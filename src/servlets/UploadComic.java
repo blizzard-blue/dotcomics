@@ -35,7 +35,7 @@ public class UploadComic extends HttpServlet {
         Map<String, List<BlobKey>> blobs = blobstoreService.getUploads(request);
         List<BlobKey> blobKeys = blobs.get("page");
 
-        response.sendRedirect("/serve?blob-key=" + blobKeys.get(0).getKeyString() + "&email=" + user.getEmail() + "&uploadcomic=true&title=" + title + "&series=" + series + "&genre=" + genre + "&description=" + description);
+        response.sendRedirect("/serveuploadcomic?blob-key=" + blobKeys.get(0).getKeyString() + "&email=" + user.getEmail() + "&title=" + title + "&series=" + series + "&genre=" + genre + "&description=" + description);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
