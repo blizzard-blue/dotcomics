@@ -47,6 +47,7 @@ public class SearchDao {
                 String desc = rs.getString("description");
                 s.setDescription(desc);
                 s.setGenre(rs.getString("genre"));
+                s.setCoverimgpath(rs.getString("coverimgpath"));
                 series.add(s);
             }
 

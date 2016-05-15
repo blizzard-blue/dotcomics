@@ -266,6 +266,18 @@ public class ComicDao {
 //        return pages;
 //    }
 
+    public List<Series> filterByGenre(String genre){
+        List<Series> filteredseries = new ArrayList<Series>();
+
+        for(Series s : series){
+            if(genre.equalsIgnoreCase(s.getGenre()))
+                filteredseries.add(s);
+
+        }
+
+        return filteredseries;
+    }
+
     public int getNextIssuePage(int comicid){
         int page = -1;
 

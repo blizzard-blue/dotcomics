@@ -1,0 +1,31 @@
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand{
+    padding: 5;
+
+}
+.navbar-default .navbar-nav>li>a{
+    color: white;
+
+}
+.navbar-default{
+    background-color: #d43f3a;
+    border-style: none;
+    border-radius: 0;
+
+}
+.navbar-brand img {
+    height: 40px;
+}
+
+.scroll-dd {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background-color: #d43f3a;
+}
