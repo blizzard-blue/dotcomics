@@ -32,7 +32,7 @@ public class UpdateImg extends HttpServlet {
         Map<String, List<BlobKey>> blobs = blobstoreService.getUploads(request);
         List<BlobKey> blobKeys = blobs.get("profilePic");
 
-        response.sendRedirect("/serve?blob-key=" + blobKeys.get(0).getKeyString() + "&email=" + user.getEmail() + "&updateImg=true");
+        response.sendRedirect("/serveupdateimg?blob-key=" + blobKeys.get(0).getKeyString() + "&email=" + user.getEmail());
         }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

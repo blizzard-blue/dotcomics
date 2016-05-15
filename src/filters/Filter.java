@@ -25,7 +25,11 @@ public class Filter implements javax.servlet.Filter {
             chain.doFilter(req, resp);
         } else if(path.startsWith("/uploadprofpic")){
             chain.doFilter(req, resp);
+        } else if(path.startsWith("/updateprofpic")){
+            chain.doFilter(req, resp);
         } else if(path.startsWith("/serve")){
+            chain.doFilter(req, resp);
+        } else if(path.startsWith("/serveupdateimg")){
             chain.doFilter(req, resp);
         } else {
             // Delegate to your front controller.

@@ -31,6 +31,7 @@ public class ActionFactory {
         actions.put("GET/bookmark", new BookmarkAction());
         actions.put("GET/updatebio", new UpdateBioAction());
         actions.put("GET/subscribe", new SubscribeAction());
+        actions.put("POST/test", new TestAction());
     }
 
     public static ActionFactory getInstance() {
