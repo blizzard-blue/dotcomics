@@ -40,35 +40,35 @@ public class Serve extends HttpServlet {
 
         HttpSession session = request.getSession(true);
 
-        if(request.getParameter("uploadcomic").equals("true") && request.getParameter("uploadcomic") != null){
-            ComicDao cd = new ComicDao();
-            String series = request.getParameter("series");
-            String title = request.getParameter("title");
-            String genre = request.getParameter("genre");
-            String description = request.getParameter("description");
-            String email = request.getParameter("email");
-
-            Series s = cd.getSeries(series);
-            // check if series exists for current user in session, if not create one
-            if(s == null){
-                cd.addSeries(series, email, description, genre, url);
-                cd.addIssue(title, email, series);
-                int comicid = cd.getIssueId(series, title);
-                cd.addPage(comicid, 1, url);
-            } else{
-                Issue i = cd.getIssue(series, title);
-                if(i == null){
-                    cd.addIssue(title, email, series);
-                    int comicid = cd.getIssueId(series, title);
-                    cd.addPage(comicid, 1, url);
-                } else {
-                    int comicid = cd.getIssueId(series, title);
-                    int pagenum = cd.getNextIssuePage(comicid);
-                    cd.addPage(comicid, pagenum, url);
-                }
-            }
-            response.sendRedirect("/upload?series=" + series + "&issue=" + title);
-        }else{
+//        if(request.getParameter("uploadcomic").equals("true") && request.getParameter("uploadcomic") != null){
+//            ComicDao cd = new ComicDao();
+//            String series = request.getParameter("series");
+//            String title = request.getParameter("title");
+//            String genre = request.getParameter("genre");
+//            String description = request.getParameter("description");
+//            String email = request.getParameter("email");
+//
+//            Series s = cd.getSeries(series);
+//            // check if series exists for current user in session, if not create one
+//            if(s == null){
+//                cd.addSeries(series, email, description, genre, url);
+//                cd.addIssue(title, email, series);
+//                int comicid = cd.getIssueId(series, title);
+//                cd.addPage(comicid, 1, url);
+//            } else{
+//                Issue i = cd.getIssue(series, title);
+//                if(i == null){
+//                    cd.addIssue(title, email, series);
+//                    int comicid = cd.getIssueId(series, title);
+//                    cd.addPage(comicid, 1, url);
+//                } else {
+//                    int comicid = cd.getIssueId(series, title);
+//                    int pagenum = cd.getNextIssuePage(comicid);
+//                    cd.addPage(comicid, pagenum, url);
+//                }
+//            }
+//            response.sendRedirect("/upload?series=" + series + "&issue=" + title);
+//        }else{
             if(request.getParameter("email") != null){
                 UserDao ud = new UserDao();
                 ud.updateImg(url, request.getParameter("email"));
@@ -77,10 +77,10 @@ public class Serve extends HttpServlet {
                 session.setAttribute("imgurl", u.getProfileImg());
             }
 
-            if(request.getParameter("updateImg").equals("true"))
-                response.sendRedirect("/account?author=" + u.getUsername());
-            else
+//            if(request.getParameter("updateImg").equals("true"))
+//                response.sendRedirect("/account?author=" + u.getUsername());
+//            else
                 response.sendRedirect("/");
-        }
+//        }
     }
 }

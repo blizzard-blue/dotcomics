@@ -52,4 +52,20 @@
         <servlet-name>UploadComic</servlet-name>
         <url-pattern>/uploadcomic</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ServeUpdateImg</servlet-name>
+        <servlet-class>servlets.ServeUpdateImg</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServeUpdateImg</servlet-name>
+        <url-pattern>/serveupdateimg</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServeUploadComic</servlet-name>
+        <servlet-class>servlets.ServeUploadComic</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServeUploadComic</servlet-name>
+        <url-pattern>/serveuploadcomic</url-pattern>
+    </servlet-mapping>
 </web-app>
