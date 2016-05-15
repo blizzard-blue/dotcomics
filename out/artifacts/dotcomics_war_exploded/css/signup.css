@@ -1,0 +1,14 @@
+#signupformbox{
+    margin: 0 auto;
+    width: 60%;
+}
+#signupHeading{
+    text-align: center;
+}
+
+#nameBox{
+    width: 20%;
+}
+#buttonDiv{
+    text-align: center;
+}

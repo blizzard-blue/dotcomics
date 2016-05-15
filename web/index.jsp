@@ -60,10 +60,10 @@
 
                 for(var i = 0; i < data.all_series.length;i++){
                     if(i == 0) {
-                        $(".carousel-inner").append("<div class=\"item active\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.all_series[i].title + "\"><img src=\"" + data.all_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.all_series[i].title + "\">" + data.all_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.all_series[i].author +"\">" + data.all_series[i].author + "</a></p></div></div></div>")
+                        $(".carousel-inner").append("<div class=\"item active\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.all_series[i].title + "\"><img src=\"" + data.all_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.all_series[i].title + "\">" + data.all_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.all_series[i].author +"\">" + data.all_series[i].author + "</a></p><p class=\"imgDesc\" id =\"scroll3-" + (i + 1) + "\">" + data.all_series[i].description + "</p></div></div></div>")
                     }
                     else {
-                        $(".carousel-inner").append("<div class=\"item\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.all_series[i].title + "\"><img src=\"" + data.all_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.all_series[i].title + "\">" + data.all_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.all_series[i].author +"\">" + data.all_series[i].author + "</a></p></div></div></div>")
+                        $(".carousel-inner").append("<div class=\"item\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.all_series[i].title + "\"><img src=\"" + data.all_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.all_series[i].title + "\">" + data.all_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.all_series[i].author +"\">" + data.all_series[i].author + "</a></p><p class=\"imgDesc\" id =\"scroll3-" + (i + 1) + "\">" + data.all_series[i].description + "</p></div></div></div>")
                     }
                 }
 
@@ -74,7 +74,7 @@
                 $(document).on('mouseleave', '.carousel', function() {
                     $(this).carousel('pause');
                 });
-                console.log("help")
+
                 $('.carousel .item').each(function(){
                     var next = $(this).next();
                     if (!next.length) {
@@ -89,7 +89,6 @@
                         }
 
                         next.children(':first-child').clone().appendTo($(this));
-                        console.log("help")
                     }
                 });
 
