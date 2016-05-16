@@ -903,6 +903,7 @@ $( document ).ready(function() {
         var title = document.forms["draw-form"].title.value;
         var genre = document.forms["draw-form"].genre.value;
         var description = document.forms["draw-form"].description.value;
+        $('#myModal').modal('show');
 
         $.ajax({
             url: 'https://api.imgur.com/3/image',

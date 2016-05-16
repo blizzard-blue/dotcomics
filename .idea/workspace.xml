@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="2e331dc0-528a-4722-b4f4-b76af2b19904" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/LoadDashboardAction.java" afterPath="$PROJECT_DIR$/src/controllers/LoadDashboardAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/comic.jsp" afterPath="$PROJECT_DIR$/web/comic.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/account.css" afterPath="$PROJECT_DIR$/web/css/account.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/comic.css" afterPath="$PROJECT_DIR$/web/css/comic.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/toolbar.css" afterPath="$PROJECT_DIR$/web/css/toolbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/draw.jsp" afterPath="$PROJECT_DIR$/web/draw.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/lc-custom.js" afterPath="$PROJECT_DIR$/web/js/lc-custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/upload.jsp" afterPath="$PROJECT_DIR$/web/upload.jsp" />
     </list>
     <ignored path="dotcomics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,15 +33,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoadDashboardAction.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoadDashboardAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/LoadDashboardAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5120482">
+            <state vertical-scroll-proportion="0.0">
               <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1111#1119#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.41331658">
+              <caret line="1604" column="0" selection-start-line="1604" selection-start-column="0" selection-end-line="1604" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,7 +135,6 @@
         <option value="$PROJECT_DIR$/src/models/Issue.java" />
         <option value="$PROJECT_DIR$/src/controllers/LoadUploadAction.java" />
         <option value="$PROJECT_DIR$/src/controllers/LoadComicAction.java" />
-        <option value="$PROJECT_DIR$/web/comic.jsp" />
         <option value="$PROJECT_DIR$/src/controllers/LoadUploadAction.java" />
         <option value="$PROJECT_DIR$/src/servlets/Serve.java" />
         <option value="$PROJECT_DIR$/src/servlets/ServeUpdateImg.java" />
@@ -129,21 +144,18 @@
         <option value="$PROJECT_DIR$/src/servlets/ServeUploadComic.java" />
         <option value="$PROJECT_DIR$/src/filters/Filter.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/upload.jsp" />
-        <option value="$PROJECT_DIR$/web/css/toolbar.css" />
-        <option value="$PROJECT_DIR$/web/css/toolbar.css" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/controllers/LoadDashboardAction.java" />
         <option value="$PROJECT_DIR$/src/dao/ComicDao.java" />
         <option value="$PROJECT_DIR$/web/account.jsp" />
-        <option value="$PROJECT_DIR$/web/draw.jsp" />
-        <option value="$PROJECT_DIR$/web/css/toolbar.css" />
-        <option value="$PROJECT_DIR$/web/css/toolbar.css" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/controllers/ActionFactory.java" />
         <option value="$PROJECT_DIR$/src/controllers/DrawUploadAction.java" />
         <option value="$PROJECT_DIR$/web/js/lc-custom.js" />
         <option value="$PROJECT_DIR$/web/js/lc-custom.js" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/controllers/LoadDashboardAction.java" />
+        <option value="$PROJECT_DIR$/web/comic.jsp" />
+        <option value="$PROJECT_DIR$/web/css/comic.css" />
+        <option value="$PROJECT_DIR$/web/css/account.css" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -344,6 +356,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dotcomics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dotcomics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -829,6 +855,21 @@
         <artifact>dotcomics:war exploded</artifact>
       </server-settings>
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <ConfigurationWrapper VM_VAR="" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="" RunnerId="Debug">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -946,12 +987,12 @@
       <workItem from="1463365502518" duration="2194000" />
       <workItem from="1463375736937" duration="579000" />
       <workItem from="1463386386044" duration="1724000" />
-      <workItem from="1463403776045" duration="1352000" />
+      <workItem from="1463402497759" duration="1902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258812000" />
+    <option name="totallyTimeSpent" value="259388000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1077,12 +1118,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1463403752102" expanded="true" signature="365:715" placeholder="{...}" />
-            <marker date="1463403752102" expanded="true" signature="761:917" placeholder="{...}" />
-            <marker date="1463403752102" expanded="true" signature="965:1363" placeholder="{...}" />
-            <marker date="1463403752102" expanded="true" signature="1035:1357" placeholder="{...}" />
-            <marker date="1463403752102" expanded="true" signature="1371:1561" placeholder="//..." />
-            <marker date="1463403752102" expanded="true" signature="31592:31595" placeholder="//..." />
+            <marker date="1463405271246" expanded="true" signature="365:715" placeholder="{...}" />
+            <marker date="1463405271246" expanded="true" signature="761:917" placeholder="{...}" />
+            <marker date="1463405271246" expanded="true" signature="965:1363" placeholder="{...}" />
+            <marker date="1463405271246" expanded="true" signature="1035:1357" placeholder="{...}" />
+            <marker date="1463405271246" expanded="true" signature="1371:1561" placeholder="//..." />
+            <marker date="1463405271246" expanded="true" signature="31629:31632" placeholder="//..." />
           </folding>
         </state>
       </provider>
@@ -1173,6 +1214,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1209,13 +1251,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5323529">
-          <caret line="1088" column="14" selection-start-line="1088" selection-start-column="14" selection-end-line="1088" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1339,12 +1374,12 @@
         <state vertical-scroll-proportion="0.54221857">
           <caret line="889" column="27" selection-start-line="889" selection-start-column="27" selection-end-line="889" selection-end-column="27" />
           <folding>
-            <marker date="1463403752102" expanded="true" signature="365:715" placeholder="{...}" />
-            <marker date="1463403752102" expanded="true" signature="761:917" placeholder="{...}" />
-            <marker date="1463403752102" expanded="true" signature="965:1363" placeholder="{...}" />
-            <marker date="1463403752102" expanded="true" signature="1035:1357" placeholder="{...}" />
-            <marker date="1463403752102" expanded="true" signature="1371:1561" placeholder="//..." />
-            <marker date="1463403752102" expanded="true" signature="31592:31595" placeholder="//..." />
+            <marker date="1463405271246" expanded="true" signature="365:715" placeholder="{...}" />
+            <marker date="1463405271246" expanded="true" signature="761:917" placeholder="{...}" />
+            <marker date="1463405271246" expanded="true" signature="965:1363" placeholder="{...}" />
+            <marker date="1463405271246" expanded="true" signature="1035:1357" placeholder="{...}" />
+            <marker date="1463405271246" expanded="true" signature="1371:1561" placeholder="//..." />
+            <marker date="1463405271246" expanded="true" signature="31629:31632" placeholder="//..." />
           </folding>
         </state>
       </provider>
@@ -1390,12 +1425,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/LoadDashboardAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5120482">
+        <state vertical-scroll-proportion="0.0">
           <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1111#1119#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.41331658">
+          <caret line="1604" column="0" selection-start-line="1604" selection-start-column="0" selection-end-line="1604" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

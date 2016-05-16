@@ -19,6 +19,22 @@
 <body>
 <jsp:directive.include file="/nav.jsp" />
 
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Page successfully uploaded.</p>
+                <button type="button" class="btn btn-info" data-dismiss="modal">Upload Another Page</button>
+                <a href="/account?author=${user.username}" class="btn btn-success" role="button">I'm Done</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <div class="col-md-2" id="toolbar-wrapper">
     <form action="<%= blobstoreService.createUploadUrl("/uploadcomic") %>" method="POST" enctype="multipart/form-data">
         <div id="leftDiv" class="toolbar-nav">
@@ -38,7 +54,7 @@
                     <option ${genre == 'Comedy' ? 'selected' : ''}>Comedy</option>
                     <option ${genre == 'Horror' ? 'selected' : ''}>Horror</option>
                     <option ${genre == 'Romance' ? 'selected' : ''}>Romance</option>
-                    <option ${genre == 'Sci-Fi' ? 'selected' : ''}>Sci-Fi</option>
+                    <option ${genre == 'scifi' ? 'selected' : ''}>Sci-Fi</option>
                     <option ${genre == 'Superhero' ? 'selected' : ''}>Superhero</option>
                 </select>
             </div>
@@ -87,6 +103,9 @@
         success : function(data) {
             var pages = data.page_urls;
             console.log(pages);
+
+            if(pages.length > 0)
+                $('#myModal').modal('show');
 
             for(var i=0; i<pages.length; i++){
 

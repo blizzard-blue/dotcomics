@@ -21,8 +21,7 @@ html, body {
 }
 
 #canvas-wrapper {
-    width: auto;
-    height: auto;
+    background-color: lightgrey;
     display: inline-block;
 }
 
@@ -65,12 +64,16 @@ html, body {
 }
 
 #speechbub {
-    top: 156;
+    top: 90;
+}
+
+#colors {
+    top: 120;
 }
 
 .tool-slideout {
     position: absolute;
-    left: 72;
+    left: 90;
     width: 200px;
     padding: 10px;
     background-color: #f2f2f2;
@@ -161,6 +164,8 @@ html, body {
 .literally {
     width: 400px;
     height: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #draw-form {
