@@ -147,11 +147,18 @@
 
 
         <!-- /#toolbar-wrapper -->
+        <%--<button id="add-tab">+</button>--%>
 
-        <div id="canvas-wrapper">
-            <div class="literally core"></div>
-        </div>
-
+        <%--<div id="tabs">--%>
+            <%--<ul id="tab-wrapper">--%>
+                <%--<li><a href='#tab1'>#1</a></li>--%>
+            <%--</ul>--%>
+            <%--<div id="tab1">--%>
+                <div id='canvas-wrapper'>
+                    <div class='literally core'></div>
+                </div>
+            <%--</div>--%>
+        <%--</div>--%>
         <div class="popup-window" id="template-popup" style="display: none">
             <table id="template-table">
                 <tr>

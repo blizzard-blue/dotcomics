@@ -32,6 +32,7 @@ public class ActionFactory {
         actions.put("GET/updatebio", new UpdateBioAction());
         actions.put("GET/subscribe", new SubscribeAction());
         actions.put("GET/getwork", new GetUserComicsAction());
+        actions.put("GET/deletecomic", new DeleteComicAction());
     }
 
     public static ActionFactory getInstance() {

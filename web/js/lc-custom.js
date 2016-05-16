@@ -893,5 +893,240 @@ console.log(LC.tools);
                     }
                 });
     }
-
+    //
+    //$("div#tabs").tabs();
+    //$("button#add-tab").click(function() {
+    //
+    //    var num_tabs = $("div#tabs ul li").length + 1;
+    //
+    //    $("div#tabs ul").append(
+    //        "<li><a href='#tab" + num_tabs + "'>#" + num_tabs + "</a></li>"
+    //    );
+    //    $("div#tabs").append(
+    //        "<div id='tab" + num_tabs + "'><div id='canvas-wrapper'><div class='literally core'></div></div></div>"
+    //    );
+    //
+    //    var backgroundImage = new Image();
+    //    var id= "none";
+    //    backgroundImage.src = '/img/tools/paneltemplates/' + id +  '.png';
+    //    var backgroundShape=LC.createShape(
+    //        'Image', {x: 20, y: -5, image: backgroundImage, scale: 1}
+    //    );
+    //    lc = LC.init(document.getElementsByClassName('literally core')[num_tabs-1], {backgroundColor: '#ffffff',
+    //        tools: LC.defaultTools.concat([Speechbub]), backgroundShapes: [backgroundShape]});
+    //
+    //    console.log(LC.tools);
+    //    var tools = [
+    //        {
+    //            name: 'pencil',
+    //            el: document.getElementById('tool-pencil'),
+    //            tool: new LC.tools.Pencil(lc)
+    //        },
+    //        {
+    //            name: 'eraser',
+    //            el: document.getElementById('tool-eraser'),
+    //            tool: new LC.tools.Eraser(lc),
+    //            stokeWidth: lc.strokeWidth
+    //        },
+    //        {
+    //            name: 'speechbub',
+    //            el: document.getElementById('tool-speechbub'),
+    //            tool: new Speechbub(lc)
+    //        },
+    //        {
+    //            name: 'speechbub',
+    //            el: document.getElementById('tool-speechbub1'),
+    //            tool: new Speechbub(lc)
+    //        },
+    //        {
+    //            name: 'roundspeechbub',
+    //            el: document.getElementById('tool-speechbub2'),
+    //            tool: new RoundSpeechbub(lc)
+    //        },
+    //        {
+    //            name: 'thoughtbub',
+    //            el: document.getElementById('tool-speechbub3'),
+    //            tool: new Thoughtbub(lc)
+    //        },
+    //        {
+    //            name: 'pan',
+    //            el: document.getElementById('tool-pan'),
+    //            tool: new LC.tools.Pan(lc)
+    //        },
+    //        {
+    //            name: 'text',
+    //            el: document.getElementById('tool-text'),
+    //            tool: new LC.tools.Text(lc)
+    //        },
+    //        {
+    //            name: 'eyedropper',
+    //            el: document.getElementById('tool-eyedropper'),
+    //            tool: new LC.tools.Eyedropper(lc)
+    //        },
+    //        {
+    //            name: 'polygon',
+    //            el: document.getElementById('tool-polygon'),
+    //            tool: new LC.tools.Polygon(lc)
+    //        },
+    //        {
+    //            name: 'rectangle',
+    //            el: document.getElementById('tool-rectangle'),
+    //            tool: new LC.tools.Rectangle(lc)
+    //        },
+    //        {
+    //            name: 'line',
+    //            el: document.getElementById('tool-line'),
+    //            tool: new LC.tools.Line(lc)
+    //        },
+    //        {
+    //            name: 'circle',
+    //            el: document.getElementById('tool-circle'),
+    //            tool: new LC.tools.Ellipse(lc)
+    //        },
+    //        {
+    //            name: new LC.tools.SelectShape(lc),
+    //            el: document.getElementById('tool-select'),
+    //            tool: new LC.tools.SelectShape(lc)
+    //        }
+    //
+    //
+    //
+    //
+    //
+    //    ];
+    //
+    //    var colors = [
+    //        {
+    //            name: 'black',
+    //            el: document.getElementById('colorTool-black'),
+    //            color: '#000000'
+    //        },{
+    //            name: 'blue',
+    //            el: document.getElementById('colorTool-blue'),
+    //            color: '#0000FF'
+    //        },{
+    //            name: 'red',
+    //            el: document.getElementById('colorTool-red'),
+    //            color: '#ff0000'
+    //        },{
+    //            name: 'white',
+    //            el: document.getElementById("colorTool-white"),
+    //            color: '#FFFFFF'
+    //        },{
+    //            name: 'pink',
+    //            el: document.getElementById("colorTool-pink"),
+    //            color: '#FFC0CB'
+    //        },{
+    //            name: 'orange',
+    //            el: document.getElementById("colorTool-orange"),
+    //            color: '#FFA500'
+    //        },{
+    //            name: 'yellow',
+    //            el: document.getElementById("colorTool-yellow"),
+    //            color: '#FFFF00'
+    //        },{
+    //            name: 'green',
+    //            el: document.getElementById("colorTool-green"),
+    //            color: '#008000'
+    //        },{
+    //            name: 'indigo',
+    //            el: document.getElementById("colorTool-indigo"),
+    //            color: '#191970'
+    //        },{
+    //            name: 'violet',
+    //            el: document.getElementById("colorTool-violet"),
+    //            color: '#4B0082'
+    //        }
+    //    ];
+    //
+    //    var setCurrentByName = function(ary, val){
+    //        ary.forEach(function(i){
+    //            $(i.el).toggleClass('current',(i.name == val));
+    //        });
+    //    };
+    //
+    //    colors.forEach(function(clr) {
+    //        $(clr.el).click(function() {
+    //            lc.setColor('primary', clr.color)
+    //            setCurrentByName(colors, clr.name);
+    //        })
+    //    });
+    //
+    //    setCurrentByName(colors, colors[0].name);
+    //
+    //    var activateTool = function(t) {
+    //        lc.setTool(t.tool);
+    //    }
+    //
+    //    tools.forEach(function(t) {
+    //        t.el.style.cursor = "pointer";
+    //        t.el.onclick = function(e) {
+    //            e.preventDefault();
+    //            activateTool(t);
+    //        };
+    //    });
+    //    activateTool(tools[0]);
+    //
+    //    $("#firstSize").click(function(){
+    //        tools[0].tool.strokeWidth = 1;
+    //        tools[1].tool.strokeWidth = 1;
+    //    });
+    //
+    //    $("#secondSize").click(function(){
+    //        tools[0].tool.strokeWidth = 2;
+    //        tools[1].tool.strokeWidth = 2;
+    //    });
+    //
+    //    $("#thirdSize").click(function(){
+    //        tools[0].tool.strokeWidth = 5;
+    //        tools[1].tool.strokeWidth = 5;
+    //    });
+    //
+    //    $("#fourthSize").click(function(){
+    //        tools[0].tool.strokeWidth = 10;
+    //        tools[1].tool.strokeWidth = 10;
+    //    });
+    //
+    //    $("#fifthSize").click(function(){
+    //        tools[0].tool.strokeWidth = 15;
+    //        tools[1].tool.strokeWidth = 15;
+    //    });
+    //
+    //    $("#sixthSize").click(function(){
+    //        tools[0].tool.strokeWidth = 20;
+    //        tools[1].tool.strokeWidth = 20;
+    //    });
+    //
+    //    $("#undo").click(function() {
+    //        if(lc.canUndo()){
+    //            lc.undo();
+    //        }
+    //    })
+    //
+    //    $("#redo").click(function() {
+    //        if(lc.canRedo()){
+    //            lc.redo();
+    //        }
+    //    })
+    //
+    //    $("#tool-zoomin").click(function (){
+    //        lc.zoom(1);
+    //    })
+    //
+    //    $("#tool-zoomout").click(function (){
+    //
+    //        if(lc.scale != 1.0)
+    //            lc.zoom(-1);
+    //    })
+    //
+    //    $("#clear").click(function(){
+    //        lc.clear();
+    //    })
+    //
+    //    $("#tool-fillcolor").click(function(){
+    //        lc.setColor('secondary', lc.getColor('primary'));
+    //    })
+    //
+    //    $("div#tabs").tabs("refresh");
+    //});
 });
