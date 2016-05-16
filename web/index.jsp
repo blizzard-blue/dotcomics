@@ -189,10 +189,7 @@
                 $(document).on('mouseleave', '.carousel', function() {
                     $(this).carousel('pause');
                 });
-<<<<<<< HEAD
-=======
 
->>>>>>> 6a898750363d71a1b9bea77d15b3951ab1275a34
                 $('.carousel .item').each(function(){
                     var next = $(this).next();
                     if (!next.length) {
