@@ -908,7 +908,7 @@ $( document ).ready(function() {
                 "/drawupload",
                 {"series":series,"title":title, "genre":genre, "description":description, "url":url},
                 function(data){
-                    console.log("data: " + data);
+                    //console.log("data: " + data);
                 },
                 "json"
         );

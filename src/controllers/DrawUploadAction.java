@@ -27,39 +27,32 @@ public class DrawUploadAction implements Action {
         String description = request.getParameter("description");
         String url = request.getParameter("url");
 
-//        ComicDao cd = new ComicDao();
-//        UserService userService = UserServiceFactory.getUserService();
-//        User user = userService.getCurrentUser();
-//        String email = user.getEmail();
-//
-//        Series s = cd.getSeries(series);
-//        // check if series exists for current user in session, if not create one
-//        if(s == null){
-//            cd.addSeries(series, email, description, genre, url);
-//            cd.addIssue(title, email, series);
-//            int comicid = cd.getIssueId(series, title);
-//            cd.addPage(comicid, 1, url);
-//        } else{
-//            Issue i = cd.getIssue(series, title);
-//            if(i == null){
-//                cd.addIssue(title, email, series);
-//                int comicid = cd.getIssueId(series, title);
-//                cd.addPage(comicid, 1, url);
-//            } else {
-//                int comicid = cd.getIssueId(series, title);
-//                int pagenum = cd.getNextIssuePage(comicid);
-//                cd.addPage(comicid, pagenum, url);
-//            }
-//        }
+        ComicDao cd = new ComicDao();
+        UserService userService = UserServiceFactory.getUserService();
+        User user = userService.getCurrentUser();
+        String email = user.getEmail();
 
+        Series s = cd.getSeries(series);
+        // check if series exists for current user in session, if not create one
+        if(s == null){
+            cd.addSeries(series, email, description, genre, url);
+            cd.addIssue(title, email, series);
+            int comicid = cd.getIssueId(series, title);
+            cd.addPage(comicid, 1, url);
+        } else{
+            Issue i = cd.getIssue(series, title);
+            if(i == null){
+                cd.addIssue(title, email, series);
+                int comicid = cd.getIssueId(series, title);
+                cd.addPage(comicid, 1, url);
+            } else {
+                int comicid = cd.getIssueId(series, title);
+                int pagenum = cd.getNextIssuePage(comicid);
+                cd.addPage(comicid, pagenum, url);
+            }
+        }
 
-
-//        response.sendRedirect("/upload?series=" + series + "&issue=" + title);
-
-        String base64Image = url.split(",")[1];
-        byte[] imageBytes = javax.xml.bind.DatatypeConverter.parseBase64Binary(base64Image);
-        Image img = ImagesServiceFactory.makeImage(imageBytes);
-
+        response.sendRedirect("/upload?series=" + series + "&issue=" + title);
 
         return null;
     }
