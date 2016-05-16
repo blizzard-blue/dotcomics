@@ -110,6 +110,15 @@
             success : function(data) {
                 console.log(data.action_series);
 
+                for(var i = 0; i < data.featured_series.length;i++){
+                    if(i == 0) {
+                        $("#inner-1").append("<div class=\"item active\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.featured_series[i].title + "\"><img src=\"" + data.featured_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.featured_series[i].title + "\">" + data.featured_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.featured_series[i].author +"\">" + data.featured_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>"+ data.featured_series[i].description +"</p></div></div></div>")
+                    }
+                    else {
+                        $("#inner-1").append("<div class=\"item\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.featured_series[i].title + "\"><img src=\"" + data.featured_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.featured_series[i].title + "\">" + data.featured_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.featured_series[i].author +"\">" + data.featured_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>" + data.featured_series[i].description +"</p></div></div></div>")
+                    }
+                }
+
                 for(var i = 0; i < data.action_series.length;i++){
                     if(i == 0) {
                         $("#inner-2").append("<div class=\"item active\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.action_series[i].title + "\"><img src=\"" + data.action_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.action_series[i].title + "\">" + data.action_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.action_series[i].author +"\">" + data.action_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>"+ data.action_series[i].description +"</p></div></div></div>")
