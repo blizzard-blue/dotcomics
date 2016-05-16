@@ -55,11 +55,8 @@
     position:absolute;
     display:none;
 }
-.user-published-item a button.btn-success {
-    top:25%;
-    left:45%;
-}
+
 .user-published-item a button.btn-danger {
-    top:75%;
+    top:50%;
     left:42%;
 }
