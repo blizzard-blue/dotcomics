@@ -149,7 +149,7 @@
                     <div class="literally core"></div>
                 </div>
 
-                <div id="resizeBar-wrapper" style="display: none;">
+                <div id="resizeBar-wrapper">
                     <ul class="toolbar-at-top">
                         <li>
                             <a id="firstSize">
