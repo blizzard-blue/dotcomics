@@ -84,7 +84,7 @@
                             $("#published-comics").append("<div class=\"row\">");
                         }
                         if(${user.username == author.username}){
-                            $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"><button class=\"btn-success\">Edit</button></a><a href=\"#\" onclick=\"deleteSeries(this);\" value=\"" + series[i].title + "\"><button class=\"btn-danger\">Delete</button></a></div>");
+                            $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"></a><a href=\"#\" onclick=\"deleteSeries(this);\" value=\"" + series[i].title + "\"><button class=\"btn-danger\">Delete</button></a></div>");
                         }
                         else{
                             $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"></a></div>");
