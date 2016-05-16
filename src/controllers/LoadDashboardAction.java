@@ -23,7 +23,7 @@ public class LoadDashboardAction implements Action {
 
         List<Series> ActionSeries = cd.filterByGenre("action");
         List<Series> HorrorSeries = cd.filterByGenre("horror");
-        List<Series> SciFiSeries = cd.filterByGenre("scifi");
+        List<Series> SciFiSeries = cd.filterByGenre("Sci-Fi");
         List<Series> RomanceSeries = cd.filterByGenre("romance");
         List<Series> SuperHeroSeries = cd.filterByGenre("superhero");
         List<Series> ComedySeries = cd.filterByGenre("comedy");

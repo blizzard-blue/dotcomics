@@ -2,15 +2,222 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e331dc0-528a-4722-b4f4-b76af2b19904" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-generated/local_db.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/appengine-web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/META-INF/persistence.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/conf/Router.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/Action.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/ActionFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/BookmarkAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/DeleteComicAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/DrawUploadAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/GetBookmarksAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/GetSubscriptionsAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/GetUserComicsAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/GetUserInfoAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoadAccountAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoadAuthorAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoadComicAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoadDashboardAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoadDrawAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoadTestAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoadUploadAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LoginAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/LogoutAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/SearchAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/SignupAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/StartupAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/SubscribeAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/controllers/UpdateBioAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/dao/BookmarksDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/dao/ComicDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/dao/SearchDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/dao/SubscriptionsDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/dao/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/db/db.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/filters/Filter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/models/Bookmark.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/models/Issue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/models/Series.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/models/Subscription.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/models/UserAcct.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/servlets/Serve.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/servlets/ServeUpdateImg.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/servlets/ServeUploadComic.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/servlets/UpdateImg.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/servlets/UploadComic.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/classes/servlets/UploadImg.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/appengine-api-1.0-sdk-1.9.32.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/appengine-api-labs-1.9.32.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/appengine-endpoints-deps.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/appengine-endpoints.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/appengine-jsr107cache-1.9.32.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/datanucleus-appengine-1.0.10.final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/datanucleus-core-1.1.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/datanucleus-jpa-1.1.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/geronimo-jpa_3.0_spec-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/jdo2-api-2.3-eb.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/jsr107cache-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/libservice.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.35-bin.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/account.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/author.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/comic.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/account.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/comic.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/literallycanvas.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/nav.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/scroll.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/search.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/signup.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/css/upload.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/draw.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/indigo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/orange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/pink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/violet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/colors/yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/checkerboard-8x8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/dashed-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/ellipse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/eraser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/eyedropper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/fluffy-thoughtbub.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/hue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/line-with-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/pan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/paneltemplates/none.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/paneltemplates/template1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/paneltemplates/template2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/paneltemplates/template3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/paneltemplates/template4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/pencil.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/polygon-cancel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/polygon-closed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/polygon-open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/polygon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/rectangle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/redo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/round-speechbub.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/saturation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/square-speechbub.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/template.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/text.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/thoughtbub.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/undo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/zoom-in.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/tools/zoom-out.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/user/10000.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/user/default.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/img/user/mckenna.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/lc-custom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/literallycanvas-core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/literallycanvas-core.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/jslibs.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/nav.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/search.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/1/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/1/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/1/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/1/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/1/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/2/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/2/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/2/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/2/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/2/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/3/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/3/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/3/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/3/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/3/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Deadpool/thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/1/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/1/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/2/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/2/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/2/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/2/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Guardians of the Galaxy/thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Judge Dredd/1/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Judge Dredd/2/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/Judge Dredd/thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/The Avengers/1/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/series/The Avengers/thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/signup.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/test.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/dotcomics_war_exploded/upload.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/META-INF/persistence.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/conf/Router.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/Action.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/ActionFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/BookmarkAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/DeleteComicAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/DrawUploadAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/GetBookmarksAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/GetSubscriptionsAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/GetUserComicsAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/GetUserInfoAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoadAccountAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoadAuthorAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoadComicAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoadDashboardAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoadDrawAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoadTestAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoadUploadAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LoginAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/LogoutAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/SearchAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/SignupAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/StartupAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/SubscribeAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/controllers/UpdateBioAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/dao/BookmarksDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/dao/ComicDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/dao/SearchDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/dao/SubscriptionsDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/dao/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/db/db.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/filters/Filter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/models/Bookmark.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/models/Issue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/models/Series.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/models/Subscription.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/models/UserAcct.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/servlets/Serve.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/servlets/ServeUpdateImg.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/servlets/ServeUploadComic.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/servlets/UpdateImg.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/servlets/UploadComic.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dotcomics/servlets/UploadImg.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/comic.jsp" afterPath="$PROJECT_DIR$/web/comic.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/account.css" afterPath="$PROJECT_DIR$/web/css/account.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/comic.css" afterPath="$PROJECT_DIR$/web/css/comic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/toolbar.css" afterPath="$PROJECT_DIR$/web/css/toolbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/draw.jsp" afterPath="$PROJECT_DIR$/web/draw.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/lc-custom.js" afterPath="$PROJECT_DIR$/web/js/lc-custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/upload.jsp" afterPath="$PROJECT_DIR$/web/upload.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/LoadDashboardAction.java" afterPath="$PROJECT_DIR$/src/controllers/LoadDashboardAction.java" />
     </list>
     <ignored path="dotcomics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,25 +240,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoadDashboardAction.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoadDashboardAction.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controllers/LoadDashboardAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.36144578">
+              <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1111#1119#0" expanded="true" />
+                <element signature="e#1112#1120#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.41331658">
-              <caret line="1604" column="0" selection-start-line="1604" selection-start-column="0" selection-end-line="1604" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="112.02941">
+              <caret line="1388" column="0" selection-start-line="1388" selection-start-column="0" selection-end-line="1388" selection-end-column="0" />
+              <folding>
+                <marker date="1463406615127" expanded="true" signature="59:87847" placeholder="..." />
+                <marker date="1463406615127" expanded="true" signature="98:364" placeholder="..." />
+                <marker date="1463406615127" expanded="true" signature="192:364" placeholder="..." />
+                <marker date="1463406615127" expanded="true" signature="85013:85030" placeholder="..." />
+                <marker date="1463406615127" expanded="true" signature="85013:85048" placeholder="..." />
+                <marker date="1463406615127" expanded="true" signature="85013:85061" placeholder="..." />
+                <marker date="1463406615127" expanded="true" signature="85013:85076" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,7 +359,6 @@
         <option value="$PROJECT_DIR$/src/servlets/ServeUploadComic.java" />
         <option value="$PROJECT_DIR$/src/filters/Filter.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/controllers/LoadDashboardAction.java" />
         <option value="$PROJECT_DIR$/src/dao/ComicDao.java" />
         <option value="$PROJECT_DIR$/web/account.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
@@ -156,6 +370,7 @@
         <option value="$PROJECT_DIR$/web/css/comic.css" />
         <option value="$PROJECT_DIR$/web/css/account.css" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/controllers/LoadDashboardAction.java" />
       </list>
     </option>
   </component>
@@ -286,42 +501,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dotcomics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dotcomics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dotcomics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dotcomics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -355,7 +534,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -992,7 +1171,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259388000" />
+    <option name="totallyTimeSpent" value="260455000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1142,7 +1321,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1111#1119#0" expanded="true" />
+            <element signature="e#1112#1120#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1153,7 +1332,7 @@
           <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1111#1119#0" expanded="true" />
+            <element signature="e#1112#1120#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1214,7 +1393,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1463406615127" expanded="true" signature="59:87847" placeholder="..." />
+            <marker date="1463406615127" expanded="true" signature="98:364" placeholder="..." />
+            <marker date="1463406615127" expanded="true" signature="192:364" placeholder="..." />
+            <marker date="1463406615127" expanded="true" signature="85013:85030" placeholder="..." />
+            <marker date="1463406615127" expanded="true" signature="85013:85048" placeholder="..." />
+            <marker date="1463406615127" expanded="true" signature="85013:85061" placeholder="..." />
+            <marker date="1463406615127" expanded="true" signature="85013:85076" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1423,22 +1610,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/LoadDashboardAction.java">
+    <entry file="file://$PROJECT_DIR$/src/controllers/LoadUploadAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1111#1119#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.21084337">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.41331658">
-          <caret line="1604" column="0" selection-start-line="1604" selection-start-column="0" selection-end-line="1604" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="112.02941">
+          <caret line="1388" column="0" selection-start-line="1388" selection-start-column="0" selection-end-line="1388" selection-end-column="0" />
+          <folding>
+            <marker date="1463406615127" expanded="true" signature="59:87847" placeholder="..." />
+            <marker date="1463406615127" expanded="true" signature="98:364" placeholder="..." />
+            <marker date="1463406615127" expanded="true" signature="192:364" placeholder="..." />
+            <marker date="1463406615127" expanded="true" signature="85013:85030" placeholder="..." />
+            <marker date="1463406615127" expanded="true" signature="85013:85048" placeholder="..." />
+            <marker date="1463406615127" expanded="true" signature="85013:85061" placeholder="..." />
+            <marker date="1463406615127" expanded="true" signature="85013:85076" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/LoadDashboardAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36144578">
+          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1112#1120#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
