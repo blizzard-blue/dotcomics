@@ -1,0 +1,156 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#toolbar-wrapper {
+    width: auto;
+    float: left;
+    background-color: #2e2e2e;
+    position: relative;
+}
+
+.toolbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#canvas-wrapper {
+    width: auto;
+    height: auto;
+}
+
+.toolbar-nav > li  > a.active {
+    background-color: #fff;
+}
+
+.toolbar-nav > li > a.active:hover {
+    background-color: #f2f2f2;
+}
+
+.toolbar-nav > li > a {
+    display: block;
+    width: 100%;
+    padding: 5px 20px;
+    background-color: #2e2e2e;
+    text-align: center;
+}
+
+.toolbar-nav > li > a:hover {
+    cursor: pointer;
+    background-color: #404040;
+}
+
+.toolbar-nav > li > a > img {
+    width: 20px;
+}
+
+.minimized {
+    display: none;
+}
+
+#speechbub {
+    top: 156;
+}
+
+.tool-slideout {
+    position: absolute;
+    left: 72;
+    width: 200px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #aaaaaa;
+    z-index: 1000;
+}
+
+.tool-wrapper {
+    padding: 5px;
+    border: 1px solid #aaaaaa;
+    background-color: #fff;
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.tool-item {
+    display: inline-block;
+    padding: 5px;
+}
+
+.tool-item:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.tool-item.active {
+    background-color: #f2f2f2;
+}
+
+.tool-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: left;
+}
+
+#resizeBar-wrapper{
+    margin-left: 72px;
+    height: 52px;
+    background-color: #2e2e2e;
+}
+
+.toolbar-at-top{
+    padding-left: 0px;
+}
+
+.toolbar-at-top li{
+    display: inline-block;
+    height: 100%;
+    width: 52px;
+    align-content: center;
+}
+
+
+.toolbar-at-top li svg circle{
+    background-color: #2e2e2e;
+
+}
+
+.toolbar-at-top li:hover {
+    cursor: pointer;
+    background-color: #404040;
+}
+
+.toolbar-at-top li.active {
+    background-color: #fff;
+}
+
+.toolbar-at-top li.active:hover {
+    background-color: #f2f2f2;
+}
+
+.toolbar-nav > .two {
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.toolbar-nav > .two > a{
+    display: inline-block;
+    width: 26px;
+    padding: 5px;
+}
+
+.toolbar-nav > .two > a > img {
+    width: 16px;
+}
+
+/*#tab-wrapper {*/
+    /*display: inline-block;*/
+/*}*/
+
+/*#tabs {*/
+    /*height: auto;*/
+    /*width: auto;*/
+    /*left: 85px;*/
+/*}*/
+
