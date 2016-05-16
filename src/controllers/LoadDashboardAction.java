@@ -8,6 +8,7 @@ import models.Series;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,12 +23,11 @@ public class LoadDashboardAction implements Action {
 
         List<Series> ActionSeries = cd.filterByGenre("action");
         List<Series> HorrorSeries = cd.filterByGenre("horror");
-        List<Series> SciFiSeries = cd.filterByGenre("scifi");
+        List<Series> SciFiSeries = cd.filterByGenre("Sci-Fi");
         List<Series> RomanceSeries = cd.filterByGenre("romance");
         List<Series> SuperHeroSeries = cd.filterByGenre("superhero");
         List<Series> ComedySeries = cd.filterByGenre("comedy");
-
-        System.out.println("@@@@@" + ActionSeries);
+        List<Series> FeaturedSeries = new ArrayList<Series>();
 
         JSONObject json = new JSONObject();
         JSONArray action = new JSONArray();
@@ -36,6 +36,25 @@ public class LoadDashboardAction implements Action {
         JSONArray romance = new JSONArray();
         JSONArray superhero = new JSONArray();
         JSONArray comedy = new JSONArray();
+        JSONArray featured = new JSONArray();
+
+        FeaturedSeries.add(cd.getSeries("DEERMAN"));
+        FeaturedSeries.add(cd.getSeries("Dankman"));
+        FeaturedSeries.add(cd.getSeries("Kenopsia"));
+        FeaturedSeries.add(cd.getSeries("Super Duper Shapes"));
+
+
+        for(Series s: FeaturedSeries){
+            JSONObject jo = new JSONObject();
+            jo.put("title", s.getTitle());
+            jo.put("author", s.getAuthor());
+            jo.put("cover_img", s.getCoverimgpath());
+            jo.put("description", s.getDescription());
+            jo.put("genre", s.getGenre());
+            featured.put(jo);
+        }
+
+        json.put("featured_series" , featured);
 
         for(Series s: ActionSeries){
             JSONObject jo = new JSONObject();
