@@ -8,6 +8,11 @@
     background-color: black;
 }
 
+.col-xs-3 .img-wrap img{
+    width: 240px;
+    height: 365px;
+}
+
 .col-xs-3:hover img{
     opacity: .20;
 }

@@ -897,21 +897,36 @@ $( document ).ready(function() {
 
     $('.controls.export [data-action=export-as-png]').click(function(e) {
         e.preventDefault();
-        var url = lc.getImage().toDataURL();
+        //var url = lc.getImage().toDataURL();
+        var url;
         var series = document.forms["draw-form"].series.value;
         var title = document.forms["draw-form"].title.value;
         var genre = document.forms["draw-form"].genre.value;
         var description = document.forms["draw-form"].description.value;
-        console.log(url);
 
-        $.post(
-                "/drawupload",
-                {"series":series,"title":title, "genre":genre, "description":description, "url":url},
-                function(data){
-                    //console.log("data: " + data);
-                },
-                "json"
-        );
+        $.ajax({
+            url: 'https://api.imgur.com/3/image',
+            type: 'POST',
+            headers: {
+                // Your application gets an imgurClientId from Imgur
+                Authorization: 'Client-ID ' + 'ca3042e2c7f88db',
+                Accept: 'application/json'
+            },
+            data: {
+                // convert the image data to base64
+                image:  lc.canvasForExport().toDataURL().split(',')[1],
+                type: 'base64'
+            },
+            success: function(result) {
+                url = 'https://i.imgur.com/' + result.data.id + ".png";
+                $.post(
+                    "/drawupload",
+                    {"series":series,"title":title, "genre":genre, "description":description, "url":url},
+                    function(data){
+                    },
+                    "json"
+                );
+            }
+        });
     });
-
 });

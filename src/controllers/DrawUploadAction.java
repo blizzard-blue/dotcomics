@@ -8,8 +8,10 @@ import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
 import com.google.appengine.repackaged.com.google.common.util.Base64;
 import dao.ComicDao;
+import dao.UserDao;
 import models.Issue;
 import models.Series;
+import models.UserAcct;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -52,7 +54,10 @@ public class DrawUploadAction implements Action {
             }
         }
 
-        response.sendRedirect("/upload?series=" + series + "&issue=" + title);
+        UserDao ud = new UserDao();
+        UserAcct u = ud.getUser(email);
+
+        response.sendRedirect("/account?author=" + u.getUsername());
 
         return null;
     }

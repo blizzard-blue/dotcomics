@@ -39,11 +39,63 @@
     <div class="col-md-12 text-center"><h3>Featured Series</h3></div>
     <div class="container">
         <div class="carousel slide" id="myCarousel-1">
-            <div class="carousel-inner"> </div>
+            <div id="inner-1" class="carousel-inner"> </div>
         </div>
     </div>
 
+    <br>
 
+    <div class="col-md-12 text-center"><h3>Action</h3></div>
+    <div class="container">
+        <div class="carousel slide" id="myCarousel-2">
+            <div id="inner-2" class="carousel-inner"> </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="col-md-12 text-center"><h3>Comedy</h3></div>
+    <div class="container">
+        <div class="carousel slide" id="myCarousel-3">
+            <div id="inner-3" class="carousel-inner"> </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="col-md-12 text-center"><h3>Super Hero</h3></div>
+    <div class="container">
+        <div class="carousel slide" id="myCarousel-4">
+            <div id="inner-4" class="carousel-inner"> </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="col-md-12 text-center"><h3>Horror</h3></div>
+    <div class="container">
+        <div class="carousel slide" id="myCarousel-5">
+            <div id="inner-5" class="carousel-inner"> </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="col-md-12 text-center"><h3>Romance</h3></div>
+    <div class="container">
+        <div class="carousel slide" id="myCarousel-6">
+            <div id="inner-6" class="carousel-inner"> </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="col-md-12 text-center"><h3>Sci-Fi</h3></div>
+    <div class="container">
+        <div class="carousel slide" id="myCarousel-7">
+            <div id="inner-7" class="carousel-inner"> </div>
+        </div>
+    </div>
 
 
 
@@ -56,21 +108,84 @@
                 console.log("Error Occured");
             },
             success : function(data) {
-                console.log(data.all_series);
+                console.log(data.action_series);
 
-                for(var i = 0; i < data.all_series.length;i++){
+                for(var i = 0; i < data.action_series.length;i++){
                     if(i == 0) {
-                        $(".carousel-inner").append("<div class=\"item active\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.all_series[i].title + "\"><img src=\"" + data.all_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.all_series[i].title + "\">" + data.all_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.all_series[i].author +"\">" + data.all_series[i].author + "</a></p><p class=\"imgDesc\" id =\"scroll3-" + (i + 1) + "\">" + data.all_series[i].description + "</p></div></div></div>")
+                        $("#inner-2").append("<div class=\"item active\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.action_series[i].title + "\"><img src=\"" + data.action_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.action_series[i].title + "\">" + data.action_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.action_series[i].author +"\">" + data.action_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>"+ data.action_series[i].description +"</p></div></div></div>")
                     }
                     else {
-                        $(".carousel-inner").append("<div class=\"item\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.all_series[i].title + "\"><img src=\"" + data.all_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.all_series[i].title + "\">" + data.all_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.all_series[i].author +"\">" + data.all_series[i].author + "</a></p><p class=\"imgDesc\" id =\"scroll3-" + (i + 1) + "\">" + data.all_series[i].description + "</p></div></div></div>")
+                        $("#inner-2").append("<div class=\"item\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.action_series[i].title + "\"><img src=\"" + data.action_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.action_series[i].title + "\">" + data.action_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.action_series[i].author +"\">" + data.action_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>" + data.action_series[i].description +"</p></div></div></div>")
                     }
                 }
 
-                $("#myCarousel-1").append("<a class=\"left carousel-control\" href=\"#myCarousel-1\" data-slide=\"prev\"><i class=\"glyphicon glyphicon-chevron-left\"></i></a><a class=\"right carousel-control\" href=\"#myCarousel-1\" data-slide=\"next\"><i class=\"glyphicon glyphicon-chevron-right\"></i></a>")
+                $("#myCarousel-2").append("<a class=\"left carousel-control\" href=\"#myCarousel-2\" data-slide=\"prev\"><i class=\"glyphicon glyphicon-chevron-left\"></i></a><a class=\"right carousel-control\" href=\"#myCarousel-2\" data-slide=\"next\"><i class=\"glyphicon glyphicon-chevron-right\"></i></a>")
+
+
+                for(var i = 0; i < data.comedy_series.length;i++){
+                    if(i == 0) {
+                        $("#inner-3").append("<div class=\"item active\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.comedy_series[i].title + "\"><img src=\"" + data.comedy_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.comedy_series[i].title + "\">" + data.comedy_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.comedy_series[i].author +"\">" + data.comedy_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>"+ data.comedy_series[i].description +"</p></div></div></div>")
+                    }
+                    else {
+                        $("#inner-3").append("<div class=\"item\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.comedy_series[i].title + "\"><img src=\"" + data.comedy_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.comedy_series[i].title + "\">" + data.comedy_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.comedy_series[i].author +"\">" + data.comedy_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>"+ data.comedy_series[i].description +"</p></div></div></div>")
+                    }
+                }
+
+                $("#myCarousel-3").append("<a class=\"left carousel-control\" href=\"#myCarousel-3\" data-slide=\"prev\"><i class=\"glyphicon glyphicon-chevron-left\"></i></a><a class=\"right carousel-control\" href=\"#myCarousel-3\" data-slide=\"next\"><i class=\"glyphicon glyphicon-chevron-right\"></i></a>")
+
+
+                for(var i = 0; i < data.superhero_series.length;i++){
+                    if(i == 0) {
+                        $("#inner-4").append("<div class=\"item active\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.superhero_series[i].title + "\"><img src=\"" + data.superhero_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.superhero_series[i].title + "\">" + data.superhero_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.superhero_series[i].author +"\">" + data.superhero_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>" + data.superhero_series[i].description +"</p></div></div></div>")
+                    }
+                    else {
+                        $("#inner-4").append("<div class=\"item\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.superhero_series[i].title + "\"><img src=\"" + data.superhero_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.superhero_series[i].title + "\">" + data.superhero_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.superhero_series[i].author +"\">" + data.superhero_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>" + data.superhero_series[i].description +"</p></div></div></div>")
+                    }
+                }
+
+                $("#myCarousel-4").append("<a class=\"left carousel-control\" href=\"#myCarousel-4\" data-slide=\"prev\"><i class=\"glyphicon glyphicon-chevron-left\"></i></a><a class=\"right carousel-control\" href=\"#myCarousel-4\" data-slide=\"next\"><i class=\"glyphicon glyphicon-chevron-right\"></i></a>")
+
+
+                for(var i = 0; i < data.horror_series.length;i++){
+                    if(i == 0) {
+                        $("#inner-5").append("<div class=\"item active\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.horror_series[i].title + "\"><img src=\"" + data.horror_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.horror_series[i].title + "\">" + data.horror_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.horror_series[i].author +"\">" + data.horror_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>" + data.horror_series[i].description +"</p></div></div></div>")
+                    }
+                    else {
+                        $("#inner-5").append("<div class=\"item\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.horror_series[i].title + "\"><img src=\"" + data.horror_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.horror_series[i].title + "\">" + data.horror_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.horror_series[i].author +"\">" + data.horror_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>" + data.horror_series[i].description +"</p></div></div></div>")
+                    }
+                }
+
+                $("#myCarousel-5").append("<a class=\"left carousel-control\" href=\"#myCarousel-5\" data-slide=\"prev\"><i class=\"glyphicon glyphicon-chevron-left\"></i></a><a class=\"right carousel-control\" href=\"#myCarousel-5\" data-slide=\"next\"><i class=\"glyphicon glyphicon-chevron-right\"></i></a>")
+
+
+                for(var i = 0; i < data.romance_series.length;i++){
+                    if(i == 0) {
+                        $("#inner-6").append("<div class=\"item active\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.romance_series[i].title + "\"><img src=\"" + data.romance_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.romance_series[i].title + "\">" + data.romance_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.romance_series[i].author +"\">" + data.romance_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>" + data.romance_series[i].description +"</p></div></div></div>")
+                    }
+                    else {
+                        $("#inner-6").append("<div class=\"item\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.romance_series[i].title + "\"><img src=\"" + data.romance_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.romance_series[i].title + "\">" + data.romance_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.romance_series[i].author +"\">" + data.romance_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>" + data.romance_series[i].description +"</p></div></div></div>")
+                    }
+                }
+
+                $("#myCarousel-6").append("<a class=\"left carousel-control\" href=\"#myCarousel-6\" data-slide=\"prev\"><i class=\"glyphicon glyphicon-chevron-left\"></i></a><a class=\"right carousel-control\" href=\"#myCarousel-6\" data-slide=\"next\"><i class=\"glyphicon glyphicon-chevron-right\"></i></a>")
+
+                for(var i = 0; i < data.scifi_series.length;i++){
+                    if(i == 0) {
+                        $("#inner-7").append("<div class=\"item active\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.scifi_series[i].title + "\"><img src=\"" + data.scifi_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.scifi_series[i].title + "\">" + data.scifi_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.scifi_series[i].author +"\">" + data.scifi_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>" + data.scifi_series[i].description +"</p></div></div></div>")
+                    }
+                    else {
+                        $("#inner-7").append("<div class=\"item\"><div class=\"col-xs-3\"><div class=\"img-wrap\"><a href=\"/comic?series=" + data.scifi_series[i].title + "\"><img src=\"" + data.scifi_series[i].cover_img + "\" class=\"img-responsive\"></a><p class=\"imgDesc\" id=\"scroll1-" + (i + 1) + "\"><a href=\"/comic?series=" + data.scifi_series[i].title + "\">" + data.scifi_series[i].title + "</a></p><p class=\"imgDesc\" id =\"scroll2-" + (i + 1) + "\"><a href=\"/account?author="+ data.scifi_series[i].author +"\">" + data.scifi_series[i].author + "</a></p><p class='imgDesc' id='scroll3-" + (i + 1) + "'>" + data.scifi_series[i].description +"</p></div></div></div>")
+                    }
+                }
+
+                $("#myCarousel-7").append("<a class=\"left carousel-control\" href=\"#myCarousel-7\" data-slide=\"prev\"><i class=\"glyphicon glyphicon-chevron-left\"></i></a><a class=\"right carousel-control\" href=\"#myCarousel-7\" data-slide=\"next\"><i class=\"glyphicon glyphicon-chevron-right\"></i></a>")
+
                 $('#myCarousel').carousel({
                     interval: false
                 })
+
+
+
                 $(document).on('mouseleave', '.carousel', function() {
                     $(this).carousel('pause');
                 });

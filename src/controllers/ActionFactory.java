@@ -35,6 +35,7 @@ public class ActionFactory {
         actions.put("GET/drawupload", new DrawUploadAction());
         actions.put("POST/drawupload", new DrawUploadAction());
         actions.put("GET/test", new LoadTestAction());
+        actions.put("GET/deletecomic", new DeleteComicAction());
     }
 
     public static ActionFactory getInstance() {

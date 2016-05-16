@@ -93,11 +93,18 @@
             console.log("Error Occured");
         },
         success : function(data) {
-            //console.log(data);
+            console.log(data);
             var sarray = data.series;
             for(var i = 0; i < sarray.length; i++){
+                if(i % 4 == 0){
+                    $("#searched-comics").append("<div class=\"row\">");
+                }
                 $("#searched-comics").append("<div class=\"col-md-3 col-sm-4 user-published-item\">" +
                         "<a href=\"/comic?series="+ sarray[i].title + "\"><img src=\"" + sarray[i].img + "\" class=\"img-responsive\"></a></div>");
+
+                if(i % 4 == 3){
+                    $("#searched-comics").append("</div>");
+                }
             }
         }
 

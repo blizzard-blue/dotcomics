@@ -175,6 +175,56 @@ public class ComicDao {
         series.add(s);
     }
 
+    public void deleteSeries(String seriestitle){
+        List<String> comicids = new ArrayList<String>();
+        try{
+            conn = db.getConnection();
+
+            stmt = conn.prepareStatement("select * from ComicBook where series = ?");
+            stmt.setString(1, seriestitle);
+            rs = stmt.executeQuery();
+
+            while(rs.next()) {
+                comicids.add(rs.getString("comicid"));
+            }
+
+            for(String id : comicids) {
+                stmt = conn.prepareStatement("delete from Page where comicid = ?");
+                stmt.setString(1, id);
+                stmt.executeUpdate();
+            }
+
+            stmt = conn.prepareStatement("delete from ComicBook where series = ?");
+            stmt.setString(1, seriestitle);
+            stmt.executeUpdate();
+
+            stmt = conn.prepareStatement("select * from Series where title = ?");
+            stmt.setString(1, seriestitle);
+            rs = stmt.executeQuery();
+            String seriesid = "";
+
+            if(rs.next())
+                seriesid = rs.getString("seriesid");
+
+            stmt = conn.prepareStatement("delete from Bookmark where seriesid = ?");
+            stmt.setString(1, seriesid);
+            stmt.executeUpdate();
+
+            stmt = conn.prepareStatement("delete from Series where title = ?");
+            stmt.setString(1, seriestitle);
+            stmt.executeUpdate();
+
+
+
+            rs.close();
+            stmt.close();
+            conn.close();
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
     public void addIssue(String title, String email, String seriesTitle){
         UserDao ud = new UserDao();
         UserAcct u = ud.getUser(email);
@@ -266,6 +316,18 @@ public class ComicDao {
 //        return pages;
 //    }
 
+    public List<Series> filterByGenre(String genre){
+        List<Series> filteredseries = new ArrayList<Series>();
+
+        for(Series s : series){
+            if(genre.equalsIgnoreCase(s.getGenre()))
+                filteredseries.add(s);
+
+        }
+
+        return filteredseries;
+    }
+
     public int getNextIssuePage(int comicid){
         int page = -1;
 
@@ -291,4 +353,6 @@ public class ComicDao {
 
         return page;
     }
+
+
 }

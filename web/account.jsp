@@ -80,32 +80,21 @@
                     console.log(data.author_series);
                     var series = data.author_series;
                     for(var i=0; i<series.length; i++){
-                        if(i % 4 == 0){
+                        if(i % 4 == 0) {
                             $("#published-comics").append("<div class=\"row\">");
-                            if(${user.username == author.username}){
-                                $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"><button class=\"btn-success\">Edit</button><button class=\"btn-danger\">Delete</button></a></div>");
-                            }
-                            else{
-                                $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"></a></div>");
-                            }
-                        } else if(i % 4 == 3){
-                            if(${user.username == author.username}){
-                                $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"><button class=\"btn-success\">Edit</button><button class=\"btn-danger\">Delete</button></a></div>");
-                                $("#published-comics").append("</div>");
-                            }
-                            else{
-                                $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"></a></div>");
-                                $("#published-comics").append("</div>");
-                            }
-                        } else{
-                            if(${user.username == author.username}){
-                                $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"><button class=\"btn-success\">Edit</button><button class=\"btn-danger\">Delete</button></a></div>");
-                            }
-                            else{
-                                $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"></a></div>");
-                            }
                         }
+                        if(${user.username == author.username}){
+                            $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"></a><a href=\"#\" onclick=\"deleteSeries(this);\" value=\"" + series[i].title + "\"><button class=\"btn-danger\">Delete</button></a></div>");
+                        }
+                        else{
+                            $("#published-comics").append("<div class=\"col-md-3 user-published-item\"><a href=\"/comic?series=" + series[i].title + "\"><img src=\"" + series[i].cover_img + "\" class=\"img-responsive\"></a></div>");
+                        }
+                        if(i % 4 == 3){
+                            $("#published-comics").append("</div>");
+                        }
+
                     }
+
                 }
             });
         });
@@ -158,9 +147,19 @@
             }
             });
         });
-//        $.ajax({
-//            url:
-//        })
+
+        function deleteSeries(button){
+            var seriestitle = button.getAttribute("value");
+            $.ajax({
+                url : "/deletecomic?seriestitle=" + seriestitle,
+                error : function() {
+                    console.log("Error Occured");
+                },
+                success : function(){
+                    location.reload();
+                }
+            });
+        }
     </script>
 </body>
 </html>
