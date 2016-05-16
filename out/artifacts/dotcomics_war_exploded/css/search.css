@@ -51,3 +51,12 @@
 #searchheader{
     text-align: center;
 }
+
+.col-md-3 img{
+    width: 240px;
+    height: 365px;
+}
+
+.row{
+    margin-bottom: 15px;
+}
