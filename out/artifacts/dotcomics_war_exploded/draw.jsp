@@ -13,7 +13,37 @@
     <body>
         <jsp:directive.include file="/nav.jsp" />
 
-
+        <div id="draw-form">
+            <form name="draw-form" class="controls export">
+                <div class="form-group">
+                    <label for="series">Series Title:</label>
+                    <input type="text" class="form-control" id="series" name="series" value="${param.series}">
+                </div>
+                <div class="form-group">
+                    <label for="title">Issue Title:</label>
+                    <input type="text" class="form-control" id="title" name="title" value="${param.issue}">
+                </div>
+                <div class="form-group">
+                    <label for="genre">Genre:</label>
+                    <select class="form-control" id="genre" name="genre">
+                        <option>Select One</option>
+                        <option ${genre == 'Action' ? 'selected' : ''}>Action</option>
+                        <option ${genre == 'Comedy' ? 'selected' : ''}>Comedy</option>
+                        <option ${genre == 'Horror' ? 'selected' : ''}>Horror</option>
+                        <option ${genre == 'Romance' ? 'selected' : ''}>Romance</option>
+                        <option ${genre == 'Sci-Fi' ? 'selected' : ''}>Sci-Fi</option>
+                        <option ${genre == 'Superhero' ? 'selected' : ''}>Superhero</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea type="text" class="form-control" id="description" name="description">${description}</textarea>
+                </div>
+                <div class="form-group">
+                    <button id="upload" data-action="export-as-png" type="button" class="btn btn-primary">Save Page</button>
+                </div>
+            </form>
+        </div>
 
         <!-- toolbar -->
         <div id="toolbar-wrapper">
@@ -97,6 +127,11 @@
             </ul>
         </div>
 
+        <div id="canvas-wrapper">
+            <div class="literally core"></div>
+        </div>
+
+
         <div id="resizeBar-wrapper">
             <ul class="toolbar-at-top">
                 <li>
@@ -145,13 +180,6 @@
             </ul>
         </div>
 
-
-        <!-- /#toolbar-wrapper -->
-
-        <div id="canvas-wrapper">
-            <div class="literally core"></div>
-        </div>
-
         <div class="popup-window" id="template-popup" style="display: none">
             <table id="template-table">
                 <tr>
@@ -172,5 +200,25 @@
         <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
         <script src="js/literallycanvas-core.js"></script>
         <script src="js/lc-custom.js"></script>
+        <script>
+//            function uploadDrawing(){
+//                var image = LC.getImage();
+//                console.log(image);
+//
+//                var series = document.forms["draw-form"].series.value;
+//                var title = document.forms["draw-form"].title.value;
+//                var genre = document.forms["draw-form"].genre.value;
+//                var description = document.forms["draw-form"].description.value;
+//
+//                $.post(
+//                        "/drawupload",
+//                        {"series":series,"title":title, "genre":genre, "description":description},
+//                        function(data){
+//                            console.log("data: " + data);
+//                        },
+//                        "json"
+//                );
+//            }
+        </script>
     </body>
 </html>

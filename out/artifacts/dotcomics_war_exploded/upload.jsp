@@ -38,6 +38,8 @@
                     <option ${genre == 'Comedy' ? 'selected' : ''}>Comedy</option>
                     <option ${genre == 'Horror' ? 'selected' : ''}>Horror</option>
                     <option ${genre == 'Romance' ? 'selected' : ''}>Romance</option>
+                    <option ${genre == 'Sci-Fi' ? 'selected' : ''}>Sci-Fi</option>
+                    <option ${genre == 'Superhero' ? 'selected' : ''}>Superhero</option>
                 </select>
             </div>
             <div class="form-group">
